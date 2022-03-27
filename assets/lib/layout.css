@@ -3,6 +3,11 @@ html, body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 /* NAV BAR */
 .nav-wrapper {
     overflow: hidden;
@@ -56,6 +61,7 @@ html, body {
     text-align: center;
     transition: 0.4s;
     cursor: pointer;
+    line-height: 25px;
 }
 
 .nav-btn:hover {
