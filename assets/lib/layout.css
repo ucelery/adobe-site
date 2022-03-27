@@ -66,33 +66,4 @@ html, body {
 /* MAIN */
 .main {
     margin-top: 150px;
-    perspective: 800px;
-}
-
-.main:hover .center-axis {
-    transform: rotateX(.5turn);
-    transform-style: preserve-3d;
-}
-
-.main:hover .row1 {
-    transition: 1s;
-}
-
-.center-axis {
-    background-color: rgba(0, 0, 0, 0.1);
-    transition: 1s;
-}
-
-.row1, .row2 {
-    width: 100%;
-    height: 100px;
-}
-
-.row1 {
-    background-color: rgba(240, 124, 124, 0.973);
-    translate: 0% -50%;
-}
-
-.row2 {
-    background-color: rgb(147, 235, 205);
 }
