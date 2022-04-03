@@ -14,60 +14,92 @@
 
     <!-- STYLES -->
     <link rel="stylesheet" href="./assets/lib/layout.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+    <script src="./assets/lib/slideMenu.js" defer></script>
 </head>
 
 <body>
     <div class="wrapper">
-        <!-- NAV BAR -->
-        <div class="nav-wrapper">
-            <!-- DESIGN -->
-            <div class="design">
-                <!-- PAGE PREVIEW -->
-                <div class="circle">
-                    <div class="page-preview">
+        <!-- BANNER -->
+        <div class="video-banner">
+            <!-- FILTERS -->
+            <div class="vid-filter"></div>
+            <div class="gradient"></div>
 
+            <!-- HEADER -->
+            <div class="header">
+                <div class="company">
+                    <!-- LOGO -->
+                    <div class="logo">
+                        <img src="./assets/images/logo/adobe-logo.png" alt="adobe-logo">
+                    </div>
+                    <span class="company-text">ADOBE</span>
+                </div>
+            </div>
+
+            <!-- SLIDE MENU -->
+            <div class="slide-menu" id="slide-menu">
+                <span class="menu-btn">
+                    <svg width="37" height="30" viewBox="0 0 37 30" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.4541 26.4062H33.4541M3.4541 14.9776H33.4541M3.4541 3.54907H33.4541" stroke="#F8F8F8"
+                            stroke-width="5.625" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+                <!-- CONTENTS -->
+                <div class="buttons" id="button-container">
+                    <div class="btn">
+                        <a id="about-btn" href="#">about us</a>
+                    </div>
+                    <div class="btn">
+                        <a id="events-btn" href="#">events</a>
+                    </div>
+                    <div class="btn">
+                        <a id="products-btn" href="#">products</a>
                     </div>
                 </div>
-                <div class="logo">
-                    <div class="image"></div>
-                </div>
             </div>
 
-            <!-- BUTTONS -->
-            <div class="nav-buttons">
-                <a href="#" class="nav-btn">
-                    button
-                </a>
-                <a href="#" class="nav-btn">
-                    button
-                </a>
-                <a href="#" class="nav-btn">
-                    button
-                </a>
-                <a href="#" class="nav-btn">
-                    button
-                </a>
-                <a href="#" class="nav-btn">
-                    button
-                </a>
-                <a href="#" class="nav-btn">
-                    button
-                </a>
-                <a href="#" class="nav-btn">
-                    button
-                </a>
-                <a href="#" class="nav-btn">
-                    button
-                </a>
+            <!-- DOWN ARROW ICO -->
+            <div class="down-arrow-icon">
+                <svg width="41" height="46" viewBox="0 0 41 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.0652 43.0727V3.07269M20.0652 43.0727L2.56519 25.5727M20.0652 43.0727L37.5652 25.5727"
+                        stroke="#F8F8F8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+
+            <!-- VIDEO -->
+            <div class="video-foreground" style="height: 100%;">
+                <video autoplay muted loop>
+                    <source src="./assets/videos/banner-video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
 
-        <!-- MAIN -->
-        <div class="main">
-            <div class="center-axis">
-
-            </div>
-        </div>
+        <!-- GOO SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                        result="goo" />
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                </filter>
+                <filter id="goo-no-comp">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9"
+                        result="goo" />
+                </filter>
+                <filter id="goo-drops">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                        result="goo" />
+                </filter>
+            </defs>
+        </svg>
     </div>
 </body>
 

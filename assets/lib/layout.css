@@ -1,6 +1,18 @@
-html, body {
+@font-face {
+    font-family: 'CodeNext_ExtraBold';
+    src: url('../fonts/codenext-extrabold-webfont.woff2') format('woff2'),
+        url('../fonts/codenext-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
     padding: 0;
     margin: 0;
+    scrollbar-color: #383f45 #bbc6ce;
+    scrollbar-width: thin;
+    background-color: #07060A;
 }
 
 a {
@@ -8,68 +20,122 @@ a {
     color: #fff;
 }
 
-/* NAV BAR */
-.nav-wrapper {
-    overflow: hidden;
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 5px;
 }
 
-.design {
+::-webkit-scrollbar-track {
+    background: #383f45;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bbc6ce;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #99a3ac;
+}
+
+/* HEADER */
+.header {
+    position: absolute;
+    height: 120px;
     display: flex;
-}
-
-.design .circle {
-    border-radius: 50%;
-    width: 350px;
-    height: 350px;
-    background-color: #242424;
-    translate: -45% -45%;
-    position: absolute;
-}
-
-.logo {
-    background-color: #fff;
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    translate: 230px 5px;
-}
-
-.logo .image {
-    height: 150px;
-    width: 150px;
-    background-image: url('../images/logo/adobe-logo.png');
-    background-size: cover;
-}
-
-.nav-buttons {
-    height: 75px;
+    align-items: center;
+    padding: 0px 5vw;
     width: 100%;
-    background-color: #242424;
-    margin-top: 40px;
-    padding: 0px 0px 0px 400px;
+}
+
+.company {
     display: flex;
-    justify-content: left;
+    align-items: center;
+    font-family: 'CodeNext_ExtraBold';
+    font-size: 2rem;
+    color: white;
 }
 
-.nav-btn {
-    font-family: 'Arvo', serif;
-    color: whitesmoke;
-    font-weight: 600;
-    padding: 5px 15px;
-    display: inline-block;
-    margin: 20px 5px;
-    text-align: center;
+.company .company-text {
+    margin-left: 25px;
+}
+
+/* SLIDE MENU */
+.slide-menu {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    width: 400px;
     transition: 0.4s;
+}
+
+.slide-menu .buttons {
+    margin-left: 100px;
+    margin-top: 120px;
+}
+
+.slide-menu .buttons .btn a {
+    font-family: 'Rockwell';
+    color: black;
+    font-size: 2.5rem;
+}
+
+.shown-menu {
+    background-color: #fbfbfd;
+    right: 0;
+}
+
+.shown-menu .menu-btn path {
+    stroke: black;
+}
+
+.menu-btn {
+    position: absolute;
+    left: 20px;
+    top: 35px;
+    height: auto;
     cursor: pointer;
-    line-height: 25px;
 }
 
-.nav-btn:hover {
-    opacity: 0.5;
-    background-color: rgba(0, 0, 0, 0.5)
+
+.logo img {
+    width: 50px;
 }
 
-/* MAIN */
-.main {
-    margin-top: 150px;
+/* VIDEO BANNER */
+.video-banner {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.vid-filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.video-foreground video {
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.video-banner .gradient {
+    background-image: url(../images/filters/gradient.png);
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.down-arrow-icon {
+    position: absolute;
+    bottom: 25px;
+    right: 50%;
+    translate: 24px 0px;
 }
