@@ -67,7 +67,7 @@ a {
     bottom: 0;
     background-color: transparent;
     width: 400px;
-    transition: 0.4s;
+    transition: 0.35s;
 }
 
 .slide-menu .buttons {
@@ -98,6 +98,23 @@ a {
     cursor: pointer;
 }
 
+.rainbow-text:hover{
+    background-size: 700%;
+    background-image: linear-gradient(45deg, red,orange,rgb(255, 208, 0),yellow,rgb(0, 255, 0),rgb(85, 231, 85) ,rgb(17, 247, 255),rgb(77, 77, 248),rgb(138, 29, 216),rgb(77, 77, 248),rgb(17, 247, 255),rgb(85, 231, 85),rgb(0, 255, 0),yellow,rgb(255, 208, 0),orange,red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:transparent;
+    animation: bg-animation 20s infinite alternate;
+}
+@keyframes bg-animation{
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
 
 .logo img {
     width: 50px;
