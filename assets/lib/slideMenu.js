@@ -9,8 +9,8 @@ $(document).ready(() => {
             menu.addClass('shown-menu');
             gsap.from('.btn', {
                 x: 100,
-                stagger: .1
-            })
+                stagger:.025
+            }).timescale(.8)
         }
     })
 })
