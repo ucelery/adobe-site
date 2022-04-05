@@ -10,7 +10,7 @@ $(document).ready(() => {
             gsap.from('.btn', {
                 x: 100,
                 stagger:.025
-            }).timescale(.8)
+            }).timescale(.8);
         }
     })
 })
