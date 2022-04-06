@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'CodeNext_ExtraBold';
+    src: url('../fonts/codenext-extrabold-webfont.woff2') format('woff2'),
+        url('../fonts/codenext-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
