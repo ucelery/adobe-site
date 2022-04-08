@@ -136,7 +136,7 @@ a {
 }
 
 .video-banner .gradient {
-    background-image: url(../images/filters/gradient.png);
+    background-image: url(../../images/filters/gradient.png);
     background-size: 100% 100%;
     position: absolute;
     bottom: 0;
