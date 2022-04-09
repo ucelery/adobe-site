@@ -315,6 +315,8 @@ a {
     position: absolute;
     width: 100%;
     text-align: center;
+    letter-spacing: -8px;
+    color: rgba(255, 255, 255, 0.5)
 }
 
 .partners .partner-container {
