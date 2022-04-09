@@ -1,0 +1,344 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    scrollbar-color: #4E4E4E #202225;
+    scrollbar-width: thin;
+    background-color: #07060A;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+html * {
+    scrollbar-color: #4E4E4E #202225;
+    scrollbar-width: thin;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #4E4E4E;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #202225;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #99a3ac;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+/* HEADER */
+.header {
+    position: absolute;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 0px 5vw;
+    width: 100%;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    font-family: 'CodeNext_ExtraBold';
+    font-size: 2rem;
+    color: red;
+}
+
+.company .company-text {
+    margin-left: 25px;
+}
+
+/* SLIDE MENU */
+.slide-menu {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    width: 400px;
+    transition: 0.35s;
+    z-index: 999;
+}
+
+@media only screen and (max-width: 720px) {
+    .slide-menu {
+        width: 100%;
+        right: -100%;
+    }
+
+    .slide-menu .menu-btn {
+        position: fixed !important;
+        left: auto;
+        right: 50px;
+    }
+}
+
+.slide-menu .buttons {
+    margin-left: 100px;
+    margin-top: 120px;
+}
+
+.slide-menu .buttons .btn a {
+    font-family: 'Rockwell';
+    color: black;
+    font-size: 2.5rem;
+}
+
+.shown-menu {
+    background-color: #fbfbfd;
+    right: 0;
+}
+
+.shown-menu .menu-btn path {
+    stroke: black;
+}
+
+.menu-btn {
+    position: absolute;
+    left: 20px;
+    top: 35px;
+    height: auto;
+    cursor: pointer;
+}
+
+.rainbow-text:hover {
+    background-size: 500%;
+    background-image: linear-gradient(45deg, red, orange, rgb(255, 208, 0), yellow, rgb(0, 255, 0), rgb(85, 231, 85), rgb(17, 247, 255), rgb(77, 77, 248), rgb(138, 29, 216), rgb(77, 77, 248), rgb(17, 247, 255), rgb(85, 231, 85), rgb(0, 255, 0), yellow, rgb(255, 208, 0), orange, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: bg-animation 10s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+.logo img {
+    width: 50px;
+}
+
+/* VIDEO BANNER */
+.video-banner {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.vid-filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.video-foreground video {
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.video-banner .gradient {
+    background-image: url(../../images/filters/gradient.png);
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.down-arrow-icon {
+    position: absolute;
+    bottom: 25px;
+    right: 50%;
+    translate: 24px 0px;
+}
+
+/* STATEMENT SECTION */
+.statement-section {
+    position: absolute;
+    top: 40vh;
+    left: 7%;
+}
+
+.statement-section .statement-header {
+    font-family: 'CodeNext_ExtraBold';
+    font-size: 3rem;
+}
+
+.statement-section .details {
+    font-family: 'Rockwell';
+    font-size: 1.2rem;
+    width: 70%;
+}
+
+/* SHOWCASES */
+.showcase {
+    display: flex;
+    height: 30vw;
+    padding: 0px 50px;
+    margin-top: 350px;
+    user-select: none;
+    min-height: 310px;
+}
+
+.showcase .title {
+    font-family: 'CodeNext_ExtraBold';
+    font-size: 3rem;
+    height: 100%;
+}
+
+.showcase-container {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding-bottom: 20px;
+}
+
+.showcase .card:first-child {
+    margin-left: 0;
+}
+
+.showcase .card:last-child {
+    margin-right: 0;
+}
+
+.showcase .card {
+    width: 20vw;
+    min-width: 210px;
+    height: 90%;
+    min-height: 290px;
+    display: inline-block;
+    background-color: rgb(138, 29, 216);
+    margin: 5px 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .showcase .title {
+        display: none;
+    }
+}
+
+/*  EVENTS */
+.events {
+    position: relative;
+    height: 800px;
+    margin-top: 300px;
+    width: 100%;
+    user-select: none;
+}
+
+.events .background {
+    position: absolute;
+    width: 100%;
+    min-width: 1400px;
+}
+
+.events-container {
+    position: absolute;
+    width: 100vw;
+    height: 380px;
+
+    margin: 0px 20px;
+    margin-top: 240px;
+    padding-bottom: 30px;
+
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.events .card {
+    height: 350px;
+    width: 270px;
+    background-color: rgb(138, 29, 216);
+    margin: 0px 50px;
+    display: inline-block;
+}
+
+.events .card.size20 {
+    width: 400px;
+    min-width: 450px;
+}
+
+.events .card {
+    width: 15vw;
+    min-width: 210px;
+    height: 90%;
+    min-height: 290px;
+    display: inline-block;
+    background-color: rgb(138, 29, 216);
+    margin: 5px 20px;
+}
+
+/* PARTNERS */
+.partners {
+    padding: 100px 0px;
+    margin-top: 200px;
+    height: 400px;
+    width: 150%;
+    margin-left: -25%;
+    background: linear-gradient(45deg, red, orange, rgb(255, 208, 0), yellow, rgb(0, 255, 0), rgb(85, 231, 85), rgb(17, 247, 255), rgb(77, 77, 248), rgb(138, 29, 216), rgb(77, 77, 248), rgb(17, 247, 255), rgb(85, 231, 85), rgb(0, 255, 0), yellow, rgb(255, 208, 0), orange, red);
+    background-size: 1800% 1800%;
+    animation: bg-animation 20s infinite;
+    transform: rotate(-5deg);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.partners .partner-header {
+    font-family: 'Altero';
+    font-size: 7rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.partners .partner-container {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}
+
+.track {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+}
+
+.track .item {
+    margin: 15px 15px;
+    width: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.partners img {
+    object-fit: contain;
+    height: 100%;
+}
