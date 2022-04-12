@@ -1,0 +1,79 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    scrollbar-color: #4E4E4E #202225;
+    scrollbar-width: thin;
+    background-color: #07060A;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+html * {
+    scrollbar-color: #4E4E4E #202225;
+    scrollbar-width: thin;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #4E4E4E;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #202225;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #99a3ac;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+/* BANNER */
+.banner {
+    background-image: url('https://media.discordapp.net/attachments/962008834895925328/963478721359134720/Gradient.png');
+    background-size: cover;
+    height: 650px;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .clip-art {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.first-half {
+    font-family: 'hando';
+    font-size: 126px;
+    color: #07060A;
+    line-height: 6rem;
+}
+
+.app-text-name {
+    font-family: 'peppermint';
+    font-size: 86px;
+    color: whitesmoke;
+}
+
+.text-banner {
+    transform: translateY(-30px)
+}
