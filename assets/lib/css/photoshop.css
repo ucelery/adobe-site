@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+body {
+    overflow: hidden;
+}
+
 html * {
     scrollbar-color: #4E4E4E #202225;
     scrollbar-width: thin;
@@ -44,12 +48,13 @@ a {
 .banner {
     background-image: url('https://media.discordapp.net/attachments/962008834895925328/963478721359134720/Gradient.png');
     background-size: cover;
-    height: 650px;
+    height: 80vh;
     width: 100vw;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .banner .clip-art {
@@ -59,6 +64,7 @@ a {
     position: absolute;
     top: 0;
     width: 100%;
+    height: 100%;
 }
 
 .first-half {
@@ -76,4 +82,59 @@ a {
 
 .text-banner {
     transform: translateY(-30px)
+}
+
+/* MAIN */
+.content {
+    margin: 100px 0px;
+}
+
+.content .video-container {
+    height: 300px;
+}
+
+.video-container video {
+    height: 100%;
+}
+
+.content .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px;
+}
+
+.section .desc {
+    width: 40%;
+}
+
+.content .block,
+.block .section {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.desc-section.header {
+    font-family: 'CodeNext_ExtraBold';
+    font-size: 2.1rem;
+    margin-bottom: 15px;
+}
+
+.desc .desc-section {
+    min-width: 300px;
+    width: 80%;
+}
+
+.desc-section.details {
+    font-family: 'Rockwell';
+    font-size: 1.1rem;
+}
+
+.sub-sec {
+    margin: 0px 20px;
+}
+
+.right {
+    float: right;
 }
