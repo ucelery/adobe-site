@@ -171,3 +171,79 @@ a {
     justify-content: center;
     margin: 0 10px;
 }
+
+/* FEATURES */
+.features-banner {
+    font-family: 'Altero';
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.features-container .big-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.big-box .feature .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.features-container .big-box .feature {
+    width: 70vw;
+}
+
+.big-box .feature .description {
+    text-align: center;
+}
+
+.feature .description .header {
+    font-family: 'Altero';
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-top: 15px;
+}
+
+.feature .description .details {
+    font-family: 'Rockwell';
+    font-size: 1.1rem;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.features-container .feature .video-container {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-container .row {
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.features-container .small-box {
+    margin: 15px;
+    width: 50%;
+}
+
+.small-box .video-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.features-container .small-boxes {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
