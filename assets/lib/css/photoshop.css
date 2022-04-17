@@ -91,6 +91,7 @@ a {
 
 .content .video-container {
     height: 300px;
+    overflow: hidden;
 }
 
 .video-container video {
@@ -113,6 +114,65 @@ a {
     display: flex;
     align-content: center;
     justify-content: center;
+}
+
+.hidden-video {
+    display: none;
+}
+
+.default-video {
+    display: block;
+}
+
+@media only screen and (max-width:600px) {
+
+    .content .block,
+    .block .section {
+        display: block;
+        align-content: center;
+        justify-content: center;
+        flex-direction: center;
+        width: 100%;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+
+    .video-container video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section .desc {
+        width: auto;
+        height: auto;
+    }
+
+    .content .desc .desc-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section .desc-section.header {
+        font-size: 1.5rem;
+    }
+
+    .section .desc-section.details {
+        font-size: .9rem;
+    }
+
+    .hidden-video {
+        display: block;
+    }
+
+    .default-video {
+        display: none;
+    }
+
+    html .content .right {
+        float: none;
+    }
 }
 
 .desc-section.header {
@@ -246,4 +306,22 @@ a {
     display: flex;
     justify-content: center;
     width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+    .features-container .small-boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .features-container .small-box {
+        width: 100%;
+    }
+
+    .features-container .big-box .feature {
+        width: 90vw;
+    }
 }
