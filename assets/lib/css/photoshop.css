@@ -69,7 +69,7 @@ a {
 
 .first-half {
     font-family: 'hando';
-    font-size: 126px;
+    font-size: 8rem;
     color: #07060A;
     line-height: 6rem;
 }
@@ -82,6 +82,17 @@ a {
 
 .text-banner {
     transform: translateY(-30px)
+}
+
+@media only screen and (max-width: 740px) {
+    .banner .first-half {
+        font-size: 5rem;
+        line-height: 4rem;
+    }
+
+    .app-text-name {
+        font-size: 3.8rem;
+    }
 }
 
 /* MAIN */
