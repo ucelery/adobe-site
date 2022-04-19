@@ -1,3 +1,45 @@
+/* BANNER */
+.banner {
+    margin-bottom: 50px;
+}
+
+.banner .back-btn {
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    padding-left: 5%;
+}
+
+.back-btn .btn-text {
+    font-size: 1.5rem;
+    font-family: 'hando';
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.img-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img-container {
+    height: 10vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container .filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+/* FORM */
 .form-container {
     padding: 0% 20%;
 }
