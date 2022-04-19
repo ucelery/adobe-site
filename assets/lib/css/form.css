@@ -1,0 +1,157 @@
+.form-container {
+    padding: 0% 20%;
+}
+
+@media only screen and (max-width: 740px) {
+    .form-container {
+        padding: 0% 5%;
+    }
+}
+
+h2 {
+    font-family: 'Altero';
+    font-size: 1.4rem;
+}
+
+form legend {
+    font-family: 'hando';
+    font-size: 2rem;
+}
+
+.form-header {
+    font-family: 'Altero';
+    font-size: 1.4rem;
+    margin-top: 40px;
+}
+
+.form-sub-header {
+    font-family: 'Altero';
+    font-size: 1rem;
+}
+
+.form-row {
+    display: flex;
+    /* align-items: flex-start; */
+}
+
+.form-row>div {
+    margin: 10px 5px;
+    width: 100%;
+}
+
+.input-group {
+    overflow: hidden;
+}
+
+.input-group select {
+    width: 100%;
+}
+
+.input-group textarea,
+.input-group input,
+.input-group .rs-select2,
+.radio-btn-label {
+    font-family: 'Rockwell';
+}
+
+.input-group.form-btn {
+    border: none;
+}
+
+.input-group textarea {
+    min-width: 100%;
+    min-height: 100px;
+    border: none;
+    resize: none;
+}
+
+.input-group .select2-dropdown {
+    color: white;
+    background-color: #1c1b22;
+}
+
+.input-group .select2-container--open .select2-dropdown--below {
+    border-color: transparent;
+}
+
+.input-group.custom-drop-down {
+    overflow: unset;
+}
+
+.cus-label {
+    font-family: 'hando';
+    font-size: 1rem;
+}
+
+/* NUMBER INPUT */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.radio-buttons {
+    margin-top: 5px;
+    display: flex;
+}
+
+.radio-btn {
+    width: 100%;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+.form-container fieldset:nth-of-type(n + 2) {
+    margin-top: 50px;
+}
+
+input[type="file"] {
+    transform: translateX(-70px)
+}
+
+.disclaimer {
+    padding: 20px;
+    font-family: 'Rockwell';
+    font-size: 1rem;
+}
+
+.disclaimer p {
+    text-align: justify;
+}
+
+#submit,
+#reset {
+    height: 100%;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#submit:hover,
+#reset:hover {
+    opacity: .4;
+}
+
+@media only screen and (max-width: 400px) {
+    .empty {
+        display: none;
+    }
+
+    .form-row {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .disclaimer {
+        padding: 20px;
+        font-family: 'Rockwell';
+        font-size: .8rem;
+    }
+}
