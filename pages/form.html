@@ -40,7 +40,7 @@
 
         <div class="form-container">
             <form>
-                <h2 style="padding-bottom: 5%;">Application Form</h2>
+                <h2 style="padding-bottom: 5%;"><span style="color: red;">Application</span> Form</h2>
                 <fieldset>
                     <legend>Personal Information</legend>
                     <!-- 1 -->
@@ -209,7 +209,7 @@
 
                     <!-- SECOND REFERENCE -->
                     <!-- 4 -->
-                    <div class="form-row">
+                    <div class="form-row" style="margin-top: 5%;">
                         <div class="input-group">
                             <label class="cus-label">
                                 First Name
@@ -268,30 +268,29 @@
                         </div>
                         <div class="empty"></div>
                     </div>
-
-                    <div class="form-header">
-                        PREVIOUS EMPLOYMENT
-                    </div>
-                    <div class="form-sub-header"> — PREVIOUS EMPLOYER NAME</div>
+                    </fieldset>
+                    <fieldset>
+                    <legend>Previous Employment</legend>
+                    <div title="ignore if mentioned in references section!">*Previous Employer Information</div>
                     <!-- 7 -->
                     <div class="form-row">
                         <div class="input-group">
                             <label class="cus-label">
                                 First Name
                             </label>
-                            <input class="input--style-3" type="text" id="fname1" name="fname1">
+                            <input class="input--style-3" type="text" id="fname1" name="fname1" placeholder="Enter first name">
                         </div>
                         <div class="input-group">
                             <label class="cus-label">
                                 Middle Name
                             </label>
-                            <input class="input--style-3" type="text" id="mname1" name="mname1">
+                            <input class="input--style-3" type="text" id="mname1" name="mname1" placeholder="Enter middle name">
                         </div>
                         <div class="input-group">
                             <label class="cus-label">
                                 Last Name
                             </label>
-                            <input class="input--style-3" type="text" id="lname1" name="lname1">
+                            <input class="input--style-3" type="text" id="lname1" name="lname1" placeholder="Enter last name">
                         </div>
                     </div>
 
@@ -299,7 +298,7 @@
                     <div class="form-row">
                         <div class="input-group">
                             <label class="cus-label">
-                                Position
+                                Title
                             </label>
                             <input class="input--style-3" type="text" id="Position" name="Position">
                         </div>
@@ -311,25 +310,39 @@
                         </div>
                         <div class="empty"></div>
                     </div>
-
-                    <!-- 9 -->
+                    <!-- new9 -->
                     <div class="form-row">
                         <div class="input-group">
                             <label class="cus-label">
-                                How many years have you stayed with the previous company?
+                                Contact No.
+                            </label>
+                            <input class="input--style-3" type="number" id="mobile1" name="mobile1"
+                                placeholder="01-234-567-8910">
+                        </div>
+                        <div class="input-group">
+                            <label class="cus-label">
+                                Email
+                            </label>
+                            <input class="input--style-3" placeholder="tasukaru@mymail.com" type="email" id="email1"
+                                name="email1">
+                        </div>
+                        <div class="empty"></div>
+                    </div>
+                    </fieldset> 
+                    <fieldset>
+                    <legend>Ad Hoc Questionnaire</legend>
+                    <!-- 10 -->
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label class="cus-label">
+                                How many years at previous company?
                             </label>
                             <input class="input--style-3" placeholder="Input number of years" type="number" id="years"
                                 name="years" min="0">
                         </div>
-                        <div class="empty"></div>
-                        <div class="empty"></div>
-                    </div>
-
-                    <!-- 10 -->
-                    <div class="form-row">
                         <div class="input-group custom-drop-down">
                             <label class="cus-label">
-                                Salary
+                                Previous Salary
                             </label>
                             <div class="rs-select2 js-select-simple select--no-search">
                                 <select name="salary" id="job">
@@ -347,11 +360,10 @@
                         </div>
                         <div class="input-group">
                             <label class="cus-label">
-                                Position
+                                Previous Position
                             </label>
                             <input class="input--style-3" type="text" id="pPosition" name="pPosition">
                         </div>
-                        <div class="empty"></div>
                     </div>
 
                     <!-- 11 -->
@@ -439,23 +451,30 @@
 
                     <!-- 14 -->
                     <div class="form-row">
-                        <div class="input-group">
+                        <div class="input-group" style="border: 0;">
                             <label class="cus-label">
                                 Curriculum Vitae
                             </label>
-                            <input type="file" id="CV" name="CV" accept=".doc,.docx,.pdf">
+                            <label for="CV" class="custom-upload">
+                                <span>Upload Here</span>
+                            </label>
+                            <input type="file" id="CV" name="CV" accept=".doc,.docx,.pdf" required/>
                         </div>
-                        <div class="input-group">
+                        <div class="input-group" style="border: 0;">
                             <label class="cus-label">
                                 Cover Letter
                             </label>
-                            <input type="file" id="Cover" name="Cover" accept=".doc,.docx,.pdf">
+                            <label for="Cover" class="custom-upload">
+                                <span>Upload Here</span>
+                            </label>
+                            <input type="file" id="Cover" name="Cover" accept=".doc,.docx,.pdf" required />
                         </div>
                     </div>
                 </fieldset>
 
                 <!-- 15 -->
-                <div class="disclaimer">
+                <div class="disclaimer" style="justify-content: center;">
+                    <hr style="width: 90%;margin-bottom: 15px;margin-left: 5%;"/>
                     <p>
                         By clicking the submit button below, I cerity that all of the information provided by me on this
                         application is true and complete, and I understand that if any false information, ommissions, or
@@ -477,23 +496,34 @@
 
                 <!-- 16 -->
                 <div class="form-row">
-                    <div class="input-group">
+                    <div class="input-group" style="border: 0;">
                         <label class="cus-label">
                             Signature
                         </label>
-                        <input type="file" id="Signature" name="Signature"
-                            accept=".doc,.docx,.pdf,.png,.jpg,.jpeg,.gif">
-                    </div>
-                    <div class="empty"></div>
-                    <div class="input-group form-btn">
-                        <input class="input--style-3" type="submit" id="submit" name="submit" value="Submit">
-                    </div>
-                    <div class="input-group form-btn">
-                        <input class="input--style-3" type="reset" id="reset" name="reset" value="Clear">
+                        <label class="custom-upload" for="Signature">
+                            <span>Upload Here</span>
+                        </label>
+                        <input type="file" id="Signature" name="Signature" accept=".doc,.docx,.pdf,.png,.jpg,.jpeg,.gif,.svg" required/>
                     </div>
                 </div>
-
+                <!--new17-->
+                <div class="form-row">
+                    <div class="input-group form-btn">
+                        <span>
+                           <input class="input--style-3" type="submit" id="submit" name="submit" value="Submit" onclick="alert('Submitting information')"> 
+                        </span>
+                    </div>
+                    <div class="input-group form-btn">
+                        <span>
+                            <input class="input--style-3" type="reset" id="reset" name="reset" value="Clear" onclick="alert('Clearing information')">
+                        </span>
+                    </div>
+                </div>
             </form>
+        </div>
+
+        <div>
+            <div class="gradient-border"></div>
         </div>
         <div class="footer">
             <div class="social-container">
