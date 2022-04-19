@@ -347,18 +347,33 @@ a {
 
 /* FOOTER */
 .footer {
-    height: 350px;
     width: 100%;
     position: relative;
+    margin-top: 200px;
+    padding: 100px 0px;
+}
+
+.footer .terms-container {
     display: flex;
+    text-align: center;
+    font-family: 'Altero';
+    margin: 10px 0px;
     justify-content: center;
 }
 
-.footer .social-container {
+.terms-container .terms a {
+    padding: 0px 10px;
+}
+
+.terms-container .terms span:last-child {
+    padding: 0px 10px;
+}
+
+/* .footer .social-container {
     position: absolute;
     bottom: 50px;
     width: 300px;
-}
+} */
 
 .social-container .message {
     text-align: center;
