@@ -210,39 +210,6 @@ a {
     float: right;
 }
 
-/* FOOTER */
-.footer {
-    height: 350px;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.footer .social-container {
-    position: absolute;
-    bottom: 50px;
-    width: 300px;
-}
-
-.social-container .message {
-    text-align: center;
-    font-family: 'Altero';
-    margin: 10px 0px;
-}
-
-.footer .socials {
-    display: flex;
-    justify-content: center;
-}
-
-.footer .soc-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
-}
-
 /* FEATURES */
 .features-banner {
     font-family: 'Altero';
