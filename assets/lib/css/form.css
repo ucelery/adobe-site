@@ -204,12 +204,22 @@ input[type="file"]::-webkit-file-upload-button {
     .empty {
         display: none;
     }
-
+    #reset,
+    #submit {
+        float: none;
+    }
+    .input-group.form-btn {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .form-row {
         display: inline-block;
         width: 100%;
     }
-
+    .form-row>div {
+        margin: 10px 0px;
+    }
     .disclaimer {
         padding: 20px;
         font-family: 'Rockwell';
