@@ -33,11 +33,23 @@
 
 <body>
     <div class="form-wrapper">
-        <nav>
-
-        </nav>
         <!-- <a href="index.html" style="font-size: 18;text-decoration: none;color: red;">Back to home</a> -->
+        <!-- BANNER -->
+        <div class="banner">
+            <div class="img-container">
+                <a href="../index.html" class="back-btn">
+                    <svg width="19" height="37" viewBox="0 0 24 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 6L9 21L24 36L21 42L0 21L21 0L24 6Z" fill="#F8F8F8" />
+                    </svg>
 
+                    <span class="btn-text">HOME</span>
+                </a>
+                <div class="filter"></div>
+                <img src="https://helpx.adobe.com/content/dam/help/images/help-center/cc-bg.jpg" alt="" srcset="">
+            </div>
+        </div>
+
+        <!-- CONTENT -->
         <div class="form-container">
             <form>
                 <h2 style="padding-bottom: 5%;"><span style="color: red;">Application</span> Form</h2>
@@ -267,8 +279,8 @@
                         </div>
                         <div class="empty"></div>
                     </div>
-                    </fieldset>
-                    <fieldset>
+                </fieldset>
+                <fieldset>
                     <legend>Previous Employment</legend>
                     <div title="ignore if mentioned in references section!">*Previous Employer Information</div>
                     <!-- 7 -->
@@ -277,19 +289,22 @@
                             <label class="cus-label">
                                 First Name
                             </label>
-                            <input class="input--style-3" type="text" id="fname1" name="fname1" placeholder="Enter first name">
+                            <input class="input--style-3" type="text" id="fname1" name="fname1"
+                                placeholder="Enter first name">
                         </div>
                         <div class="input-group">
                             <label class="cus-label">
                                 Middle Name
                             </label>
-                            <input class="input--style-3" type="text" id="mname1" name="mname1" placeholder="Enter middle name">
+                            <input class="input--style-3" type="text" id="mname1" name="mname1"
+                                placeholder="Enter middle name">
                         </div>
                         <div class="input-group">
                             <label class="cus-label">
                                 Last Name
                             </label>
-                            <input class="input--style-3" type="text" id="lname1" name="lname1" placeholder="Enter last name">
+                            <input class="input--style-3" type="text" id="lname1" name="lname1"
+                                placeholder="Enter last name">
                         </div>
                     </div>
 
@@ -327,8 +342,8 @@
                         </div>
                         <div class="empty"></div>
                     </div>
-                    </fieldset> 
-                    <fieldset>
+                </fieldset>
+                <fieldset>
                     <legend>Ad Hoc Questionnaire</legend>
                     <!-- 10 -->
                     <div class="form-row">
@@ -457,7 +472,7 @@
                             <label for="CV" class="custom-upload">
                                 <span>Upload Here</span>
                             </label>
-                            <input type="file" id="CV" name="CV" accept=".doc,.docx,.pdf" required/>
+                            <input type="file" id="CV" name="CV" accept=".doc,.docx,.pdf" required />
                         </div>
                         <div class="input-group" style="border: 0;">
                             <label class="cus-label">
@@ -473,7 +488,7 @@
 
                 <!-- 15 -->
                 <div class="disclaimer" style="justify-content: center;">
-                    <hr style="width: 90%;margin-bottom: 15px;margin-left: 5%;"/>
+                    <hr style="width: 90%;margin-bottom: 15px;margin-left: 5%;" />
                     <p>
                         By clicking the submit button below, I cerity that all of the information provided by me on this
                         application is true and complete, and I understand that if any false information, ommissions, or
@@ -502,19 +517,22 @@
                         <label class="custom-upload" for="Signature">
                             <span>Upload Here</span>
                         </label>
-                        <input type="file" id="Signature" name="Signature" accept=".doc,.docx,.pdf,.png,.jpg,.jpeg,.gif,.svg" required/>
+                        <input type="file" id="Signature" name="Signature"
+                            accept=".doc,.docx,.pdf,.png,.jpg,.jpeg,.gif,.svg" required />
                     </div>
                 </div>
                 <!--new17-->
                 <div class="form-row">
                     <div class="input-group form-btn">
                         <span>
-                           <input class="input--style-3" type="submit" id="submit" name="submit" value="Submit" onclick="alert('Submitting information')"> 
+                            <input class="input--style-3" type="submit" id="submit" name="submit" value="Submit"
+                                onclick="alert('Submitting information')">
                         </span>
                     </div>
                     <div class="input-group form-btn">
                         <span>
-                            <input class="input--style-3" type="reset" id="reset" name="reset" value="Clear" onclick="alert('Clearing information')">
+                            <input class="input--style-3" type="reset" id="reset" name="reset" value="Clear"
+                                onclick="alert('Clearing information')">
                         </span>
                     </div>
                 </div>
