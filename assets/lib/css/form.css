@@ -41,12 +41,16 @@
 
 /* FORM */
 .form-container {
-    padding: 0% 20%;
+    padding-left:  20%;
+    padding-right: 20%;
+    padding-top: 5%;
 }
 
 @media only screen and (max-width: 740px) {
     .form-container {
-        padding: 0% 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
     }
 }
 
@@ -58,6 +62,7 @@ h2 {
 form legend {
     font-family: 'hando';
     font-size: 2rem;
+    margin-bottom: 2.5%;
 }
 
 .form-header {
@@ -77,7 +82,7 @@ form legend {
 }
 
 .form-row>div {
-    margin: 10px 5px;
+    margin: 10px 10px;
     width: 100%;
 }
 
@@ -155,8 +160,56 @@ input[type="radio"] {
     margin-top: 50px;
 }
 
-input[type="file"] {
-    transform: translateX(-70px)
+.custom-upload {
+    justify-content: center;
+    font-family: 'Monospace';
+    font-size: 1rem;
+    display: block;
+    margin: 20px 0;
+}
+.custom-upload span{
+    padding: 2.8px;
+    cursor: pointer;
+    --angle: 0deg;
+    border: 2.5px solid white;
+    border-image: linear-gradient(var(--angle), rgb(0, 6, 128), rgb(255, 0, 60)) 1;
+    animation: 12s rotate linear infinite;
+    opacity: .5;
+    transition: .15s;
+}
+
+.custom-upload span:hover {
+    opacity: 1;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.custom-button {
+    margin: 0; /*tbc...*/
+}
+
+#Signature:valid {display: flex;overflow: hidden;}
+#Signature:invalid {display: none;}
+#Cover:valid  {display: flex;overflow: hidden;}
+#Cover:invalid {display: none;}
+#CV:valid {display: flex;}
+#CV:invalid {display: none;overflow: hidden;}
+ 
+@keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+}
+  
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+  
+  
+input[type="file"]::-webkit-file-upload-button {
+    display: none;
 }
 
 .disclaimer {
@@ -173,12 +226,20 @@ input[type="file"] {
 #reset {
     height: 100%;
     cursor: pointer;
+    font-size: 24px;
     transition: .2s;
+    width: auto;
+    padding: 0 20px;
+}
+
+#submit {
+    float: right;
 }
 
 #submit:hover,
 #reset:hover {
     opacity: .4;
+    color: red;
 }
 
 @media only screen and (max-width: 400px) {
