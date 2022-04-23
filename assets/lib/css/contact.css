@@ -1,0 +1,94 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #312F2F;
+}
+
+.banner {
+    width: 100%;
+    height: 10rem;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: top center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://helpx.adobe.com/content/dam/help/images/help-center/all-bg.jpg');
+    z-index: 1;
+    font-family: 'Portico-outline';
+}
+
+/*https://css-tricks.com/how-to-create-neon-text-with-css/ */
+.neon-title {
+    animation: pulsate 1.25s ease-in-out infinite alternate;    
+}
+
+@keyframes pulsate {
+    100% {
+      text-shadow:
+        0 0 .4rem #fefae0,
+        0 0 1rem #fefae0,
+        0 0 1.5rem #fefae0,
+        0 0 2rem #fefae0,
+        0 0 2.8rem #f14a4a,
+        0 0 3.7rem #f14a4a,
+        0 0 4.6rem #f14a4a,
+        0 0 5.5rem #ce1e1e,
+        0 0 6.4rem #d70b0b;
+    }
+    0% {
+        text-shadow:
+          0 0 .2rem #fefae0,
+          0 0 5rem #fefae0,
+          0 0 1rem #fefae0,
+          0 0 1.4rem #fefae0,
+          0 0 2rem #f14a4a,
+          0 0 2.8rem #f14a4a,
+          0 0 3.5rem #f14a4a,
+          0 0 4.2rem #ce1e1e,
+          0 0 4.9rem #d70b0b;
+      }
+  }
+
+.fill-text {
+    background-color: #e9f0eb;
+    text-transform: uppercase;
+    position: relative;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.fill-text::before {
+    content: attr(data-hd);
+    background: linear-gradient(45deg,blue,red,indigo);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    transition: all 1s ease-in-out;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.fill-text:hover::before {
+    height: 65%;
+}
