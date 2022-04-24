@@ -221,6 +221,10 @@ section.features .feature .feature-video img {
     margin: 150px 0px;
 }
 
+.misc-section {
+    margin-bottom: 100px;
+}
+
 .card-gallery {
     display: flex;
     height: 30vw;
@@ -290,4 +294,39 @@ section.features .feature .feature-video img {
 
 .card-gallery .card .app-link:hover a {
     color: rgb(149, 117, 255);
+}
+
+/* PLANS AND PRICING */
+.d-line {
+    width: 50px;
+    height: 5px;
+    display: inline-block;
+    background-color: rgb(149, 117, 255);
+    transform: translateY(-9px);
+    margin: 0px 10px;
+}
+
+.plans-and-pricing {
+    padding: 0px 5%;
+}
+
+.plans-and-pricing a {
+    font-size: 2em;
+    font-family: 'Altero';
+    color: rgba(149, 117, 255, 1);
+    transition: .4s;
+}
+
+.plans-and-pricing a:hover {
+    opacity: .4;
+}
+
+.discover.more-apps .subheader {
+    font-family: 'Altero';
+    letter-spacing: 10px;
+    margin: 10px 0px;
+}
+
+.discover.more-apps .card-container .card {
+    text-align: center;
 }

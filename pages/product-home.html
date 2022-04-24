@@ -25,6 +25,7 @@
     <script src="../assets/lib/js/imageMapResizer.min.js" defer></script>
 
     <!-- STYLES -->
+    <link rel="stylesheet" href="../assets/lib/css/contact.css">
     <link rel="stylesheet" href="../assets/lib/css/home-layout.css">
     <link rel="stylesheet" href="../assets/lib/css/product-home.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
@@ -839,40 +840,61 @@
             </div>
         </div>
     </section>
-    <section>
-        <h3>Featured Products</h3>
-        <!--this is our own pages | maybe remove this?idk-->
-        <!--insert a link to our plans n pricing page here somewhere-->
-        <a href="plan-price.html">Check out our plans and pricings!</a>
-        <ul>
-            <li><a href="product-.html">Photoshop</a></li>
-            <li><a href="product-.html">Premiere Pro</a></li>
-            <li><a href="product-.html">Dreamweaver</a></li>
-            <!--
-            <li><a href="product-.html">Illustrator</a></li>
-            <li><a href="product-.html">Xd</a></li>
-            <li><a href="product-.html">After Effects</a></li>
-            -->
-        </ul>
+
+    <!-- PLAN AND PRICING -->
+    <section class="plans-and-pricing">
+        <a href="plan-price.html"><span class="d-line"></span>Check out our plans and pricings!</a>
     </section>
-    <section>
-        <table>
-            <!--tables are basically the alternative for css grids, i still dont know anything about it other than being a grid and good for spatial manipulation-->
-            <tr>
-                <td><span>Go Beyond and Grow</span>
-                    <p>In-app:Pick up tips and tricks when and where you need them, right in your favorite app.</p>
-                    <p>Tutorials:Learn new skills step-by-step. Start with the basics, then build from there.</p>
-                    <p>Livestreams:Watch, listen, learn tips and tricks from the pros. Tune in live or later.</p>
-                </td>
-                <td><img src=""><span>Pick up where you left off, ANYWHERE!</span>
-                    <p>Creative Cloud desktop and mobile apps are integrated. So you can sketch an idea on your tablet
-                        from the train. Design it on your desktop in the office. Read comments on your phone at home.
-                        And do it all seamlessly, simply, without missing a beat.</p>
-                </td>
-            </tr>
-        </table>
+
+    <!-- DISCOVER -->
+    <section class="discover more-apps">
+        <span class="subheader">
+            <div class="text-container">
+                Go Beyond and Grow
+            </div>
+        </span>
+        <dl class="card-container">
+            <!-- 1 -->
+            <div class="card">
+                <div class="image">
+                    <img src="https://media.discordapp.net/attachments/962008834895925328/967810371140329482/1-3-removebg-preview.png"
+                        alt="">
+                </div>
+                <dt>In-app</dt>
+                <dd>
+                    Pick up tips and tricks when and where you need them, right in your favorite app.
+                </dd>
+            </div>
+
+            <!-- 2 -->
+            <div class="card">
+                <div class="image">
+                    <img src="https://media.discordapp.net/attachments/962008834895925328/967810371408785458/1-2-removebg-preview.png"
+                        alt="">
+                </div>
+                <dt>Tutorials</dt>
+                <dd>
+                    Learn new skills step-by-step. Start with the basics, then build from there.
+                </dd>
+            </div>
+
+            <!-- 3 -->
+            <div class="card">
+                <div class="image">
+                    <img src="https://media.discordapp.net/attachments/962008834895925328/967810371740110858/1-1-removebg-preview.png"
+                        alt="" srcset="">
+                </div>
+                <dt>Livestreams</dt>
+                <dd>
+                    Watch, listen, learn tips and tricks from the pros. Tune in live or later.
+                </dd>
+
+            </div>
+        </dl>
     </section>
-    <div class="footer">
+
+    <!-- FOOTER -->
+    <footer class="footer">
         <div class="social-container">
             <div class="message">
                 FOLLOW OUR SOCIALS!
@@ -934,7 +956,7 @@
                 </span>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 
 <script>
