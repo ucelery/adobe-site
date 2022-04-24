@@ -44,42 +44,42 @@
 }
 @font-face {
     font-family: 'Portico';
-    src: url(../../fontsportico/Portico\ Regular.woff) format('woff');
+    src: url('../../fonts/portico/Portico\ Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Portico-light';
-    src: url(../../fontsportico/Portico\ Light.woff) format('woff');
+    src: url('../../fonts/portico/Portico\ Light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Portico-layer';
-    src: url(../../fontsportico/Portico\ Layer.woff) format('woff');
+    src: url('../../fonts/portico/Portico\ Layer.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Portico-diagonal';
-    src: url(../../fontsportico/Portico\ Diagonal.woff) format('woff');
+    src: url('../../fonts/portico/Portico\ Diagonal.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Portico-indiagonal';
-    src: url(../../fontsportico/Portico\ Indiagonal.woff) format('woff');
+    src: url('../../fonts/portico/Portico\ Indiagonal.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Portico-outline';
-    src: url(../../fonts/portico/Portico\ Outline.woff) format('woff');
+    src: url('../../fonts/portico/Portico\ Outline.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

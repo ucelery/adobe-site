@@ -17,26 +17,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
 
     <!-- STYLES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/lib/css/home-layout.css">
+    <link rel="stylesheet" href="../assets/lib/css/contact.css">
+    <link rel="stylesheet" href="../assets/lib/css/fonts.css">
 </head>
 
 <body>
     <nav>
-        <section>
+
+    </nav>
+    <section class="text-center">
+            <div class="banner">
+                <h3 class="p-5 display-5 neon-title">Contact us</h3>
+            </div>
+    </section>
+    <section class="p-5 text-center bg-w2">
+        <div class="container">
+            <div class="row text-center align-items-center justify-content-between gy-3">
+                <div class="col-md">
+                    <div class="card o-card bg-w">
+                        <div class="card-body">
+                            <a href="https://helpx.adobe.com/contact.html">
+                            <div class="mb-3">
+                                <img src="https://helpx.adobe.com/content/dam/help/icons/help-center/individual_contact.svg" alt="indiv icon"class="o-img" >
+                            </div>
+                            <div class="card-text">
+                                <h3 class="h1 fill-text" data-hd="Individual">Individual</h3>
+                                <!--split this-->
+                                <span class="h5">Sign in to contact us</span>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card o-card bg-d">
+                        <div class="card-body">
+                            <a href="https://helpx.adobe.com/enterprise/teams.html?promoid=SGDJMH5T&mv=other">
+                            <div class="mb-3">
+                                <img src="https://helpx.adobe.com/content/dam/help/en/qe/test-docs/pris-test/support-TEST/jcr_content/main-pars/tabcontent/cc/multi_column_flexbox_1337692544/col-1-parsys/imageandtext_220586780/imageandtextimage/teams_contact.svg" alt="teams icon" class="o-img">
+                            </div>
+                            <div class="card-text">
+                                <h3 class="h1 fill-text" data-hd="Teams">Teams</h3>
+                                <!--split this-->
+                                <span class="h5">Set up and manage account</span>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card o-card bg-w">
+                        <div class="card-body">
+                            <a href="https://adminconsole.adobe.com/support?promoid=SGDJMH5T&mv=other">
+                            <div class="mb-3">
+                                <img src="https://helpx.adobe.com/content/dam/help/icons/help-center/enterprise_contact.svg" alt="enter icon" class="o-img">
+                            </div>
+                            <div class="card-text">
+                                <h3 class="h1 fill-text" data-hd="Enterprise">Enterprise</h3>
+                                <!--split this-->
+                                <span class="h5">Sign in for admin support</span>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>        
+    <section>
             <div>
-                <h3>Contact us</h3>
-                <ul>
-                    <!-- inspect the svg icons for each of them-->
-                    <li>Individual | <a href="https://helpx.adobe.com/contact.html">Sign in to contact us</a></li>
-                    <!--icon link:https://helpx.adobe.com/content/dam/help/icons/help-center/individual_contact.svg-->
-                    <li>Teams | <a href="https://helpx.adobe.com/enterprise/teams.html?promoid=SGDJMH5T&mv=other">Set up
-                            and manage account</a></li>
-                    <!--icon link:https://helpx.adobe.com/content/dam/help/en/qe/test-docs/pris-test/support-TEST/jcr_content/main-pars/tabcontent/cc/multi_column_flexbox_1337692544/col-1-parsys/imageandtext_220586780/imageandtextimage/teams_contact.svg-->
-                    <li>Enterprise | <a href="https://adminconsole.adobe.com/support?promoid=SGDJMH5T&mv=other">Sign in
-                            for admin support</a> </li>
-                    <!--icon link:https://helpx.adobe.com/content/dam/help/icons/help-center/enterprise_contact.svg-->
-                    <!--the href is not working properly on my end-->
-                </ul>
                 <span>Ask the community on <a href="https://community.adobe.com/">Creative Cloud forums</a>.</span>
                 <!--icon link:https://helpx.adobe.com/content/dam/help/icons/support-hub/support-hub2/community_contact.svg-->
                 <span>Get tips and solutions from <a href="https://twitter.com/AdobeCare">@AdobeCare</a>.</span>
@@ -51,98 +101,114 @@
                 <!--find new icons for this one-->
             </div>
         </section>
-        <section>
-            <div>
-                <h3>Adobe Help Center</h3> <!-- we'll only link into 5 apps | Sidebar-->
-                Creative Cloud <img src="assets/images/product_icon/ccicon.png" alt="ccicon">
-                <a href="https://helpx.adobe.com/support/express.html"><img
-                        src="https://cdn.discordapp.com/attachments/962008834895925328/964913068792483860/cc.png"
-                        alt="cce"></a>
-                <a href="https://helpx.adobe.com/support/photoshop.html"><img
-                        src="https://cdn.discordapp.com/attachments/962008834895925328/964913047351214141/photoshop.png"
-                        alt="photoshop"></a>
-                <a href="https://helpx.adobe.com/support/dreamweaver.html"><img
-                        src="https://cdn.discordapp.com/attachments/962008834895925328/964913068574375957/dreamweaver.png"
-                        alt="dreamweaver"></a>
-                <a href="https://helpx.adobe.com/support/premiere-pro.html"><img
-                        src="https://cdn.discordapp.com/attachments/962008834895925328/964913027759603752/premiere.pngg"
-                        alt="premiere pro"></a>
-                <a href="https://helpx.adobe.com/support/illustrator.html"><img
-                        src="https://cdn.discordapp.com/attachments/962008834895925328/964912995840978984/illustrator.png"
-                        alt="illustrator"></a>
+        <section class="mt-3 mb-3 pt-3 pb-3 bg-d2"> <!-- on hover, a big outline-text appear depending on the name of the app-->
+            <div class="container text-center" >
+                <h3 class="text-center">Adobe Help Center</h3>
+                <div class="row gy-3 justify-content-between align-items-center p-5">
+                    <div class="col-12 col-md-3 ">
+                        
+                        <a href="https://helpx.adobe.com/support/express.html"><img src="https://cdn.discordapp.com/attachments/962008834895925328/964913068792483860/cc.png" class="img-fluid w-50" alt srcset> </a>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <img src="https://cdn.discordapp.com/attachments/962008834895925328/964913047351214141/photoshop.png" class="img-fluid w-50" alt srcset>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <img src="https://cdn.discordapp.com/attachments/962008834895925328/964913068574375957/dreamweaver.png" class="img-fluid w-50" alt srcset>
+                    </div>
+                    <div class="col-12  col-md-3">
+                        <img src="https://cdn.discordapp.com/attachments/962008834895925328/964913027759603752/premiere.png" class="img-fluid w-50" alt srcset>
+                    </div>       
+                </div>
+                <div class="row gy-3 justify-content-between align-items-center p-5">
+                    <div class="col-12  col-md-3 ">
+                        <img src="https://cdn.discordapp.com/attachments/962008834895925328/964912995840978984/illustrator.png" class="img-fluid w-50" alt srcset>
+                    </div>
+                    <div class="col-12  col-md-3">
+                        <img src="https://cdn.discordapp.com/attachments/962008834895925328/964913068792483860/cc.png" class="img-fluid w-50" alt srcset>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <img src="https://cdn.discordapp.com/attachments/962008834895925328/964913068792483860/cc.png" class="img-fluid w-50" alt srcset>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <img src="https://cdn.discordapp.com/attachments/962008834895925328/964913068792483860/cc.png" class="img-fluid w-50" alt srcset>
+                    </div> 
+                </div>
             </div>
         </section>
-        <article>
-            <div>
+        <article class="p-5 text-center">
+            <container>
                 <h3>Popular Topics</h3>
-                <!--https://helpx.adobe.com/support.cc.html-->
-                <table>
-                    <!-- dropdown menu?-->
-                    <tr>
-                        <td>
-                            <div>
-                                Download & Install
-                                <a
-                                    href="https://helpx.adobe.com/download-install/using/install-apps-number-of-computers.html?promoid=P3KMQVVS&mv=other">Can
-                                    I install on another computer?</a>
-                                Download <a href="https://www.adobe.com/go/ccd-allapps-download">Creative Cloud</a> apps
-                                or <a
-                                    href="https://helpx.adobe.com/download-install/kb/acrobat-downloads.html?promoid=599F8NTP&mv=other">Acrobat</a>
-                                <a
-                                    href="https://helpx.adobe.com/creative-cloud/kb/troubleshoot-download-install-logs.html?promoid=P3KMQVVS&mv=other">How
-                                    do I fix this install error?</a>
-                                <a
-                                    href="https://helpx.adobe.com/download-install/kb/creative-cloud-install-stuck.html?promoid=P3KMQVVS&mv=other">Why
-                                    is the installer stuck?</a>
-                                <a href="https://helpx.adobe.com/download-install.html">More topics...</a>
+                <div class="row gy-3 justify-content-between align-items-center gx-5 p-5">
+                    <div class="col-12 col-md-3 ">
+                       <div class="card">
+                           <div class="card-body">
+                               <div class="card-title">
+                                    Download & Install
+                               </div>
+                               <div class="card-text">
+                                    <p><a href="https://helpx.adobe.com/download-install/using/install-apps-number-of-computers.html?promoid=P3KMQVVS&mv=other">
+                                        Can I install on another computer?</a></p>
+                                    <p> Download <a href="https://www.adobe.com/go/ccd-allapps-download">Creative Cloud</a> apps or <a href="https://helpx.adobe.com/download-install/kb/acrobat-downloads.html?promoid=599F8NTP&mv=other">Acrobat</a></p>
+                                    <p><a href="https://helpx.adobe.com/creative-cloud/kb/troubleshoot-download-install-logs.html?promoid=P3KMQVVS&mv=other">
+                                        How do I fix this install error?</a></p>
+                                    <p><a href="https://helpx.adobe.com/download-install/kb/creative-cloud-install-stuck.html?promoid=P3KMQVVS&mv=other">
+                                        Why is the installer stuck?</a></p>
+                                    <p><a href="https://helpx.adobe.com/download-install.html">More topics...</a></p>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    Payment
+                                </div>
+                                <div class="card-text">
+                                    <p> <a href="https://helpx.adobe.com/manage-account/using/delete-adobe-account.html">Can I delete my account?</a></p>
+                                    <p> <a href="https://helpx.adobe.com/manage-account/kb/fix-failed-missed-payment.html">How do I fix a failed or missed payment?</a></p>
+                                    <p> <a href="https://helpx.adobe.com/manage-account/using/update-billing-information.html">How do I update credit card info?</a></p>
+                                    <p> <a href="https://helpx.adobe.com/manage-account/kb/billing-faq.html">What's this charge on my bill?</a></p>
+                                    <p> <a href="https://helpx.adobe.com/manage-account.html">More topics...</a></p>
+                               </div>
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                Payment
-                                <a href="https://helpx.adobe.com/manage-account/using/delete-adobe-account.html">Can I
-                                    delete my account?</a>
-                                <a href="https://helpx.adobe.com/manage-account/kb/fix-failed-missed-payment.html">How
-                                    do I fix a failed or missed payment?</a>
-                                <a href="https://helpx.adobe.com/manage-account/using/update-billing-information.html">How
-                                    do I update credit card info?</a>
-                                <a href="https://helpx.adobe.com/manage-account/kb/billing-faq.html">What's this charge
-                                    on my bill?</a>
-                                <a href="https://helpx.adobe.com/manage-account.html">More topics...</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    Plan & Sign-in
+                                </div>
+                                <div class="card-text">
+                                    <p> <a href="https://helpx.adobe.com/manage-account/using/cancel-subscription.html">How do I cancel my trial or plan?</a></p>
+                                    <p> <a href="https://helpx.adobe.com/manage-account/using/change-plan.html">How do I change my plan?</a></p>
+                                    <p> <a href="https://helpx.adobe.com/manage-account/using/creative-cloud-subscription-terms.html#cancel">Is there a cancellation fee?</a></p>
+                                    <p> <a href="https://helpx.adobe.com/manage-account/kb/account-password-sign-help.html">Why can't I sign in?</a></p>
+                                    <p> <a href="https://helpx.adobe.com/manage-account.html">More topics...</a></p>
+                               </div>
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                Plan & Sign-in
-                                <a href="https://helpx.adobe.com/manage-account/using/cancel-subscription.html">How do I
-                                    cancel my trial or plan?</a>
-                                <a href="https://helpx.adobe.com/manage-account/using/change-plan.html">How do I change
-                                    my plan?</a>
-                                <a
-                                    href="https://helpx.adobe.com/manage-account/using/creative-cloud-subscription-terms.html#cancel">Is
-                                    there a cancellation fee?</a>
-                                <a href="https://helpx.adobe.com/manage-account/kb/account-password-sign-help.html">Why
-                                    can't I sign in?</a>
-                                <a href="https://helpx.adobe.com/manage-account.html">More topics...</a>
+                        </div>
+                    </div>
+                    <div class="col-12  col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    Helpful Links
+                                </div>
+                                <div class="card-text">
+                                    <p> <a href="https://community.adobe.com/">Adobe Community</a></p>
+                                    <p> <a href="https://community.adobe.com/t5/download-install/ct-p/ct-download-and-install?page=1&sort=latest_replies&filter=all&lang=all&tabid=discussions">Adobe Download & Install Community</a></p>
+                                    <p> <a href="https://helpx.adobe.com/support.html">Adobe Help Center</a></p>
+                                    <p> <a href="https://helpx.adobe.com/contact/what-contact-options.html">What are my contact options?</a> </p>
+                                    <p style="visibility: hidden;"> empty filler </p>
+                               </div>
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                Helpful Links
-                                <a href="https://community.adobe.com/">Adobe Community</a>
-                                <a
-                                    href="https://community.adobe.com/t5/download-install/ct-p/ct-download-and-install?page=1&sort=latest_replies&filter=all&lang=all&tabid=discussions">Adobe
-                                    Download & Install Community</a>
-                                <a href="https://helpx.adobe.com/support.html">Adobe Help Center</a>
-                                <a href="https://helpx.adobe.com/contact/what-contact-options.html">What are my contact
-                                    options?</a>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                        </div>
+                    </div>       
+                </div>
+            </container>
         </article>
-    </nav>
     <div class="footer">
         <div class="social-container">
             <div class="message">

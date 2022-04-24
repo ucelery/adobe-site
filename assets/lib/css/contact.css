@@ -90,5 +90,34 @@ body {
 }
 
 .fill-text:hover::before {
-    height: 65%;
+    height: 90%;
+}
+
+.bg-w {
+    background-color: #fefff2;
+}
+
+.bg-w2 {
+    background-color: #f7f3f0;
+}
+
+.bg-w3 {
+    background-color: #f8f4e3;
+}
+
+.bg-d {
+    background-color: #312F2F;
+}
+
+.bg-d2 {
+    background-color: #1b1a1a;
+}
+
+.o-img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.o-card {
+    border-radius: .5rem;
 }
