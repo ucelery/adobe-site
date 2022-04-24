@@ -154,7 +154,6 @@ body {
 }
 .card:hover .o-card-change{
     animation: fade-in .7s;
-    animation-delay: 100ms;
     opacity: 1;
     height: 75%;
 }
