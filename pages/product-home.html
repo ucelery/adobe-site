@@ -27,85 +27,215 @@
     <!-- STYLES -->
     <link rel="stylesheet" href="../assets/lib/css/home-layout.css">
     <link rel="stylesheet" href="../assets/lib/css/product-home.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+    <script src="../assets/lib/js/slideMenu.js" defer></script>
 </head>
 
 <body>
-    <nav>
-
-    </nav>
     <!--link: https://www.adobe.com/creativecloud/all-apps.html-->
-    <section>
-        <div>
+
+
+    <section class="product-home-layout">
+        <!-- BANNER -->
+        <div class="video-banner">
+            <!-- FILTERS -->
+            <div class="vid-filter"></div>
+            <div class="gradient"></div>
+
+            <!-- IMAGE MAP -->
+            <div class="image-map-section">
+                <div class="image-map">
+                    <div class="image-container">
+                        <img class="map"
+                            src="https://media.discordapp.net/attachments/962008834895925328/967599625462759494/unknown.png?width=961&height=676"
+                            alt="imagemap" height="auto" width="100%" usemap="#cloud-map">
+                    </div>
+                </div>
+
+                <map name="cloud-map">
+                    <area id="au" shape="rect" coords="475,0,571,96" href="#">
+                    <area id="br" shape="rect" coords="230,150,330,250" href="#">
+                    <area id="fr" shape="rect" coords="350,115,450,215" href="#">
+                    <area id="lr" shape="rect" coords="475,115,575,215" href="#">
+                    <area id="dn" shape="rect" coords="596,115,695,215" href="#">
+                    <area id="ps" shape="rect" coords="596,230,736,360" href="#">
+                    <area id="lc" shape="rect" coords="750,260,850,360" href="#">
+                    <area id="ld" shape="rect" coords="865,260,965,360" href="#">
+                    <area id="xd" shape="rect" coords="596,375,695,470" href="#">
+                    <area id="dw" shape="rect" coords="710,375,810,470" href="#">
+                    <area id="acrobat" shape="rect" coords="596,495,695,595" href="#">
+                    <area id="lc" shape="rect" coords="469,465,567,563" href="#">
+                    <area id="ch" shape="rect" coords="349,465,447,563" href="#">
+                    <area id="ar" shape="rect" coords="349,580,447,675" href="#">
+                    <area id="ae" shape="rect" coords="229,530,327,630" href="#">
+                    <area id="pr" shape="rect" coords="190,380,327,515" href="#">
+                    <area id="ai" shape="rect" coords="227,265,327,360" href="#">
+                    <area id="an" shape="rect" coords="115,270,215,365" href="#">
+                    <area id="au" shape="rect" coords="0,270,100,365" href="#">
+                    <area id="cloud" shape="rect" coords="365,240,560,435" href="#">
+                </map>
+            </div>
+
+            <!-- STATEMENT SECTION -->
+            <div class="statement-section">
+                <div class="statement-header">
+                    Creativity for all.
+                </div>
+                <div class="statement-subheader">
+                    adobe creative cloud
+                </div>
+                <div class="details">
+                    Now everyone can make something amazing for fun, for work, or just because. All you need is a little
+                    imagination and Adobe Creative Cloud.
+                </div>
+            </div>
+
+            <!-- SLIDE MENU -->
+            <div class="slide-menu" id="slide-menu">
+                <span class="menu-btn">
+                    <svg width="37" height="30" viewBox="0 0 37 30" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.4541 26.4062H33.4541M3.4541 14.9776H33.4541M3.4541 3.54907H33.4541" stroke="white"
+                            stroke-width="5.625" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+                <!-- CONTENTS -->
+                <div class="buttons" id="button-container">
+                    <div class="btn">
+                        <a id="about-btn" class="rainbow-text" href="pages/about-adobe.html">about us</a>
+                    </div>
+                    <div class="btn">
+                        <a id="products-btn" class="rainbow-text" href="pages/product-home.html">products</a>
+                    </div>
+                    <div class="btn">
+                        <a id="plan-btn" class="rainbow-text" href="pages/plan-price.html">plans & pricing</a>
+                    </div>
+                    <div class="btn">
+                        <a id="contact-btn" class="rainbow-text" href="pages/contact.html">contact us</a>
+                        <!--removed events -> contact us-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO -->
+            <div class="video-foreground" style="height: 100%;">
+                <video autoplay muted loop>
+                    <source
+                        src="https://cdn.discordapp.com/attachments/962008834895925328/967633710839124018/Adobe_Banner_Low.mp4"
+                        type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <!-- <div>
             <h1>Creativity for all</h1>
             <span>Adobe Creative Cloud</span>
             <p>Now everyone can make something amazing for fun, for work, or just because. All you need is a little
                 imagination and Adobe Creative Cloud.</p>
-            <!--insert hero banner-->
-        </div>
+            
+        </div> -->
     </section>
-    <section>
-        <caption>All the apps you need to solve any creative challenge is here!</caption>
-        <!-- IMAGE MAP -->
-        <div class="image-map">
-            <div class="image-container">
-                <img class="map"
-                    src="https://media.discordapp.net/attachments/962008834895925328/967599625462759494/unknown.png?width=961&height=676"
-                    alt="imagemap" height="auto" width="100%" usemap="#cloud-map">
+
+    <!-- FEATURES -->
+    <section class="features">
+        <!-- FEATURE 1 -->
+        <div class="feature big-desc">
+            <!-- DESCRIPTION -->
+            <div class="desc ">
+                <h1>Power at your fingertips</h1>
+                <!--nts - .gif/video fading in fading out apps at intervals for background if possible-->
+                <p>
+                    With Creative Cloud All Apps, you can explore and deliver your best creative solutions — quickly,
+                    confidently, with time to spare. Everything’s connected. So you can move smoothly between 20+
+                    integrated
+                    apps, find and add assets, and share for review. All in Creative Cloud. All in your flow.
+                </p>
             </div>
         </div>
 
+        <!-- FEATURE 2 -->
+        <div class="feature">
+            <!-- DESCRIPTION -->
+            <div class="desc">
+                <h1>Design an email campaign</h1>
+                <!--nts - .gif/video fading in fading out apps at intervals for background if possible-->
+                <p>
+                    Edit your photos in Photoshop. Create snazzy banners in Illustrator. Put it all together in Adobe
+                    XD. Save it as an Acrobat PDF for review.
+                </p>
+            </div>
 
-        <map name="cloud-map">
-            <area id="au" shape="rect" coords="475,0,571,96" href="#">
-            <area id="br" shape="rect" coords="230,150,330,250" href="#">
-            <area id="fr" shape="rect" coords="350,115,450,215" href="#">
-            <area id="lr" shape="rect" coords="475,115,575,215" href="#">
-            <area id="dn" shape="rect" coords="596,115,695,215" href="#">
-            <area id="ps" shape="rect" coords="596,230,736,360" href="#">
-            <area id="lc" shape="rect" coords="750,260,850,360" href="#">
-            <area id="ld" shape="rect" coords="865,260,965,360" href="#">
-            <area id="xd" shape="rect" coords="596,375,695,470" href="#">
-            <area id="dw" shape="rect" coords="710,375,810,470" href="#">
-            <area id="acrobat" shape="rect" coords="596,495,695,595" href="#">
-            <area id="lc" shape="rect" coords="469,465,567,563" href="#">
-            <area id="ch" shape="rect" coords="349,465,447,563" href="#">
-            <area id="ar" shape="rect" coords="349,580,447,675" href="#">
-            <area id="ae" shape="rect" coords="229,530,327,630" href="#">
-            <area id="pr" shape="rect" coords="190,380,327,515" href="#">
-            <area id="ai" shape="rect" coords="227,265,327,360" href="#">
-            <area id="an" shape="rect" coords="115,270,215,365" href="#">
-            <area id="au" shape="rect" coords="0,270,100,365" href="#">
-            <area id="cloud" shape="rect" coords="365,240,560,435" href="#">
-        </map>
-    </section>
-    <section>
-        <div>
-            <h3>Power at your fingertips</h3>
-            <!--nts - .gif/video fading in fading out apps at intervals for background if possible-->
-            <p>With Creative Cloud All Apps, you can explore and deliver your best creative solutions — quickly,
-                confidently, with time to spare. Everything’s connected. So you can move smoothly between 20+ integrated
-                apps, find and add assets, and share for review. All in Creative Cloud. All in your flow.</p>
-            <div>
-                <!--when its an img, hovering/clicking it switch into the text, and when its the text, it will fade back after x amount of seconds back to an image or move onto the next image and text-->
-                <img src="" alt="">
-                <h5>Design an email campaign</h5>
-                <p>Edit your photos in Photoshop. Create snazzy banners in Illustrator. Put it all together in Adobe XD.
-                    Save it as an Acrobat PDF for review.</p>
-                <img src="" alt="">
-                <h5>Create a video tutorial</h5>
-                <p>Edit your footage in Premiere Pro. Add transitions from After Effects. Render your files in Media
+            <!-- VIDEO / GIF -->
+            <div class="video">
+                <div class="feature-video" style="height: 100%;">
+                    <img src="https://media.discordapp.net/attachments/962008834895925328/967650986128703538/1-removebg-preview.png"
+                        alt="" srcset="">
+                </div>
+            </div>
+        </div>
+
+        <!-- FEATURE 3 -->
+        <div class="feature">
+            <!-- VIDEO / GIF -->
+            <div class="video">
+                <div class="feature-video" style="height: 100%;">
+                    <img src="https://media.discordapp.net/attachments/962008834895925328/967650986338426960/2-removebg-preview.png"
+                        alt="" srcset="">
+                </div>
+            </div>
+
+            <!-- DESCRIPTION -->
+            <div class="desc">
+                <h1>Create a video tutorial</h1>
+                <!--nts - .gif/video fading in fading out apps at intervals for background if possible-->
+                <p>
+                    Edit your footage in Premiere Pro. Add transitions from After Effects. Render your files in Media
                     Encoder. Make thumbnails in Photoshop. And upload your finished piece to your favorite video sharing
-                    platform.</p>
-                <img src="" alt="">
-                <h5>Mock up a webpage</h5>
-                <p>Add Photoshop images and Adobe Fonts to your XD file from the Libraries panel. Create a logo in
+                    platform.
+                </p>
+            </div>
+        </div>
+
+        <!-- FEATURE 4 -->
+        <div class="feature">
+            <!-- DESCRIPTION -->
+            <div class="desc">
+                <h1>Mock up a webpage</h1>
+                <!--nts - .gif/video fading in fading out apps at intervals for background if possible-->
+                <p>
+                    Add Photoshop images and Adobe Fonts to your XD file from the Libraries panel. Create a logo in
                     Illustrator, then import it. Bring it to life in an interactive XD prototype. And make your vision a
-                    reality.</p>
-                <img src="" alt="">
-                <h5>Make a perfect presentation</h5>
-                <p>When it’s time to pitch your product, design your deck in Illustrator. Add images from our free
+                    reality.
+                </p>
+            </div>
+
+            <!-- VIDEO / GIF -->
+            <div class="video">
+                <div class="feature-video" style="height: 100%;">
+                    <img src="https://media.discordapp.net/attachments/962008834895925328/967650986795610152/4-removebg-preview.pnghttps://media.discordapp.net/attachments/962008834895925328/967652281791168542/3-removebg-preview.png"
+                        alt="" srcset="">
+                </div>
+            </div>
+        </div>
+
+        <!-- FEATURE 5 -->
+        <div class="feature">
+            <!-- VIDEO / GIF -->
+            <div class="video">
+                <div class="feature-video" style="height: 100%;">
+                    <img src="https://media.discordapp.net/attachments/962008834895925328/967650986795610152/4-removebg-preview.png"
+                        alt="">
+                </div>
+            </div>
+
+            <!-- DESCRIPTION -->
+            <div class="desc">
+                <h1>Make a perfect presentation</h1>
+                <!--nts - .gif/video fading in fading out apps at intervals for background if possible-->
+                <p>
+                    When it’s time to pitch your product, design your deck in Illustrator. Add images from our free
                     collection of Stock assets — or import them from Photoshop. Express your brand with Adobe Fonts. And
-                    export as an Acrobat PDF that’s simple to share.</p>
+                    export as an Acrobat PDF that’s simple to share.
+                </p>
             </div>
         </div>
     </section>

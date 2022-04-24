@@ -1,8 +1,17 @@
+/* BANNER */
+.video-banner {
+    overflow: visible;
+}
+
+.video-foreground video {
+    overflow: hidden;
+}
+
 .image-map {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px;
+    padding: 0% 30%;
 }
 
 .image-container {
@@ -14,4 +23,100 @@
 
 .image-container img {
     object-fit: contain;
+}
+
+.image-map-section {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+}
+
+.statement-section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 8%;
+    left: 0;
+    width: 100%;
+}
+
+.statement-section .statement-header {
+    line-height: 40px;
+    font-size: 3em;
+}
+
+.statement-section .statement-subheader {
+    font-family: "Altero";
+    font-size: 1.8em;
+}
+
+.statement-section .details {
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width:700px) {
+    .image-map {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0% 5%;
+    }
+
+    .statement-section {
+        font-size: 0.8em
+    }
+
+    .statement-section .details {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .image-map-section {
+        top: 40%;
+    }
+}
+
+/* FEATURES SECTION */
+.features {
+    margin-top: 150px;
+}
+
+section.features {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.features .feature {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.features .big-desc {
+    width: 80%;
+    text-align: center;
+}
+
+section.features .feature h1 {
+    font-family: 'CodeNext_ExtraBold';
+}
+
+section.features .feature p {
+    font-family: 'Rockwell';
+}
+
+section.features .feature>* {
+    width: 50%;
+    margin: 0px 25px;
+}
+
+section.features .feature .feature-video img {
+    width: 100%;
+    height: auto;
 }
