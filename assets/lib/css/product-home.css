@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* BANNER */
 .video-banner {
     overflow: visible;
@@ -113,10 +117,177 @@ section.features .feature p {
 
 section.features .feature>* {
     width: 50%;
-    margin: 0px 25px;
+    margin: 10px 25px;
 }
 
 section.features .feature .feature-video img {
     width: 100%;
     height: auto;
+}
+
+@media only screen and (max-width: 700px) {
+    section.features .feature {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    section.features .feature.reverse {
+        flex-direction: column-reverse;
+    }
+
+    section.features .feature>* {
+        width: 100%;
+    }
+}
+
+/* MORE APPS */
+.more-apps {
+    margin: 100px 0px;
+}
+
+.more-apps h1 {
+    font-family: 'Altero';
+    white-space: nowrap;
+    font-size: 2.5em;
+    margin: 0;
+    margin-left: -350px;
+    line-height: 35px;
+}
+
+.more-apps .subheader {
+    font-size: 1.8em;
+    font-family: 'CodeNext_ExtraBold';
+    display: flex;
+    justify-content: center;
+    margin: 80px 0px;
+}
+
+.more-apps .card-container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 10%;
+}
+
+.more-apps .card-container .card {
+    margin: 0px 15px;
+    width: 30%;
+}
+
+.more-apps .card .image img {
+    width: 100%;
+    height: auto;
+}
+
+.more-apps .card dt {
+    font-family: 'hando';
+    font-size: 1.5em;
+}
+
+.more-apps .card dd {
+    font-family: 'Rockwell';
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 700px) {
+    .more-apps .card-container {
+        flex-direction: column;
+    }
+
+    .more-apps .card-container .card {
+        width: 100%;
+        margin: 50px 0px;
+    }
+}
+
+/* APPS */
+.products-section .showcase {
+    margin-top: 150px;
+}
+
+.products-section .showcase-container {
+    display: inline-block;
+}
+
+.products-section .showcase-container .card {
+    white-space: normal;
+}
+
+#popular-section {
+    margin-top: 250px;
+    padding-top: 100px;
+}
+
+.products-section>* {
+    margin: 150px 0px;
+}
+
+.card-gallery {
+    display: flex;
+    height: 30vw;
+    max-height: 310px;
+    padding: 0px 50px;
+    user-select: none;
+    min-height: 430px;
+}
+
+.card-gallery .title {
+    width: 105px;
+}
+
+.card-gallery .card-gallery-container {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.card-gallery .card-gallery-container .card {
+    height: 90%;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    margin: 0px 10px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.card-gallery .card .card-banner {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-gallery .card .card-banner img {
+    height: auto;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.card-gallery .card:hover .card-banner img {
+    transform: scale(1.5);
+}
+
+.card-gallery .card .card-header {
+    width: 100%;
+    font-family: 'hando';
+    margin: 10px 0px;
+    font-size: 2em;
+}
+
+.card-gallery .card .card-desc {
+    width: 100%;
+    font-family: 'Rockwell';
+}
+
+.card-gallery .card .app-link {
+    position: absolute;
+    bottom: 10px;
+    font-family: 'Rockwell';
+}
+
+.card-gallery .card .app-link:hover a {
+    color: rgb(149, 117, 255);
 }
