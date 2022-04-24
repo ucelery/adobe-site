@@ -21,11 +21,41 @@
     <link rel="stylesheet" href="../assets/lib/css/home-layout.css">
     <link rel="stylesheet" href="../assets/lib/css/contact.css">
     <link rel="stylesheet" href="../assets/lib/css/fonts.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+    <script src="../assets/lib/js/slideMenu.js" defer></script>
+
 </head>
 
 <body>
     <nav>
-
+        <!-- SLIDE MENU -->
+        <div class="slide-menu" id="slide-menu">
+            <span class="menu-btn">
+                <svg width="37" height="30" viewBox="0 0 37 30" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.4541 26.4062H33.4541M3.4541 14.9776H33.4541M3.4541 3.54907H33.4541" stroke="white"
+                        stroke-width="5.625" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </span>
+            <!-- CONTENTS -->
+            <div class="buttons" id="button-container">
+                <div class="btn">
+                    <a id="about-btn" class="rainbow-text" href="about-adobe.html">about us</a>
+                </div>
+                <div class="btn">
+                    <a id="products-btn" class="rainbow-text" href="product-home.html">products</a>
+                </div>
+                <div class="btn">
+                    <a id="plan-btn" class="rainbow-text" href="plan-price.html">plans & pricing</a>
+                </div>
+                <div class="btn">
+                    <a id="contact-btn" class="rainbow-text" href="contact.html">contact us</a>
+                    <!--removed events -> contact us-->
+                </div>
+            </div>
+        </div>
     </nav>
     <section class="text-center">
             <div class="banner">
