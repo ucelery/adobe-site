@@ -321,6 +321,10 @@ section.features .feature .feature-video img {
     opacity: .4;
 }
 
+.discover.more-apps {
+    margin-top: 200px;
+}
+
 .discover.more-apps .subheader {
     font-family: 'Altero';
     letter-spacing: 10px;
