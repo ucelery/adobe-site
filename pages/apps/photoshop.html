@@ -263,7 +263,51 @@
                 </div>
             </div>
         </div>
-    
+        <section>
+            <div class="p-container"> 
+                <div class="gallery-section">
+                        <div class="gallery-item">
+                            <img src="https://drscdn.500px.org/photo/85393709/m%3D900/v2?sig=98ad90ff1d1563133b2787e9ee32c775a098ea26262b087d5c74cb68b8c05e7c" alt="Rob Woodcox" class="p-img">
+                            <div class="gallery-caption">
+                                <span>Colors Of The Wind pt. 3: Blue</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://drscdn.500px.org/photo/18439741/m%3D900/v2?sig=410933206b263bfd5fd27e30de0bbb8eb67f002f1b775c503c70d8750437d82f" alt="Rob Woodcox" class="p-img">
+                            <div class="gallery-caption">
+                                <span>When Autumn Was Spirited Away</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://drscdn.500px.org/photo/64861253/m%3D900/v2?sig=c81aea5f70f44b5a5b1b753473cd753736d3346ae9c3e0d4f8a108e40a5b47f2" alt="Sebastien del Grosso" class="p-img">
+                            <div class="gallery-caption">
+                                <span>Desir d'existence 1/5</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://drscdn.500px.org/photo/4313843/m%3D900/v2?sig=dce3ac4d991a91d0f15fb02579e10495706060cb5525371d77d7278fcd93971b" alt="Rob Woodcox" class="p-img">
+                            <div class="gallery-caption">
+                                <span>The Celebration Art</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://drscdn.500px.org/photo/59272412/m%3D900/v2?sig=fd10b4f43e4658c834b25af2e601da0722654465cd05e1b798475019b99d3d36" alt="Sebastien del Grosso" class="p-img">
+                            <div class="gallery-caption">
+                                <span>Illusion d'un printemps perdu</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item=>{
+                item.addEventListener('click',()=>{
+                    items.forEach(item=>item.classList.remove('show'))
+                    item.classList.add('show')
+                })
+            }) 
+        </script>
         <!-- FOOTER -->
         <footer>
             <div class="footer" style="margin-top:-100px">
