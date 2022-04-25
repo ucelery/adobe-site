@@ -303,3 +303,35 @@ a {
         width: 90vw;
     }
 }
+
+.o-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+.o-col {
+    flex: 25%;
+    max-width: 25%;
+    padding: .5rem .5rem;
+}
+
+.o-col img {
+    margin-top: 2rem;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 769px) {
+    .o-col {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .o-col {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
