@@ -65,12 +65,13 @@ a {
     top: 0;
     width: 100%;
     height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.discordapp.net/attachments/962008834895925328/963492485856911381/3D_Illustrations.png?width=1212&height=657");
 }
 
 .first-half {
     font-family: 'hando';
     font-size: 8rem;
-    color: #07060A;
+    color: #f84242;
     line-height: 6rem;
 }
 
@@ -97,7 +98,7 @@ a {
 
 /* MAIN */
 .content {
-    margin: 100px 0px;
+    margin: 50px 0px;
 }
 
 .content .video-container {
@@ -184,12 +185,15 @@ a {
     html .content .right {
         float: none;
     }
+    .desc-section.header {
+        margin-top: 1rem;
+    }
 }
 
 .desc-section.header {
     font-family: 'CodeNext_ExtraBold';
     font-size: 2.1rem;
-    margin-bottom: 15px;
+    margin-bottom: 1.3rem;
 }
 
 .desc .desc-section {
@@ -310,6 +314,13 @@ a {
     object-fit: cover;
 }
 
+.p-container {
+    margin: 10rem;
+    padding: 5rem;
+    border: 1rem solid transparent;
+    border-image: url('../../images/filters/brdg.png') 5%;
+}
+
 .gallery-section {
     height: 100vh;
     width: 100%;
@@ -318,6 +329,13 @@ a {
     justify-content: center;
     overflow: hidden;
 }
+.p-container {
+    margin: 10rem;
+    padding: 5rem;
+    border: 1rem solid transparent;
+    border-image: url('../../images/filters/brdg.png') 5%;
+}
+
 
 .gallery-item {
     height: 100%;
@@ -333,6 +351,7 @@ a {
 .gallery-item.show {
     flex: 8;
     opacity: 1;
+    box-shadow: 0 0 15rem black;
 }
 
 .gallery-caption {
@@ -362,10 +381,59 @@ a {
     .p-container {
         margin: 0;
         padding: 0;
+        border: 0;
     }
 }
 
-.p-container {
-    margin: 5rem;
-    padding: 2.5rem;
+.o-container {
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
+    justify-content: center;
+    align-content: stretch;
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+}
+
+.o-container h1{
+    font-family: 'CodeNext_ExtraBold';
+    font-size: 3rem;
+}
+
+.o-container span{
+    display: block;
+    font-size: 1.3rem;
+    line-height: 1.75rem;
+}
+
+.o-container p {
+    font-size: 1.3rem;
+    line-height: 1.75rem;
+}
+
+.phide {
+    display: none;
+}
+.shide {
+    visibility: visible;
+}
+
+.a-hover:hover {
+    color: #f84242;
+}
+
+@media only screen and (max-width:1236px) {
+    .phide {
+        display: block;
+    }
+    .shide {
+        visibility: collapse;
+    }
+    .o-container span{
+        display: block;
+        font-size: .1rem;
+        line-height: 1rem;
+    }
 }
