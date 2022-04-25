@@ -10,15 +10,16 @@
     <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/adobe-2752254-2285071.png"
         type="image/icon type">
 
-    <!-- GOOGLE FONTS -->
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/lib/css/fonts.css">
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="./assets/lib/css/layout.css">
     <link rel="stylesheet" href="../assets/lib/css/home-layout.css">
+    <link rel="stylesheet" href="../assets/lib/css/about-page.css">
 
     <!-- JAVASCRIPT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -28,239 +29,457 @@
 </head>
 
 <body>
-    <nav>
-        <!-- SLIDE MENU -->
-        <div class="slide-menu" id="slide-menu">
-            <span class="menu-btn">
-                <svg width="37" height="30" viewBox="0 0 37 30" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.4541 26.4062H33.4541M3.4541 14.9776H33.4541M3.4541 3.54907H33.4541" stroke="white"
-                        stroke-width="5.625" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </span>
-            <!-- CONTENTS -->
-            <div class="buttons" id="button-container">
-                <div class="btn">
-                    <a id="about-btn" class="rainbow-text" href="about-adobe.html">about us</a>
-                </div>
-                <div class="btn">
-                    <a id="products-btn" class="rainbow-text" href="product-home.html">products</a>
-                </div>
-                <div class="btn">
-                    <a id="plan-btn" class="rainbow-text" href="plan-price.html">plans & pricing</a>
-                </div>
-                <div class="btn">
-                    <a id="contact-btn" class="rainbow-text" href="contact.html">contact us</a>
-                    <!--removed events -> contact us-->
-                </div>
-            </div>
-        </div>
-    </nav>
-    <h1>About Adobe</h1>
-    <section>
-        <div>
-            <h2>Adobe is Creativity</h2>
-            <p>Adobe believes creativity empowers transformation — personally, professionally, and across all
-                industries. Our game-changing innovations are redefining the possibilities of digital experiences. We
-                connect content and data and introduce new technologies that democratize creativity, shape the next
-                generation of storytelling, and inspire entirely new categories of business.We not only deliver strong
-                financial results, but we’re also driving incredible innovation, adding millions of new customers,
-                delivering billions of experiences across screens, and processing trillions of data transactions online.
-            </p>
-        </div>
-    </section>
-    <section>
-        <div>
-            <h2>Our Mission</h2>
-            <p>Let's create experiences that matter. Adobe is the global leader in digital media and digital marketing
-                solutions. Our creative, marketing and document solutions empower everyone – from emerging artists to
-                global brands – to bring digital creations to life and deliver immersive, compelling experiences to the
-                right person at the right moment for the best results. In short, Adobe is everywhere, and we’re changing
-                the world through digital experiences.</p>
-            <h2>Our Values</h2>
-            <p>Genuine<span>We are sincere, trustworthy, and reliable</span></p>
-            <p>Exceptional<span>We’re committed to creating exceptional experiences that delight our employees and
-                    customers.</span></p>
-            <p>Innovative<span>We’re highly creative and always striving to connect new ideas with business
-                    realities.</span></p>
-            <p>Involved<span>We’re inclusive, open, and actively engaged with our customers, partners, employees, and
-                    the communities we serve.</span></p>
-        </div>
-    </section>
-    <section>
-        <div>
-            <span>Quick Facts</span>
-            <ul>
-                <li>Founded : December 1982 by Charles Geschke and John Warnock</li>
-                <li>Incorporated : October 1983 in California; reincorporated in Delaware, May 1997</li>
-                <li>Initial public offering : August 20, 1986, at a split-adjusted share price of US$0.17</li>
-                <li>Employees : More than 2600 worldwide</li>
-                <li>Corporate headquarters : San Jose, California, USA</li>
-                <li>Stock Symbol : ADBE (NASDAQ)</li>
-                <li>Revenue : Fiscal 2021 revenue: US$15.79 billion</li>
-            </ul>
-        </div>
-    </section>
-    <section>
-        <div>
-            <!--Animated images of switching adobe logos over the years:LINK FOR THE LOGOS:https://logos-world.net/adobe-logo/-->
-            <img src="https://cdn.discordapp.com/attachments/962008834895925328/964912701438591046/adobe-logo-1982.gif"
-                alt="first logo" width="400px" height="120px">
-            <span>1982-1990</span>
-            <img src="https://cdn.discordapp.com/attachments/962008834895925328/964912701639889016/adobe-logo-1990.png"
-                alt="second logo" width="400px" height="120px">
-            <span>1990-1993</span>
-            <img src="https://cdn.discordapp.com/attachments/962008834895925328/964912701593776128/adobe-logo-1993.png"
-                alt="third logo" width="400px" height="120px">
-            <span>1993-2014</span>
-            <img src="https://cdn.discordapp.com/attachments/962008834895925328/964919273560637450/adobe-logo-2014.png"
-                alt="fourth logo" width="400px" height="120px">
-            <span>2014-2020</span>
-            <img src="https://cdn.discordapp.com/attachments/962008834895925328/964912701455364176/adobe-logo-2020.png"
-                alt="current logo" width="400px" height="120px">
-            <span>2020-now</span>
-        </div>
-    </section>
-    <section>
-        <div>
-            <table>
-                <caption>Timeline</caption>
-                <!--image gallery with captions link:https://www.zippia.com/adobe-careers-189/history/-->
-                <!--ill add the caption details later on-->
-                <!--additional info:https://illustratorhow.com/adobe-history/#:~:text=Adobe%20Inc%2C%20formerly%20known%20as,%2C%20marketing%2C%20and%20visual%20communication.-->
-                <tr>
-                    <th>1980's Hightlights</th>
-                    <th>1990's Hightlights</th>
-                    <th>2000's Hightlights</th>
-                    <th>2010's Hightlights</th>
-                </tr>
-            </table>
-        </div>
-    </section>
-    <section>
-        <div>
-            <h3>Our Leaders</h3>
-            <span>Shantanu Narayen - Chairman and Chief Executive Officer</span>
-            <span>Gloria Chen - Chief People Officer and Executive Vice President, Employee Experience</span>
-            <span>Dana Rao - Executive Vice President, General Counsel and Chief Trust Officer</span>
-            <span>Scott Belsky - Executive Vice President and Chief Product Officer, Creative Cloud</span>
-            <span>Dan Durn - Chief Financial Officer and Executive Vice President, Finance, Technology Services and
-                Operations</span>
-            <span>David Wadhwani - President, Digital Media Business</span>
-            <span>Anil Chakravarthy - President, Digital Experience Business</span>
-            <span>Ann Lewnes - Chief Marketing Officer and Executive Vice President, Corporate Strategy &
-                Development</span>
-            <span>Charles Geschke</span>
-            <span>John Warnock</span>
-            <a href="https://www.adobe.com/about-adobe/leaders.html">Learn more about Adobe leaders</a>
-        </div>
-    </section>
-    <section>
-        <div>
-            <h3>Major Acquisitions</h3>
-            <ul>
-                <li>ConcentCal, 2021</li>
-                <li>Frame.io, 2021</li>
-                <li>Workfront, 2020</li>
-                <li>Allegorithmic, 2019</li>
-                <li>Marketo, 2018</li>
-                <li>Magento, 2018</li>
-                <li>Fotolia, 2015</li>
-                <li>Behance, 2012</li>
-                <li>Day Software, 2010</li>
-                <li>Omniture, Inc., 2009</li>
-                <li>Macromedia, Inc., 2005</li>
-            </ul>
-        </div>
-    </section>
-    <section>
-        <div>
-            <h3>Industry Recognition</h3>
-            <ul>
-                <li>Gender Equality Index -Bloomberg</li>
-                <li>Best Culture -Comparably</li>
-                <li>Happiest Employees -Comparably</li>
-                <li>Corporate Equality Index -DEI</li>
-                <li>Disability Equality Index -DisabilityIN</li>
-                <li>Next Big Things in Tech -Fast Company</li>
-                <li>Brands That Matter -Fast Company</li>
-                <li>Most Innovative Companies -Fast Company</li>
-                <li>World's Best Workplaces -Forbes</li>
-                <li>Best Employers for Diversity -Forbes</li>
-                <li>JUST100 -Forbes & JUST Capital</li>
-                <li>World's Most Admired Companies -Fortune</li>
-                <li>World's Best Workplaces -Fortune</li>
-                <li>Best Places to Work -Glassdoor</li>
-                <li>Best Global Brands -Interbrand</li>
-                <li>Companies That Care -People Magazine</li>
-                <li>Dow Jones Sustainability Index -S&P Dow Jones Indices</li>
-            </ul>
-        </div>
-    </section>
-    <footer>
-        <div class="footer" style="margin-top:-100px">
-        <div class="social-container">
-            <div class="message">
-                FOLLOW OUR SOCIALS!
-            </div>
-            <div class="socials">
-                <a target="_blank" href="https://www.youtube.com/user/AdobeSystems" class="soc-icon youtube">
-                    <svg width="60" height="42" viewBox="0 0 60 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M58.7501 7.26745C58.4103 6.05552 57.7486 4.95831 56.8351 4.09245C55.8958 3.19996 54.7446 2.56154 53.4901 2.23745C48.7951 0.999946 29.9851 0.999946 29.9851 0.999946C22.1434 0.910728 14.3037 1.30313 6.51008 2.17495C5.25555 2.52298 4.10649 3.17566 3.16508 4.07495C2.24008 4.96495 1.57008 6.06245 1.22008 7.26495C0.379311 11.7943 -0.0291918 16.3933 7.81143e-05 20.9999C-0.0299219 25.6024 0.377578 30.1999 1.22008 34.7349C1.56258 35.9324 2.23008 37.0249 3.15758 37.9074C4.08508 38.7899 5.24008 39.4274 6.51008 39.7649C11.2676 40.9999 29.9851 40.9999 29.9851 40.9999C37.8367 41.0893 45.6865 40.6969 53.4901 39.8249C54.7446 39.5009 55.8958 38.8624 56.8351 37.9699C57.7482 37.1043 58.4092 36.0069 58.7476 34.7949C59.6103 30.2673 60.0298 25.6664 60.0001 21.0574C60.065 16.429 59.646 11.8064 58.7501 7.26495V7.26745ZM24.0051 29.5599V12.4424L39.6551 21.0024L24.0051 29.5599Z"
-                            fill="#F8F8F8" />
+    <div class="about-wrapper">
+        <nav>
+            <!-- SLIDE MENU -->
+            <div class="slide-menu" id="slide-menu">
+                <span class="menu-btn">
+                    <svg width="37" height="30" viewBox="0 0 37 30" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.4541 26.4062H33.4541M3.4541 14.9776H33.4541M3.4541 3.54907H33.4541" stroke="white"
+                            stroke-width="5.625" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                </a>
-                <a target="_blank" href="https://twitter.com/Adobe" class="soc-icon twitter">
-                    <svg width="50" height="40" viewBox="0 0 60 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M18.8475 49.2499C41.49 49.2499 53.8762 30.4887 53.8762 14.2474C53.8762 13.7224 53.8763 13.1899 53.8538 12.6649C56.2652 10.9192 58.3465 8.75798 60 6.28241C57.7474 7.2756 55.3604 7.93019 52.9163 8.22491C55.4908 6.68606 57.419 4.2648 58.3425 1.41116C55.9237 2.84413 53.2763 3.85006 50.5162 4.38491C48.6607 2.40875 46.2053 1.09961 43.5303 0.660254C40.8554 0.220903 38.1102 0.675869 35.72 1.95468C33.3298 3.23349 31.428 5.26477 30.3092 7.73389C29.1903 10.203 28.9169 12.9722 29.5312 15.6124C24.6365 15.367 19.8481 14.0954 15.4764 11.8802C11.1048 9.66498 7.24757 6.55558 4.155 2.75366C2.58503 5.46523 2.1059 8.67267 2.81492 11.7247C3.52394 14.7767 5.36796 17.4444 7.9725 19.1862C6.02077 19.1199 4.11195 18.5958 2.4 17.6562V17.8249C2.40337 20.6655 3.3874 23.4177 5.18578 25.6165C6.98415 27.8153 9.48655 29.3257 12.27 29.8924C11.2135 30.1835 10.1221 30.3286 9.02625 30.3237C8.25369 30.326 7.48268 30.2544 6.72375 30.1099C7.51045 32.5551 9.04227 34.693 11.1047 36.2242C13.1671 37.7554 15.6568 38.6031 18.225 38.6487C13.8621 42.0754 8.47275 43.9339 2.925 43.9249C1.94745 43.929 0.970587 43.8727 0 43.7562C5.63068 47.3459 12.1699 49.252 18.8475 49.2499V49.2499Z"
-                            fill="#F8F8F8" />
-                    </svg>
-                </a>
-                <a target="_blank" href="https://www.facebook.com/Adobe/" class="soc-icon facebook">
-                    <svg width="45" height="45" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0 30.1675C0 45.0825 10.8325 57.485 25 60V38.3325H17.5V30H25V23.3325C25 15.8325 29.8325 11.6675 36.6675 11.6675C38.8325 11.6675 41.1675 12 43.3325 12.3325V20H39.5C35.8325 20 35 21.8325 35 24.1675V30H43L41.6675 38.3325H35V60C49.1675 57.485 60 45.085 60 30.1675C60 13.575 46.5 0 30 0C13.5 0 0 13.575 0 30.1675Z"
-                            fill="#F8F8F8" />
-                    </svg>
-                </a>
-                <a target="_blank" class="soc-icon linkedin" href="http://www.linkedin.com/company/adobe">
-                    <svg width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M18.5725 17.4225H27.8575V22.0475C29.195 19.3875 32.625 16.9975 37.7775 16.9975C47.655 16.9975 50 22.2925 50 32.0075V50H40V34.22C40 28.6875 38.6625 25.5675 35.2575 25.5675C30.535 25.5675 28.5725 28.93 28.5725 34.2175V50H18.5725V17.4225V17.4225ZM1.425 49.575H11.425V16.9975H1.425V49.575V49.575ZM12.8575 6.375C12.8579 7.21319 12.6916 8.04309 12.3685 8.81647C12.0453 9.58985 11.5716 10.2913 10.975 10.88C9.766 12.0816 8.12953 12.7541 6.425 12.75C4.72347 12.7489 3.09078 12.078 1.88 10.8825C1.28553 10.2918 0.813465 9.58956 0.490859 8.81608C0.168254 8.0426 0.00144783 7.21306 0 6.375C0 4.6825 0.675 3.0625 1.8825 1.8675C3.09221 0.670396 4.7256 -0.000748027 6.4275 6.25661e-07C8.1325 6.25661e-07 9.7675 0.672501 10.975 1.8675C12.18 3.0625 12.8575 4.6825 12.8575 6.375Z"
-                            fill="#F8F8F8" />
-                    </svg>
-                </a>
-                <a target="_blank" class="soc-icon instagram" href="https://www.instagram.com/adobe/">
-                    <svg width="50" height="50" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M44.9615 0.0656738H15.0386C6.79456 0.0656738 0.0874023 6.75027 0.0874023 14.9666V45.0332C0.0874023 53.2489 6.79456 59.9342 15.0386 59.9342H44.9615C53.2055 59.9342 59.9125 53.2488 59.9125 45.0332V14.9665C59.9125 6.75027 53.2055 0.0657338 44.9615 0.0657338V0.0656738ZM54.3752 45.033C54.3752 50.2059 50.1524 54.4151 44.9616 54.4151H15.0386C9.84778 54.4151 5.62492 50.2059 5.62492 45.033V25.6142H17.4537C16.5901 27.4407 16.1044 29.4784 16.1044 31.6272C16.1044 39.4322 22.4752 45.7811 30.3062 45.7811C38.1369 45.7811 44.5079 39.4322 44.5079 31.6272C44.5079 29.4784 44.0222 27.4407 43.1585 25.6142H54.3752V45.033H54.3752ZM24.4107 31.6274C24.4107 28.388 27.0553 25.752 30.3062 25.752C33.5573 25.752 36.2017 28.388 36.2017 31.6274C36.2017 34.8674 33.5573 37.5029 30.3062 37.5029C27.0554 37.5029 24.4107 34.8674 24.4107 31.6274V31.6274ZM54.3752 20.0954H38.5248C36.2027 18.4473 33.3675 17.4737 30.3062 17.4737C27.2449 17.4737 24.4094 18.4473 22.0878 20.0954H5.62492V14.9666C5.62492 9.79317 9.84778 5.58453 15.0386 5.58453H44.9616C50.1524 5.58453 54.3752 9.79317 54.3752 14.9666V20.0954H54.3753H54.3752ZM48.3749 8.93163H43.2419C42.3279 8.93163 41.5806 9.67671 41.5806 10.5873V15.7032C41.5806 16.6137 42.3279 17.3589 43.2419 17.3589H48.3749C49.2887 17.3589 50.0361 16.6137 50.0361 15.7032V10.5873C50.0361 9.67671 49.2888 8.93163 48.3749 8.93163Z"
-                            fill="#F8F8F8" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="terms-container">
-            <div class="terms">
-                <a href="#">
-                    SITEMAP
-                </a>
-                <span>|</span>
-                <a href="https://www.adobe.com/privacy.html">
-                    PRIVACY
-                </a>
-                <span>|</span>
-                <a href="https://www.adobe.com/legal/terms.html">
-                    TERMS OF USE
-                </a>
-                <span>|</span>
-                <span>
-                    ©2022
                 </span>
+                <!-- CONTENTS -->
+                <div class="buttons" id="button-container">
+                    <div class="btn">
+                        <a id="about-btn" class="rainbow-text" href="about-adobe.html">about us</a>
+                    </div>
+                    <div class="btn">
+                        <a id="products-btn" class="rainbow-text" href="product-home.html">products</a>
+                    </div>
+                    <div class="btn">
+                        <a id="plan-btn" class="rainbow-text" href="plan-price.html">plans & pricing</a>
+                    </div>
+                    <div class="btn">
+                        <a id="contact-btn" class="rainbow-text" href="contact.html">contact us</a>
+                        <!--removed events -> contact us-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- BANNER -->
+        <div class="ab-banner video-banner">
+            <div class="vid-filter"></div>
+            <div class="gradient"></div>
+
+            <div class="ab-header-text">
+                <!-- HEADER PAGE TITLE -->
+                <div class="ab-page-title">
+                    <svg width="auto" height="100%" viewBox="0 0 265 284" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M51.973 54.7834L31.173 9.98338H25.285L4.48502 54.7834H14.661L17.029 49.7274H39.429L41.797 54.7834H51.973ZM21.253 40.5114L28.229 25.5354L35.141 40.5114H21.253ZM62.23 9.98338V54.7834H82.07C85.462 54.7834 88.534 54.2714 91.222 53.3754C94.102 52.3514 96.534 50.8154 98.518 48.8314C100.502 46.8474 102.038 44.3514 103.062 41.5354C104.022 38.7834 104.47 35.7114 104.47 32.3834C104.47 29.0554 104.022 25.9834 103.062 23.2314C102.038 20.4154 100.502 17.9194 98.518 15.9354C96.534 13.9514 94.102 12.4154 91.222 11.3914C88.534 10.4314 85.462 9.98338 82.07 9.98338H62.23ZM71.446 19.1994H82.07C90.966 19.1994 95.254 23.4874 95.254 32.3834C95.254 41.2794 90.966 45.5674 82.07 45.5674H71.446V19.1994ZM135.875 9.98338C132.547 9.98338 129.475 10.4314 126.723 11.3914C123.907 12.4154 121.411 13.9514 119.427 15.9354C117.443 17.9194 115.907 20.4154 114.883 23.2314C113.987 25.9834 113.475 29.0554 113.475 32.3834C113.475 35.7114 113.987 38.7834 114.883 41.5354C115.907 44.3514 117.443 46.8474 119.427 48.8314C121.411 50.8154 123.907 52.3514 126.723 53.3754C129.475 54.2714 132.547 54.7834 135.875 54.7834C139.203 54.7834 142.275 54.2714 145.027 53.3754C147.843 52.3514 150.339 50.8154 152.323 48.8314C154.307 46.8474 155.843 44.3514 156.867 41.5354C157.827 38.7834 158.275 35.7114 158.275 32.3834C158.275 29.0554 157.827 25.9834 156.867 23.2314C155.843 20.4154 154.307 17.9194 152.323 15.9354C150.339 13.9514 147.843 12.4154 145.027 11.3914C142.275 10.4314 139.203 9.98338 135.875 9.98338ZM135.875 19.1994C144.771 19.1994 149.059 23.4874 149.059 32.3834C149.059 41.2794 144.771 45.5674 135.875 45.5674C126.979 45.5674 122.691 41.2794 122.691 32.3834C122.691 23.4874 126.979 19.1994 135.875 19.1994ZM169.158 9.98338V54.7834H197.894C203.014 54.7834 206.086 52.7994 207.75 51.1354C209.414 49.4714 211.398 46.3994 211.398 41.2794C211.398 36.9914 210.054 34.1754 208.646 32.3834C210.054 30.5914 211.398 27.7754 211.398 23.4874C211.398 18.3674 209.414 15.2954 207.75 13.6314C206.086 11.9674 203.014 9.98338 197.894 9.98338H169.158ZM178.374 19.1994H197.894C198.982 19.1994 200.454 19.3914 201.222 20.1594C202.054 20.9274 202.182 22.3994 202.182 23.4874C202.182 24.5754 202.054 26.0474 201.222 26.8154C200.454 27.5834 198.982 27.7754 197.894 27.7754H178.374V19.1994ZM178.374 36.9914H197.894C198.982 36.9914 200.454 37.1834 201.222 37.9514C202.054 38.7194 202.182 40.1914 202.182 41.2794C202.182 42.3674 202.054 43.8394 201.222 44.6074C200.454 45.3754 198.982 45.5674 197.894 45.5674H178.374V36.9914ZM260.149 19.1994V9.98338H222.965V54.7834H260.149V45.5674H232.181V36.9914H260.149V27.7754H232.181V19.1994H260.149Z"
+                            fill="#FF0000" />
+                        <path
+                            d="M7.00943 63.9834V62.9834H6.00943V63.9834H7.00943ZM7.00943 108.783H6.00943V109.783H7.00943V108.783ZM45.6014 105.135L46.3085 105.842L46.3085 105.842L45.6014 105.135ZM46.4974 86.3834L45.7111 85.7656L45.2257 86.3834L45.7111 87.0012L46.4974 86.3834ZM16.2254 73.1994V72.1994H15.2254V73.1994H16.2254ZM39.0734 74.1594L38.3663 74.8665L38.3805 74.8806L38.3952 74.8942L39.0734 74.1594ZM39.0734 80.8154L38.3952 80.0806L38.3805 80.0941L38.3663 80.1083L39.0734 80.8154ZM16.2254 81.7754H15.2254V82.7754H16.2254V81.7754ZM16.2254 90.9914V89.9914H15.2254V90.9914H16.2254ZM39.0734 91.9514L38.3663 92.6585L38.3805 92.6726L38.3952 92.6862L39.0734 91.9514ZM39.0734 98.6074L38.3952 97.8726L38.3805 97.8861L38.3663 97.9003L39.0734 98.6074ZM16.2254 99.5674H15.2254V100.567H16.2254V99.5674ZM6.00943 63.9834V108.783H8.00943V63.9834H6.00943ZM7.00943 109.783H35.7454V107.783H7.00943V109.783ZM35.7454 109.783C41.1563 109.783 44.4759 107.675 46.3085 105.842L44.8943 104.428C43.3989 105.924 40.5746 107.783 35.7454 107.783V109.783ZM46.3085 105.842C48.1411 104.01 50.2494 100.69 50.2494 95.2794H48.2494C48.2494 100.109 46.3897 102.933 44.8943 104.428L46.3085 105.842ZM50.2494 95.2794C50.2494 90.7625 48.8272 87.7299 47.2838 85.7656L45.7111 87.0012C46.9837 88.6209 48.2494 91.2203 48.2494 95.2794H50.2494ZM47.2838 87.0012C48.8272 85.0369 50.2494 82.0043 50.2494 77.4874H48.2494C48.2494 81.5465 46.9837 84.1459 45.7111 85.7656L47.2838 87.0012ZM50.2494 77.4874C50.2494 72.0765 48.1411 68.7569 46.3085 66.9243L44.8943 68.3385C46.3897 69.8339 48.2494 72.6582 48.2494 77.4874H50.2494ZM46.3085 66.9243C44.4759 65.0917 41.1563 62.9834 35.7454 62.9834V64.9834C40.5746 64.9834 43.3989 66.8431 44.8943 68.3385L46.3085 66.9243ZM35.7454 62.9834H7.00943V64.9834H35.7454V62.9834ZM16.2254 74.1994H35.7454V72.1994H16.2254V74.1994ZM35.7454 74.1994C36.2385 74.1994 36.7954 74.2436 37.2961 74.3638C37.8121 74.4876 38.1681 74.6682 38.3663 74.8665L39.7805 73.4523C39.2108 72.8825 38.4467 72.5831 37.7628 72.419C37.0635 72.2512 36.3404 72.1994 35.7454 72.1994V74.1994ZM38.3952 74.8942C38.6003 75.0835 38.7756 75.4189 38.8902 75.9244C39.0022 76.4188 39.0334 76.9736 39.0334 77.4874H41.0334C41.0334 76.9132 41.0007 76.188 40.8407 75.4823C40.6833 74.7878 40.3786 74.0032 39.7517 73.4246L38.3952 74.8942ZM39.0334 77.4874C39.0334 78.0012 39.0022 78.556 38.8902 79.0503C38.7756 79.5558 38.6003 79.8912 38.3952 80.0806L39.7517 81.5502C40.3786 80.9715 40.6833 80.1869 40.8407 79.4924C41.0007 78.7868 41.0334 78.0616 41.0334 77.4874H39.0334ZM38.3663 80.1083C38.1681 80.3065 37.8121 80.4871 37.2961 80.611C36.7954 80.7312 36.2385 80.7754 35.7454 80.7754V82.7754C36.3404 82.7754 37.0635 82.7236 37.7628 82.5558C38.4467 82.3916 39.2108 82.0922 39.7805 81.5225L38.3663 80.1083ZM35.7454 80.7754H16.2254V82.7754H35.7454V80.7754ZM17.2254 81.7754V73.1994H15.2254V81.7754H17.2254ZM16.2254 91.9914H35.7454V89.9914H16.2254V91.9914ZM35.7454 91.9914C36.2385 91.9914 36.7954 92.0356 37.2961 92.1558C37.8121 92.2796 38.1681 92.4602 38.3663 92.6585L39.7805 91.2443C39.2108 90.6745 38.4467 90.3751 37.7628 90.211C37.0635 90.0432 36.3404 89.9914 35.7454 89.9914V91.9914ZM38.3952 92.6862C38.6003 92.8755 38.7756 93.2109 38.8902 93.7164C39.0022 94.2108 39.0334 94.7656 39.0334 95.2794H41.0334C41.0334 94.7052 41.0007 93.98 40.8407 93.2743C40.6833 92.5798 40.3786 91.7952 39.7517 91.2166L38.3952 92.6862ZM39.0334 95.2794C39.0334 95.7932 39.0022 96.348 38.8902 96.8423C38.7756 97.3478 38.6003 97.6832 38.3952 97.8726L39.7517 99.3422C40.3786 98.7635 40.6833 97.9789 40.8407 97.2844C41.0007 96.5788 41.0334 95.8536 41.0334 95.2794H39.0334ZM38.3663 97.9003C38.1681 98.0985 37.8121 98.2791 37.2961 98.403C36.7954 98.5232 36.2385 98.5674 35.7454 98.5674V100.567C36.3404 100.567 37.0635 100.516 37.7628 100.348C38.4467 100.184 39.2108 99.8842 39.7805 99.3145L38.3663 97.9003ZM35.7454 98.5674H16.2254V100.567H35.7454V98.5674ZM17.2254 99.5674V90.9914H15.2254V99.5674H17.2254Z"
+                            fill="white" />
+                        <path
+                            d="M18.9762 120.391L18.6468 119.447L18.6344 119.452L18.9762 120.391ZM11.6802 124.935L10.9731 124.228L10.9731 124.228L11.6802 124.935ZM7.13618 132.231L6.19639 131.89L6.19058 131.906L6.18531 131.922L7.13618 132.231ZM7.13618 150.535L6.18531 150.845L6.19058 150.861L6.19639 150.877L7.13618 150.535ZM11.6802 157.831L10.9731 158.538L10.9731 158.538L11.6802 157.831ZM18.9762 162.375L18.6344 163.315L18.6504 163.321L18.6666 163.326L18.9762 162.375ZM37.2802 162.375L37.5898 163.326L37.6059 163.321L37.6219 163.315L37.2802 162.375ZM44.5762 157.831L45.2833 158.538L45.2833 158.538L44.5762 157.831ZM49.1202 150.535L50.0601 150.877L50.0644 150.865L49.1202 150.535ZM49.1202 132.231L50.0645 131.902L50.06 131.89L49.1202 132.231ZM44.5762 124.935L45.2833 124.228L45.2833 124.228L44.5762 124.935ZM37.2802 120.391L37.622 119.452L37.6096 119.447L37.2802 120.391ZM28.1282 117.983C24.7124 117.983 21.5255 118.443 18.6468 119.447L19.3056 121.336C21.9309 120.42 24.888 119.983 28.1282 119.983V117.983ZM18.6344 119.452C15.6962 120.52 13.0712 122.13 10.9731 124.228L12.3873 125.642C14.2572 123.773 16.6242 122.311 19.3179 121.331L18.6344 119.452ZM10.9731 124.228C8.875 126.326 7.26486 128.951 6.19639 131.89L8.07598 132.573C9.05551 129.879 10.5174 127.512 12.3873 125.642L10.9731 124.228ZM6.18531 131.922C5.25611 134.776 4.72818 137.952 4.72818 141.383H6.72818C6.72818 138.158 7.22426 135.191 8.08706 132.541L6.18531 131.922ZM4.72818 141.383C4.72818 144.814 5.25611 147.991 6.18531 150.845L8.08706 150.226C7.22426 147.576 6.72818 144.608 6.72818 141.383H4.72818ZM6.19639 150.877C7.26486 153.815 8.875 156.44 10.9731 158.538L12.3873 157.124C10.5174 155.254 9.05551 152.887 8.07598 150.194L6.19639 150.877ZM10.9731 158.538C13.0712 160.637 15.6962 162.247 18.6344 163.315L19.3179 161.436C16.6242 160.456 14.2572 158.994 12.3873 157.124L10.9731 158.538ZM18.6666 163.326C21.5206 164.255 24.6972 164.783 28.1282 164.783V162.783C24.9032 162.783 21.9358 162.287 19.2858 161.425L18.6666 163.326ZM28.1282 164.783C31.5592 164.783 34.7358 164.255 37.5898 163.326L36.9706 161.425C34.3206 162.287 31.3532 162.783 28.1282 162.783V164.783ZM37.6219 163.315C40.5602 162.247 43.1852 160.637 45.2833 158.538L43.8691 157.124C41.9992 158.994 39.6322 160.456 36.9384 161.436L37.6219 163.315ZM45.2833 158.538C47.3814 156.44 48.9915 153.815 50.06 150.877L48.1804 150.194C47.2009 152.887 45.739 155.254 43.8691 157.124L45.2833 158.538ZM50.0644 150.865C51.0686 147.986 51.5282 144.799 51.5282 141.383H49.5282C49.5282 144.624 49.0918 147.581 48.176 150.206L50.0644 150.865ZM51.5282 141.383C51.5282 137.968 51.0686 134.781 50.0644 131.902L48.176 132.561C49.0918 135.186 49.5282 138.143 49.5282 141.383H51.5282ZM50.06 131.89C48.9915 128.951 47.3814 126.326 45.2833 124.228L43.8691 125.642C45.739 127.512 47.2009 129.879 48.1804 132.573L50.06 131.89ZM45.2833 124.228C43.1852 122.13 40.5602 120.52 37.6219 119.452L36.9384 121.331C39.6322 122.311 41.9992 123.773 43.8691 125.642L45.2833 124.228ZM37.6096 119.447C34.7309 118.443 31.544 117.983 28.1282 117.983V119.983C31.3684 119.983 34.3255 120.42 36.9508 121.336L37.6096 119.447ZM28.1282 129.199C32.4313 129.199 35.4233 130.237 37.3491 132.162C39.2748 134.088 40.3122 137.08 40.3122 141.383H42.3122C42.3122 136.79 41.2055 133.191 38.7633 130.748C36.3211 128.306 32.7211 127.199 28.1282 127.199V129.199ZM40.3122 141.383C40.3122 145.686 39.2748 148.679 37.3491 150.604C35.4233 152.53 32.4313 153.567 28.1282 153.567V155.567C32.7211 155.567 36.3211 154.461 38.7633 152.018C41.2055 149.576 42.3122 145.976 42.3122 141.383H40.3122ZM28.1282 153.567C23.8251 153.567 20.8331 152.53 18.9073 150.604C16.9815 148.679 15.9442 145.686 15.9442 141.383H13.9442C13.9442 145.976 15.0508 149.576 17.4931 152.018C19.9353 154.461 23.5353 155.567 28.1282 155.567V153.567ZM15.9442 141.383C15.9442 137.08 16.9815 134.088 18.9073 132.162C20.8331 130.237 23.8251 129.199 28.1282 129.199V127.199C23.5353 127.199 19.9353 128.306 17.4931 130.748C15.0508 133.191 13.9442 136.79 13.9442 141.383H15.9442Z"
+                            fill="white" />
+                        <path
+                            d="M47.9707 172.983H48.9707V171.983H47.9707V172.983ZM38.7547 172.983V171.983H37.7547V172.983H38.7547ZM36.1947 205.943L36.9018 206.65L36.9018 206.65L36.1947 205.943ZM20.0667 205.943L19.3596 206.65L19.3596 206.65L20.0667 205.943ZM17.5067 172.983H18.5067V171.983H17.5067V172.983ZM8.29068 172.983V171.983H7.29068V172.983H8.29068ZM9.57068 205.943L10.5145 205.613L10.5104 205.601L10.506 205.589L9.57068 205.943ZM13.6027 212.471L14.3098 211.764L14.3098 211.764L13.6027 212.471ZM20.0667 216.503L19.7288 217.445L19.7359 217.447L19.743 217.449L20.0667 216.503ZM36.1947 216.503L36.5184 217.449L36.5255 217.447L36.5325 217.445L36.1947 216.503ZM42.7227 212.471L43.4298 213.178L43.4362 213.172L43.4425 213.165L42.7227 212.471ZM46.7547 205.943L45.8112 205.612L45.8108 205.613L46.7547 205.943ZM47.9707 171.983H38.7547V173.983H47.9707V171.983ZM37.7547 172.983V197.943H39.7547V172.983H37.7547ZM37.7547 197.943C37.7547 201.398 36.95 203.774 35.4876 205.236L36.9018 206.65C38.8954 204.657 39.7547 201.657 39.7547 197.943H37.7547ZM35.4876 205.236C34.0192 206.705 31.5726 207.567 28.1307 207.567V209.567C31.8567 209.567 34.9142 208.638 36.9018 206.65L35.4876 205.236ZM28.1307 207.567C24.6887 207.567 22.2422 206.705 20.7738 205.236L19.3596 206.65C21.3472 208.638 24.4046 209.567 28.1307 209.567V207.567ZM20.7738 205.236C19.3114 203.774 18.5067 201.398 18.5067 197.943H16.5067C16.5067 201.657 17.366 204.657 19.3596 206.65L20.7738 205.236ZM18.5067 197.943V172.983H16.5067V197.943H18.5067ZM17.5067 171.983H8.29068V173.983H17.5067V171.983ZM7.29068 172.983V197.943H9.29068V172.983H7.29068ZM7.29068 197.943C7.29068 200.97 7.68486 203.785 8.6354 206.297L10.506 205.589C9.66451 203.366 9.29068 200.805 9.29068 197.943H7.29068ZM8.62683 206.274C9.56889 208.965 10.99 211.273 12.8956 213.178L14.3098 211.764C12.6314 210.086 11.3645 208.041 10.5145 205.613L8.62683 206.274ZM12.8956 213.178C14.7999 215.083 17.105 216.503 19.7288 217.445L20.4045 215.562C18.0364 214.712 15.9895 213.444 14.3098 211.764L12.8956 213.178ZM19.743 217.449C22.2861 218.319 25.0841 218.783 28.1307 218.783V216.783C25.2893 216.783 22.7113 216.351 20.3904 215.557L19.743 217.449ZM28.1307 218.783C31.1773 218.783 33.9753 218.319 36.5184 217.449L35.871 215.557C33.5501 216.351 30.9721 216.783 28.1307 216.783V218.783ZM36.5325 217.445C39.1475 216.506 41.5195 215.089 43.4298 213.178L42.0156 211.764C40.3419 213.438 38.2339 214.709 35.8568 215.562L36.5325 217.445ZM43.4425 213.165C45.2641 211.276 46.752 208.978 47.6985 206.274L45.8108 205.613C44.9654 208.029 43.6372 210.082 42.0028 211.777L43.4425 213.165ZM47.6981 206.275C48.5761 203.776 48.9707 200.971 48.9707 197.943H46.9707C46.9707 200.804 46.5972 203.375 45.8112 205.612L47.6981 206.275ZM48.9707 197.943V172.983H46.9707V197.943H48.9707Z"
+                            fill="white" />
+                        <path
+                            d="M47.3797 234.199V235.199H48.3797V234.199H47.3797ZM47.3797 224.983H48.3797V223.983H47.3797V224.983ZM8.91568 224.983V223.983H7.91568V224.983H8.91568ZM8.91568 234.199H7.91568V235.199H8.91568V234.199ZM23.5077 234.199H24.5077V233.199H23.5077V234.199ZM23.5077 269.783H22.5077V270.783H23.5077V269.783ZM32.7237 269.783V270.783H33.7237V269.783H32.7237ZM32.7237 234.199V233.199H31.7237V234.199H32.7237ZM48.3797 234.199V224.983H46.3797V234.199H48.3797ZM47.3797 223.983H8.91568V225.983H47.3797V223.983ZM7.91568 224.983V234.199H9.91568V224.983H7.91568ZM8.91568 235.199H23.5077V233.199H8.91568V235.199ZM22.5077 234.199V269.783H24.5077V234.199H22.5077ZM23.5077 270.783H32.7237V268.783H23.5077V270.783ZM33.7237 269.783V234.199H31.7237V269.783H33.7237ZM32.7237 235.199H47.3797V233.199H32.7237V235.199Z"
+                            fill="white" />
+                    </svg>
+                </div>
             </div>
         </div>
+
+        <div class="main-content">
+            <!-- STATEMENT -->
+            <section class="ab-header-statement">
+                <!-- STATEMENT -->
+                <div class="ab-state">
+                    ADOBE <br>
+                    IS <br>
+                    CREATIVITY
+                </div>
+
+                <!-- DETAILS -->
+                <div class="ab-details">
+                    &emsp;&emsp;&emsp;Adobe believes creativity empowers transformation — personally, professionally,
+                    and across all industries. Our game-changing innovations are redefining the possibilities of digital
+                    experiences. We connect content and data and introduce new technologies that democratize
+                    creativity, shape the next generation of storytelling, and inspire entirely new categories of
+                    business.We not only deliver strong financial results, but we’re also driving incredible
+                    innovation, adding millions of new customers, delivering billions of experiences across screens,
+                    and processing trillions of data transactions online.
+                </div>
+            </section>
+
+            <!-- MISSION VISION -->
+            <section class="mission-vision-sec">
+                <div class="mission-vision">
+                    <!-- MISSION -->
+                    <div class="ab-card">
+                        <h2>Our Mission</h2>
+                        <p>
+                            Let's create experiences that matter. Adobe is the global leader in digital media and
+                            digital marketing solutions. Our creative, marketing and document solutions empower everyone
+                            – from emerging artists to global brands – to bring digital creations to life and deliver
+                            immersive, compelling experiences to the right person at the right moment for the best
+                            results. In short, Adobe is everywhere, and we’re changing
+                            the world through digital experiences.
+                        </p>
+                    </div>
+
+                    <!-- VISION -->
+                    <div class="ab-card">
+                        <!-- VALUES -->
+                        <div class="ab-value">
+                            <div class="ab-hollow-num">
+                                <svg width="auto" height="100%" viewBox="0 0 25 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.260559 11.4347L-0.906303 9.81036L-2.40354 10.8859L-1.45324 12.4656L0.260559 11.4347ZM5.18856 19.6267L3.47476 20.6576L4.49794 22.3585L6.20652 21.3482L5.18856 19.6267ZM12.5486 15.2747L14.5485 15.2864L14.5692 11.7564L11.5306 13.5531L12.5486 15.2747ZM12.4846 26.2187L10.4846 26.207V26.2187H12.4846ZM12.4846 44.9707H10.4846V46.9707H12.4846V44.9707ZM24.0686 44.9707V46.9707H26.0686V44.9707H24.0686ZM24.0686 0.170685H26.0686V-1.82932H24.0686V0.170685ZM15.9406 0.170685V-1.82932H15.2967L14.7737 -1.45364L15.9406 0.170685ZM-1.45324 12.4656L3.47476 20.6576L6.90236 18.5957L1.97436 10.4037L-1.45324 12.4656ZM6.20652 21.3482L13.5665 16.9962L11.5306 13.5531L4.1706 17.9051L6.20652 21.3482ZM10.5486 15.263L10.4846 26.207L14.4845 26.2304L14.5485 15.2864L10.5486 15.263ZM10.4846 26.2187V44.9707H14.4846V26.2187H10.4846ZM12.4846 46.9707H24.0686V42.9707H12.4846V46.9707ZM26.0686 44.9707V0.170685H22.0686V44.9707H26.0686ZM24.0686 -1.82932H15.9406V2.17068H24.0686V-1.82932ZM14.7737 -1.45364L-0.906303 9.81036L1.42742 13.059L17.1074 1.79501L14.7737 -1.45364Z"
+                                        fill="#F8B195" />
+                                </svg>
+                            </div>
+                            <div class="ab-value-text">
+                                Genuine
+                            </div>
+                            <div class="ab-details">
+                                We are sincere, trustworthy, and reliable
+                            </div>
+                        </div>
+                        <div class="ab-value">
+                            <div class="ab-hollow-num">
+                                <svg width="auto" height="100%" viewBox="0 0 34 46" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.7837 35.8587L17.4486 34.3695L13.2452 38.1381L18.8835 37.8562L18.7837 35.8587ZM24.3517 30.8667L23.0265 29.3687L23.0166 29.3775L24.3517 30.8667ZM0.863669 16.7227H-1.13633V18.7227H0.863669V16.7227ZM12.2557 16.7227V18.7227H14.2557V16.7227H12.2557ZM16.4797 23.6347L17.8377 25.103L17.8478 25.0936L17.8578 25.0841L16.4797 23.6347ZM0.287669 38.6107L-1.07034 37.1424L-1.71233 37.7362V38.6107H0.287669ZM0.287669 45.9707H-1.71233V47.9707H0.287669V45.9707ZM33.7597 45.9707V47.9707H35.7597V45.9707H33.7597ZM33.7597 35.6027H35.7597V33.6027H33.7597V35.6027ZM23.9037 35.6027V33.6027H23.8537L23.8038 33.6052L23.9037 35.6027ZM20.1188 37.3478L25.6868 32.3558L23.0166 29.3775L17.4486 34.3695L20.1188 37.3478ZM25.6768 32.3647C29.0805 29.3538 31.518 26.6411 33.0968 23.8738C34.7033 21.058 35.3757 18.2651 35.3757 15.1867H31.3757C31.3757 17.6123 30.864 19.7154 29.6225 21.8916C28.3533 24.1162 26.2789 26.4916 23.0265 29.3687L25.6768 32.3647ZM35.3757 15.1867C35.3757 10.2926 33.4736 6.03697 30.1627 3.02029C26.8646 0.0154365 22.2824 -1.66132 17.0557 -1.66132V2.33868C21.4289 2.33868 25.0067 3.73393 27.4687 5.97708C29.9177 8.2084 31.3757 11.3767 31.3757 15.1867H35.3757ZM17.0557 -1.66132C11.7273 -1.66132 7.14244 0.153586 3.88757 3.45442C0.635439 6.75249 -1.13633 11.3787 -1.13633 16.7227H2.86367C2.86367 12.2747 4.3239 8.70888 6.73577 6.26295C9.1449 3.81978 12.6561 2.33868 17.0557 2.33868V-1.66132ZM0.863669 18.7227H12.2557V14.7227H0.863669V18.7227ZM14.2557 16.7227C14.2557 15.5022 14.6063 14.7015 15.0262 14.2323C15.4266 13.7847 16.0322 13.4747 16.9277 13.4747V9.47469C15.0072 9.47469 13.2767 10.1887 12.0452 11.5651C10.833 12.9199 10.2557 14.7432 10.2557 16.7227H14.2557ZM16.9277 13.4747C17.8639 13.4747 18.49 13.7724 18.8709 14.1421C19.2463 14.5063 19.5357 15.0864 19.5357 15.9547H23.5357C23.5357 14.135 22.897 12.4751 21.6564 11.2713C20.4214 10.073 18.7435 9.47469 16.9277 9.47469V13.4747ZM19.5357 15.9547C19.5357 17.2987 19.0674 18.4144 15.1015 22.1853L17.8578 25.0841C21.6999 21.4309 23.5357 19.2187 23.5357 15.9547H19.5357ZM15.1217 22.1664L-1.07034 37.1424L1.64567 40.079L17.8377 25.103L15.1217 22.1664ZM-1.71233 38.6107V45.9707H2.28767V38.6107H-1.71233ZM0.287669 47.9707H33.7597V43.9707H0.287669V47.9707ZM35.7597 45.9707V35.6027H31.7597V45.9707H35.7597ZM33.7597 33.6027H23.9037V37.6027H33.7597V33.6027ZM23.8038 33.6052L18.6838 33.8612L18.8835 37.8562L24.0035 37.6002L23.8038 33.6052Z"
+                                        fill="#F67280" />
+                                </svg>
+                            </div>
+                            <div class="ab-value-text">
+                                Exceptional
+                            </div>
+                            <div class="ab-details">
+                                We’re committed to creating exceptional experiences that delight our
+                                employees and customers.
+                            </div>
+                        </div>
+                        <div class="ab-value">
+                            <div class="ab-hollow-num">
+                                <svg width="auto" height="100%" viewBox="0 0 35 47" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M27.9193 22.4827L26.8021 20.8238L24.2081 22.5708L26.8821 24.1927L27.9193 22.4827ZM1.16728 14.1627H-0.832721V16.1627H1.16728V14.1627ZM12.4313 14.1627V16.1627H14.4313V14.1627H12.4313ZM12.3673 18.0027V16.0027H10.3673V18.0027H12.3673ZM12.3673 27.7307H10.3673V29.7307H12.3673V27.7307ZM11.9833 32.0187H13.9833V30.0187H11.9833V32.0187ZM0.271279 32.0187V30.0187H-1.72872V32.0187H0.271279ZM29.0365 24.1416C32.8094 21.6006 34.7193 17.4065 34.7193 12.7547H30.7193C30.7193 16.2948 29.3011 19.1408 26.8021 20.8238L29.0365 24.1416ZM34.7193 12.7547C34.7193 8.28345 32.8802 4.58889 29.6256 2.06274C26.4259 -0.420719 22.0148 -1.66132 16.9753 -1.66132V2.33868C21.4078 2.33868 24.8687 3.43409 27.173 5.22262C29.4223 6.96848 30.7193 9.48192 30.7193 12.7547H34.7193ZM16.9753 -1.66132C11.8548 -1.66132 7.39731 -0.251029 4.18793 2.52114C0.945363 5.32196 -0.832721 9.35244 -0.832721 14.1627H3.16728C3.16728 10.3969 4.5252 7.51541 6.80263 5.54823C9.11325 3.5524 12.5598 2.33868 16.9753 2.33868V-1.66132ZM1.16728 16.1627H12.4313V12.1627H1.16728V16.1627ZM14.4313 14.1627C14.4313 13.5732 14.6387 13.2064 14.9471 12.9509C15.2939 12.6637 15.9389 12.3867 16.9753 12.3867V8.38668C15.2596 8.38668 13.6327 8.84568 12.3955 9.87042C11.1199 10.927 10.4313 12.4481 10.4313 14.1627H14.4313ZM16.9753 12.3867C17.9893 12.3867 18.5957 12.6524 18.9109 12.9151C19.1844 13.143 19.3913 13.4882 19.3913 14.0987H23.3913C23.3913 12.4052 22.7342 10.8944 21.4716 9.84224C20.2509 8.82493 18.6493 8.38668 16.9753 8.38668V12.3867ZM19.3913 14.0987C19.3913 14.8493 19.1545 15.2172 18.8815 15.4415C18.5507 15.7133 17.8787 16.0027 16.6553 16.0027V20.0027C18.4398 20.0027 20.1358 19.5881 21.4211 18.5319C22.7641 17.4282 23.3913 15.8441 23.3913 14.0987H19.3913ZM16.6553 16.0027H12.3673V20.0027H16.6553V16.0027ZM10.3673 18.0027V27.7307H14.3673V18.0027H10.3673ZM12.3673 29.7307H16.6553V25.7307H12.3673V29.7307ZM16.6553 29.7307C18.0663 29.7307 18.9132 30.0663 19.3659 30.4284C19.7597 30.7434 20.0313 31.2127 20.0313 32.0187H24.0313C24.0313 30.1367 23.3109 28.4619 21.8647 27.3049C20.4773 26.1951 18.6363 25.7307 16.6553 25.7307V29.7307ZM20.0313 32.0187C20.0313 32.8042 19.7657 33.272 19.3975 33.5794C18.9854 33.9235 18.2245 34.2427 16.9753 34.2427V38.2427C18.8621 38.2427 20.6291 37.7619 21.961 36.65C23.3368 35.5014 24.0313 33.8572 24.0313 32.0187H20.0313ZM16.9753 34.2427C15.7263 34.2427 14.9902 33.9238 14.599 33.5912C14.2489 33.2934 13.9833 32.8264 13.9833 32.0187H9.98328C9.98328 33.835 10.6457 35.48 12.0076 36.6382C13.3284 37.7615 15.0882 38.2427 16.9753 38.2427V34.2427ZM11.9833 30.0187H0.271279V34.0187H11.9833V30.0187ZM-1.72872 32.0187C-1.72872 37.0147 0.211042 41.2694 3.61798 44.2516C7.00118 47.213 11.6912 48.8027 17.0393 48.8027V44.8027C12.4674 44.8027 8.77338 43.4483 6.25258 41.2418C3.75552 39.056 2.27128 35.9187 2.27128 32.0187H-1.72872ZM17.0393 48.8027C22.3071 48.8027 27.0513 47.3847 30.5285 44.7176C34.0447 42.0206 36.1913 38.0893 36.1913 33.3627H32.1913C32.1913 36.764 30.6898 39.5527 28.0941 41.5437C25.4593 43.5647 21.6274 44.8027 17.0393 44.8027V48.8027ZM36.1913 33.3627C36.1913 28.007 33.4155 23.4773 28.9565 20.7727L26.8821 24.1927C30.231 26.2241 32.1913 29.5023 32.1913 33.3627H36.1913Z"
+                                        fill="#C06C84" />
+                                </svg>
+                            </div>
+                            <div class="ab-value-text">
+                                Innovative
+                            </div>
+                            <div class="ab-details">
+                                We’re highly creative and always striving to connect new ideas with business
+                                realities.
+                            </div>
+                        </div>
+                        <div class="ab-value">
+                            <div class="ab-hollow-num">
+                                <svg width="auto" height="100%" viewBox="0 0 38 45" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M31.9184 0.170685H33.9184V-1.82932H31.9184V0.170685ZM20.4624 0.170685V-1.82932H19.4614L18.8615 -1.02809L20.4624 0.170685ZM0.430389 26.9227L-1.17053 25.7239L-1.56961 26.2569V26.9227H0.430389ZM0.430389 36.3307H-1.56961V38.3307H0.430389V36.3307ZM20.5904 36.3307H22.5904V34.3307H20.5904V36.3307ZM20.5904 44.9707H18.5904V46.9707H20.5904V44.9707ZM31.9824 44.9707V46.9707H33.9824V44.9707H31.9824ZM31.9824 36.3307V34.3307H29.9824V36.3307H31.9824ZM37.2304 36.3307V38.3307H39.2304V36.3307H37.2304ZM37.2304 26.0907H39.2304V24.0907H37.2304V26.0907ZM31.9184 26.0907H29.9184V28.0907H31.9184V26.0907ZM12.2704 26.3467L10.6654 25.1534L8.29131 28.3467H12.2704V26.3467ZM21.3584 14.1227L23.3561 14.2186L23.6709 7.66006L19.7534 12.9294L21.3584 14.1227ZM20.9744 22.1227L18.9767 22.0268L18.9744 22.0747V22.1227H20.9744ZM20.9744 26.3467V28.3467H22.9744V26.3467H20.9744ZM31.9184 -1.82932H20.4624V2.17068H31.9184V-1.82932ZM18.8615 -1.02809L-1.17053 25.7239L2.03131 28.1215L22.0633 1.36946L18.8615 -1.02809ZM-1.56961 26.9227V36.3307H2.43039V26.9227H-1.56961ZM0.430389 38.3307H20.5904V34.3307H0.430389V38.3307ZM18.5904 36.3307V44.9707H22.5904V36.3307H18.5904ZM20.5904 46.9707H31.9824V42.9707H20.5904V46.9707ZM33.9824 44.9707V36.3307H29.9824V44.9707H33.9824ZM31.9824 38.3307H37.2304V34.3307H31.9824V38.3307ZM39.2304 36.3307V26.0907H35.2304V36.3307H39.2304ZM37.2304 24.0907H31.9184V28.0907H37.2304V24.0907ZM33.9184 26.0907V0.170685H29.9184V26.0907H33.9184ZM13.8754 27.54L22.9634 15.316L19.7534 12.9294L10.6654 25.1534L13.8754 27.54ZM19.3607 14.0268L18.9767 22.0268L22.9721 22.2186L23.3561 14.2186L19.3607 14.0268ZM18.9744 22.1227V26.3467H22.9744V22.1227H18.9744ZM20.9744 24.3467H12.2704V28.3467H20.9744V24.3467Z"
+                                        fill="#6C567B" />
+                                </svg>
+                            </div>
+                            <div class="ab-value-text">
+                                Involved
+                            </div>
+                            <div class="ab-details">
+                                We’re inclusive, open, and actively engaged with our customers, partners,
+                                employees, and the communities we serve.
+                            </div>
+                        </div>
+                        <h2>Our Values</h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- QUICK FACTS -->
+            <section class="quick-facts">
+                <!-- HEADER -->
+                <div class="qf-header">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M51.3333 3.81666C51.2687 3.67203 51.1633 3.54933 51.0302 3.46351C50.897 3.37769 50.7417 3.33246 50.5833 3.33333H27.3666C27.2272 3.33356 27.0901 3.36877 26.9678 3.43574C26.8455 3.50272 26.7419 3.5993 26.6666 3.71666L8.81665 32.05C8.73071 32.1734 8.6805 32.3181 8.67155 32.4682C8.6626 32.6182 8.69526 32.7679 8.76592 32.9006C8.83659 33.0333 8.94252 33.1439 9.07204 33.2203C9.20156 33.2966 9.34965 33.3358 9.49998 33.3333H22.2833L11 55.4167C10.9352 55.548 10.9048 55.6936 10.9115 55.8399C10.9182 55.9862 10.9619 56.1283 11.0385 56.2532C11.115 56.378 11.222 56.4814 11.3493 56.5537C11.4766 56.626 11.6202 56.6649 11.7666 56.6667H16.7666C16.8823 56.6674 16.9969 56.6441 17.103 56.5982C17.2092 56.5523 17.3047 56.4848 17.3833 56.4L46.6666 24.75C46.7829 24.6315 46.8611 24.481 46.8913 24.3177C46.9214 24.1545 46.9021 23.986 46.8359 23.8338C46.7696 23.6816 46.6594 23.5526 46.5194 23.4635C46.3794 23.3743 46.2159 23.329 46.05 23.3333H34.8166L51.2 4.69999C51.3056 4.58162 51.3745 4.43504 51.3981 4.27817C51.4218 4.1213 51.3993 3.96093 51.3333 3.81666V3.81666Z"
+                            fill="#F8F8F8" />
+                    </svg>
+                    quick facts
+                </div>
+
+                <!-- BACKGROUND -->
+                <div class="qf-container">
+                    <!-- PHONE DISPLAY -->
+                    <div class="qf-inner">
+                        <!-- CARDS -->
+                        <!-- 1 -->
+                        <div class="qf-card-container" id="qf-first">
+                            <div class="qf-card">
+                                <div class="qf-title">
+                                    Established
+                                </div>
+                                <hr>
+                                <div class="qf-subhead">
+                                    December 1982
+                                </div>
+                                <div class="qf-subdesc">
+                                    by Charles Geschke and John Warnock
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="qf-card-container">
+                            <div class="qf-card">
+                                <div class="qf-title">
+                                    Incorporated
+                                </div>
+                                <hr>
+                                <div class="qf-subhead">
+                                    October 1983
+                                </div>
+                                <div class="qf-subdesc">
+                                    in California; reincorporated in Delaware, May 1997
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="qf-card-container">
+                            <div class="qf-card">
+                                <div class="qf-title">
+                                    Initial public offering
+                                </div>
+                                <hr>
+                                <div class="qf-subhead">
+                                    August 20, 1986
+                                </div>
+                                <div class="qf-subdesc">
+                                    split-adjusted share price of US$0.17
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="qf-card-container">
+                            <div class="qf-card">
+                                <div class="qf-title">
+                                    Employees
+                                </div>
+                                <hr>
+                                <div class="qf-subhead">
+                                    More than 2600 worldwide
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="qf-card-container">
+                            <div class="qf-card">
+                                <div class="qf-title">
+                                    Corporate headquarters
+                                </div>
+                                <hr>
+                                <div class="qf-subhead">
+                                    San Jose, California, USA
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="qf-card-container">
+                            <div class="qf-card">
+                                <div class="qf-title">
+                                    Stock Symbol
+                                </div>
+                                <hr>
+                                <div class="qf-subhead">
+                                    ADBE (NASDAQ)
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 7 -->
+                        <div class="qf-card-container">
+                            <div class="qf-card">
+                                <div class="qf-title">
+                                    Revenue
+                                </div>
+                                <hr>
+                                <div class="qf-subhead">
+                                    Fiscal 2021 revenue:
+                                </div>
+                                <div class="qf-subdesc">
+                                    US$15.79 billion
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PHONE BUTTON -->
+                    <div class="qf-phone-btn">
+                        <span class="qf-btn"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TIMELINE -->
+            <section class="ab-timeline">
+                <!-- LINE -->
+                <div class="tl-date-container">
+                    <div class="tl-line"></div>
+                    <div class="tl-indicator" id="tl-indicator"></div>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="tl-content" id="tl-hpoint">
+                    <!-- EMPTY -->
+                </div>
+            </section>
+            <section class="special-mentions">
+                <div class="sp-card">
+                    <div class="sp-header">
+                        <h3>Our Leaders</h3>
+                        <ul>
+                            <li>Shantanu Narayen</li>
+                            <li>Gloria Chen</li>
+                            <li>Dana Rao</li>
+                            <li>Scott Belsky</li>
+                            <li>Dan Durn</li>
+                            <li>David Wadhwani</li>
+                            <li>Anil Chakravarthy</li>
+                            <li>Ann Lewnes</li>
+                            <li>Charles Geschke</li>
+                            <li>John Warnock</li>
+                        </ul>
+                        <a href="https://www.adobe.com/about-adobe/leaders.html">Learn more about Adobe leaders</a>
+                    </div>
+                </div>
+
+                <div class="sp-card">
+                    <div class="sp-header">
+                        <h3>Major Acquisitions</h3>
+                        <ul>
+                            <li>ConcentCal, 2021</li>
+                            <li>Frame.io, 2021</li>
+                            <li>Workfront, 2020</li>
+                            <li>Allegorithmic, 2019</li>
+                            <li>Marketo, 2018</li>
+                            <li>Magento, 2018</li>
+                            <li>Fotolia, 2015</li>
+                            <li>Behance, 2012</li>
+                            <li>Day Software, 2010</li>
+                            <li>Omniture, Inc., 2009</li>
+                            <li>Macromedia, Inc., 2005</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sp-card">
+                    <div>
+                        <h3>Industry Recognition</h3>
+                        <ul>
+                            <li>Gender Equality Index -Bloomberg</li>
+                            <li>Best Culture -Comparably</li>
+                            <li>Happiest Employees -Comparably</li>
+                            <li>Corporate Equality Index -DEI</li>
+                            <li>Disability Equality Index -DisabilityIN</li>
+                            <li>Next Big Things in Tech -Fast Company</li>
+                            <li>Brands That Matter -Fast Company</li>
+                            <li>Most Innovative Companies -Fast Company</li>
+                            <li>World's Best Workplaces -Forbes</li>
+                            <li>Best Employers for Diversity -Forbes</li>
+                            <li>JUST100 -Forbes & JUST Capital</li>
+                            <li>World's Most Admired Companies -Fortune</li>
+                            <li>World's Best Workplaces -Fortune</li>
+                            <li>Best Places to Work -Glassdoor</li>
+                            <li>Best Global Brands -Interbrand</li>
+                            <li>Companies That Care -People Magazine</li>
+                            <li>Dow Jones Sustainability Index -S&P Dow Jones Indices</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
-    </footer>
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer" style="margin-top:-100px">
+                <div class="social-container">
+                    <div class="message">
+                        FOLLOW OUR SOCIALS!
+                    </div>
+                    <div class="socials">
+                        <a target="_blank" href="https://www.youtube.com/user/AdobeSystems" class="soc-icon youtube">
+                            <svg width="60" height="42" viewBox="0 0 60 42" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M58.7501 7.26745C58.4103 6.05552 57.7486 4.95831 56.8351 4.09245C55.8958 3.19996 54.7446 2.56154 53.4901 2.23745C48.7951 0.999946 29.9851 0.999946 29.9851 0.999946C22.1434 0.910728 14.3037 1.30313 6.51008 2.17495C5.25555 2.52298 4.10649 3.17566 3.16508 4.07495C2.24008 4.96495 1.57008 6.06245 1.22008 7.26495C0.379311 11.7943 -0.0291918 16.3933 7.81143e-05 20.9999C-0.0299219 25.6024 0.377578 30.1999 1.22008 34.7349C1.56258 35.9324 2.23008 37.0249 3.15758 37.9074C4.08508 38.7899 5.24008 39.4274 6.51008 39.7649C11.2676 40.9999 29.9851 40.9999 29.9851 40.9999C37.8367 41.0893 45.6865 40.6969 53.4901 39.8249C54.7446 39.5009 55.8958 38.8624 56.8351 37.9699C57.7482 37.1043 58.4092 36.0069 58.7476 34.7949C59.6103 30.2673 60.0298 25.6664 60.0001 21.0574C60.065 16.429 59.646 11.8064 58.7501 7.26495V7.26745ZM24.0051 29.5599V12.4424L39.6551 21.0024L24.0051 29.5599Z"
+                                    fill="#F8F8F8" />
+                            </svg>
+                        </a>
+                        <a target="_blank" href="https://twitter.com/Adobe" class="soc-icon twitter">
+                            <svg width="50" height="40" viewBox="0 0 60 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.8475 49.2499C41.49 49.2499 53.8762 30.4887 53.8762 14.2474C53.8762 13.7224 53.8763 13.1899 53.8538 12.6649C56.2652 10.9192 58.3465 8.75798 60 6.28241C57.7474 7.2756 55.3604 7.93019 52.9163 8.22491C55.4908 6.68606 57.419 4.2648 58.3425 1.41116C55.9237 2.84413 53.2763 3.85006 50.5162 4.38491C48.6607 2.40875 46.2053 1.09961 43.5303 0.660254C40.8554 0.220903 38.1102 0.675869 35.72 1.95468C33.3298 3.23349 31.428 5.26477 30.3092 7.73389C29.1903 10.203 28.9169 12.9722 29.5312 15.6124C24.6365 15.367 19.8481 14.0954 15.4764 11.8802C11.1048 9.66498 7.24757 6.55558 4.155 2.75366C2.58503 5.46523 2.1059 8.67267 2.81492 11.7247C3.52394 14.7767 5.36796 17.4444 7.9725 19.1862C6.02077 19.1199 4.11195 18.5958 2.4 17.6562V17.8249C2.40337 20.6655 3.3874 23.4177 5.18578 25.6165C6.98415 27.8153 9.48655 29.3257 12.27 29.8924C11.2135 30.1835 10.1221 30.3286 9.02625 30.3237C8.25369 30.326 7.48268 30.2544 6.72375 30.1099C7.51045 32.5551 9.04227 34.693 11.1047 36.2242C13.1671 37.7554 15.6568 38.6031 18.225 38.6487C13.8621 42.0754 8.47275 43.9339 2.925 43.9249C1.94745 43.929 0.970587 43.8727 0 43.7562C5.63068 47.3459 12.1699 49.252 18.8475 49.2499V49.2499Z"
+                                    fill="#F8F8F8" />
+                            </svg>
+                        </a>
+                        <a target="_blank" href="https://www.facebook.com/Adobe/" class="soc-icon facebook">
+                            <svg width="45" height="45" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 30.1675C0 45.0825 10.8325 57.485 25 60V38.3325H17.5V30H25V23.3325C25 15.8325 29.8325 11.6675 36.6675 11.6675C38.8325 11.6675 41.1675 12 43.3325 12.3325V20H39.5C35.8325 20 35 21.8325 35 24.1675V30H43L41.6675 38.3325H35V60C49.1675 57.485 60 45.085 60 30.1675C60 13.575 46.5 0 30 0C13.5 0 0 13.575 0 30.1675Z"
+                                    fill="#F8F8F8" />
+                            </svg>
+                        </a>
+                        <a target="_blank" class="soc-icon linkedin" href="http://www.linkedin.com/company/adobe">
+                            <svg width="40" height="40" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.5725 17.4225H27.8575V22.0475C29.195 19.3875 32.625 16.9975 37.7775 16.9975C47.655 16.9975 50 22.2925 50 32.0075V50H40V34.22C40 28.6875 38.6625 25.5675 35.2575 25.5675C30.535 25.5675 28.5725 28.93 28.5725 34.2175V50H18.5725V17.4225V17.4225ZM1.425 49.575H11.425V16.9975H1.425V49.575V49.575ZM12.8575 6.375C12.8579 7.21319 12.6916 8.04309 12.3685 8.81647C12.0453 9.58985 11.5716 10.2913 10.975 10.88C9.766 12.0816 8.12953 12.7541 6.425 12.75C4.72347 12.7489 3.09078 12.078 1.88 10.8825C1.28553 10.2918 0.813465 9.58956 0.490859 8.81608C0.168254 8.0426 0.00144783 7.21306 0 6.375C0 4.6825 0.675 3.0625 1.8825 1.8675C3.09221 0.670396 4.7256 -0.000748027 6.4275 6.25661e-07C8.1325 6.25661e-07 9.7675 0.672501 10.975 1.8675C12.18 3.0625 12.8575 4.6825 12.8575 6.375Z"
+                                    fill="#F8F8F8" />
+                            </svg>
+                        </a>
+                        <a target="_blank" class="soc-icon instagram" href="https://www.instagram.com/adobe/">
+                            <svg width="50" height="50" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M44.9615 0.0656738H15.0386C6.79456 0.0656738 0.0874023 6.75027 0.0874023 14.9666V45.0332C0.0874023 53.2489 6.79456 59.9342 15.0386 59.9342H44.9615C53.2055 59.9342 59.9125 53.2488 59.9125 45.0332V14.9665C59.9125 6.75027 53.2055 0.0657338 44.9615 0.0657338V0.0656738ZM54.3752 45.033C54.3752 50.2059 50.1524 54.4151 44.9616 54.4151H15.0386C9.84778 54.4151 5.62492 50.2059 5.62492 45.033V25.6142H17.4537C16.5901 27.4407 16.1044 29.4784 16.1044 31.6272C16.1044 39.4322 22.4752 45.7811 30.3062 45.7811C38.1369 45.7811 44.5079 39.4322 44.5079 31.6272C44.5079 29.4784 44.0222 27.4407 43.1585 25.6142H54.3752V45.033H54.3752ZM24.4107 31.6274C24.4107 28.388 27.0553 25.752 30.3062 25.752C33.5573 25.752 36.2017 28.388 36.2017 31.6274C36.2017 34.8674 33.5573 37.5029 30.3062 37.5029C27.0554 37.5029 24.4107 34.8674 24.4107 31.6274V31.6274ZM54.3752 20.0954H38.5248C36.2027 18.4473 33.3675 17.4737 30.3062 17.4737C27.2449 17.4737 24.4094 18.4473 22.0878 20.0954H5.62492V14.9666C5.62492 9.79317 9.84778 5.58453 15.0386 5.58453H44.9616C50.1524 5.58453 54.3752 9.79317 54.3752 14.9666V20.0954H54.3753H54.3752ZM48.3749 8.93163H43.2419C42.3279 8.93163 41.5806 9.67671 41.5806 10.5873V15.7032C41.5806 16.6137 42.3279 17.3589 43.2419 17.3589H48.3749C49.2887 17.3589 50.0361 16.6137 50.0361 15.7032V10.5873C50.0361 9.67671 49.2888 8.93163 48.3749 8.93163Z"
+                                    fill="#F8F8F8" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="terms-container">
+                    <div class="terms">
+                        <a href="#">
+                            SITEMAP
+                        </a>
+                        <span>|</span>
+                        <a href="https://www.adobe.com/privacy.html">
+                            PRIVACY
+                        </a>
+                        <span>|</span>
+                        <a href="https://www.adobe.com/legal/terms.html">
+                            TERMS OF USE
+                        </a>
+                        <span>|</span>
+                        <span>
+                            ©2022
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+<script src="../assets/lib/js/slideshow.js" defer></script>
+<script src="../assets/lib/js/highlights-utils.js" defer></script>
 
 </html>
