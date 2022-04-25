@@ -352,6 +352,7 @@ a {
     flex: 8;
     opacity: 1;
     box-shadow: 0 0 15rem black;
+    /*transform: scaleY(.9);*/
 }
 
 .gallery-caption {
@@ -373,7 +374,7 @@ a {
     }
     .gallery-item {
       flex: 1;
-      height: 100px;
+      height: 100%;
     }
     .gallery-item.show {
       flex: 10;
