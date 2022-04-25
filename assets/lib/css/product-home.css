@@ -199,6 +199,8 @@ section.features .feature .feature-video img {
     }
 }
 
+
+
 /* APPS */
 .products-section .showcase {
     margin-top: 150px;
@@ -333,4 +335,32 @@ section.features .feature .feature-video img {
 
 .discover.more-apps .card-container .card {
     text-align: center;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+dt {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+@media (min-width:0px) {
+    * {
+        text-align: center;
+    }
+    #o-subheader {
+        text-align: start;
+        padding: .5rem;
+    }
+}
+
+@media (min-width:700px) {
+    * {
+        text-align: unset;
+    }
+    #o-subheader {
+        padding: 0;
+    }
 }
