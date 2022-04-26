@@ -109,7 +109,9 @@ a {
 .video-container video {
     height: 100%;
 }
-
+.video-container img {
+    height: 100%;
+}
 .content .block {
     display: flex;
     justify-content: center;
