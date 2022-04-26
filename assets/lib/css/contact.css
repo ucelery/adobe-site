@@ -472,3 +472,7 @@ ul li:before {
     content: "•";
     font-size: 10pt;
 }
+
+.nostyle li:before {
+    content: "";
+}
