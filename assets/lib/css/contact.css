@@ -293,3 +293,69 @@ body {
         font-size: 3rem;
     }
 }
+
+/* */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("https://helpx.adobe.com/content/dam/help/en/creative-cloud/how-to/adobe-stock-sell-photos-videos-vector-online_1408x792.jpg");
+    /*min-height: 50rem;*/
+  }
+  
+  .bgimg-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://adobe.arizona.edu/sites/default/files/styles/uaqs_full_width_xs/public/AdobeCreativeCloud_MediaRow.jpg?itok=B8q1rkUb&timestamp=1602789662");
+    /*min-height: 50rem;*/
+  }
+  
+  .bgimg-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://helpx.adobe.com/content/dam/help/en/photoshop/how-to/blur-background-for-focal-point/jcr%3acontent/main-pars/image_1240569604/selective-focus-blur_1408x792.jpg");
+    /*min-height: 50rem;*/
+  }
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+}
+/*Plan-price page */
+
+.o-table td{
+    color: #f7f3f0;
+    text-align: justify;
+}
+.o-table thead th{
+    color: blueviolet;
+    border-bottom: 1.8px solid;
+    font-size: large;
+    border-color: rgba(248, 244, 227,.75);
+    pointer-events: none;
+    padding-bottom: 1rem;
+}
+.o-table tbody {
+    font-family: 'hando',sans-serif;
+}
+.o-table th{
+    color: #f14a4a;
+}
+.o-table th{
+    color: #f14a4a;
+}
+.o-table tr:hover {
+    background-color: rgba(69, 68, 68,.5);
+}
+.o-table tr:hover th{
+    color: #f7f3f0;
+}
+.sm-icon {
+    content: "";
+}
+.buy-btn {
+    content: "";
+}
