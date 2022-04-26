@@ -378,8 +378,10 @@ body {
 }
 
 /*Plan-price page */
-
-.o-table td {
+.o-tiny {
+    font-size: x-small;
+}
+.o-table td{
     color: #f7f3f0;
     text-align: justify;
 }
@@ -390,11 +392,11 @@ body {
     font-size: large;
     border-color: rgba(248, 244, 227, .75);
     pointer-events: none;
-    padding-bottom: 1rem;
+    padding: .5em 0em ;
 }
 
 .o-table tbody {
-    font-family: 'hando', sans-serif;
+    font-family: sans-serif;
 }
 
 .o-table th {
@@ -420,7 +422,12 @@ body {
 .buy-btn {
     content: "";
 }
-
+.o-block  {
+    display: flex;
+    padding: .2rem;
+    align-items: center;
+    justify-content: start;
+}
 /* MODAL */
 .ab-modal-wrapper {
     position: fixed;
@@ -436,13 +443,19 @@ body {
 
 .ab-modal-container {
     height: 60%;
-    width: 50%;
+    width: 90%;
     min-width: 400px;
     background-color: whitesmoke;
     margin: auto;
     overflow: auto;
+    border-radius: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .hide {
     display: none;
 }
+
+ul{ list-style: none; }
+ul li:before{ content:"•"; font-size:10pt; }
