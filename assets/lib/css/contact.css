@@ -441,8 +441,13 @@ body {
     background-color: whitesmoke;
     margin: auto;
     overflow: auto;
+    padding: 50px;
 }
 
 .hide {
+    display: none;
+}
+
+.pp-modal-cont {
     display: none;
 }
