@@ -385,12 +385,17 @@ a {
     height: 100%;
 }
 
+footer a:hover{
+    color: red;
+}
+
 /* FOOTER */
 .footer {
     width: 100%;
     position: relative;
     margin-top: 200px;
-    padding: 100px 0px;
+    padding-top: 100px;
+    padding-bottom: .5rem;
 }
 
 .footer .terms-container {
@@ -431,4 +436,42 @@ a {
     align-items: center;
     justify-content: center;
     margin: 0 10px;
+}
+
+.sitemap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    font-family: 'hando',sans-serif;
+}
+
+@media (max-width:992px) {
+    .sitemap {
+        flex-direction: column;
+    }
+    .dropright a {
+        padding: 0 .3rem;
+    }
+}
+
+.dropright {
+    display: none;
+    padding: 1px;
+}
+.dropright a{
+    padding: 0 5px;
+}
+
+.dropright:target {
+    display: block;
+}
+
+.exit:target .dropright{
+    display: none;
+}
+
+#hoversvg:hover {
+    fill: red;
 }
