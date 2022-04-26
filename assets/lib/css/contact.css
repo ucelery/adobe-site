@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    background-color: rgba(138, 134, 134,.25);
+    background-color: rgba(138, 134, 134, .25);
 }
 
 .banner {
@@ -35,35 +35,37 @@ body {
 
 /*https://css-tricks.com/how-to-create-neon-text-with-css/ */
 .neon-title {
-    animation: pulsate 1.25s ease-in-out infinite alternate;    
+    animation: pulsate 1.25s ease-in-out infinite alternate;
 }
 
 @keyframes pulsate {
     100% {
-      text-shadow:
-        0 0 .4rem #fefae0,
-        0 0 1rem #fefae0,
-        0 0 1.5rem #fefae0,
-        0 0 2rem #fefae0,
-        0 0 2.8rem #f14a4a,
-        0 0 3.7rem #f14a4a,
-        0 0 4.6rem #f14a4a,
-        0 0 5.5rem #ce1e1e,
-        0 0 6.4rem #d70b0b;
+        text-shadow:
+            0 0 .4rem #fefae0,
+            0 0 1rem #fefae0,
+            0 0 1.5rem #fefae0,
+            0 0 2rem #fefae0,
+            0 0 2.8rem #f14a4a,
+            0 0 3.7rem #f14a4a,
+            0 0 4.6rem #f14a4a,
+            0 0 5.5rem #ce1e1e,
+            0 0 6.4rem #d70b0b;
     }
+
     0% {
         text-shadow:
-          0 0 .2rem #fefae0,
-          0 0 5rem #fefae0,
-          0 0 1rem #fefae0,
-          0 0 1.4rem #fefae0,
-          0 0 2rem #f14a4a,
-          0 0 2.8rem #f14a4a,
-          0 0 3.5rem #f14a4a,
-          0 0 4.2rem #ce1e1e,
-          0 0 4.9rem #d70b0b;
-      }
-  }
+            0 0 .2rem #fefae0,
+            0 0 5rem #fefae0,
+            0 0 1rem #fefae0,
+            0 0 1.4rem #fefae0,
+            0 0 2rem #f14a4a,
+            0 0 2.8rem #f14a4a,
+            0 0 3.5rem #f14a4a,
+            0 0 4.2rem #ce1e1e,
+            0 0 4.9rem #d70b0b;
+    }
+}
+
 /* w-i-p
 .fill-text {
     background-color: #e9f0eb;
@@ -119,13 +121,15 @@ body {
 
 .o-card {
     border-radius: 1rem;
-    font-family: 'hando',sans-serif;
+    font-family: 'hando', sans-serif;
     color: #312F2F !important;
 }
+
 .o-hover:hover {
     transition: all .7s;
     transform: scale(1.05);
 }
+
 .o-card a {
     color: #312F2F;
 }
@@ -135,46 +139,66 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: 0; 
-    font-size: 3rem; /* oddly enough, this font size is only not responsiveness on min-width 768 up to 992, applied a weak-ass fix on the bottom */
+    opacity: 0;
+    font-size: 3rem;
+    /* oddly enough, this font size is only not responsiveness on min-width 768 up to 992, applied a weak-ass fix on the bottom */
     padding: 1rem;
 }
 
-#card-i:hover{
+#card-i:hover {
     background-color: rgb(127, 208, 255);
     transition: none;
 }
+
 #card-t:hover {
     background-color: rgb(176, 255, 127);
     transition: none;
 }
+
 #card-e:hover {
     background-color: rgb(189, 127, 255);
     transition: none;
 }
-.card:hover .o-card-change{
+
+.card:hover .o-card-change {
     animation: fade-in .7s;
     opacity: 1;
     height: 75%;
 }
+
 @keyframes fade-in {
-    0% {opacity:0;height: 30%;}
-    100% {opacity:1;height: 75%;}
+    0% {
+        opacity: 0;
+        height: 30%;
+    }
+
+    100% {
+        opacity: 1;
+        height: 75%;
+    }
 }
+
 .card:hover .o-hide {
     animation: fade-out .3s;
     opacity: 0;
 }
+
 @keyframes fade-out {
-    100% {opacity:0;}
-    0% {opacity:1;}
+    100% {
+        opacity: 0;
+    }
+
+    0% {
+        opacity: 1;
+    }
 }
 
 .o-card-2 {
     border-radius: 1rem;
-    font-family: 'hando',sans-serif;
+    font-family: 'hando', sans-serif;
     color: #433f3f !important;
 }
+
 .o-card-2 a {
     color: #433f3f;
 }
@@ -188,27 +212,32 @@ body {
     background-color: transparent;
     color: #312F2F;
 }
+
 .o-list a:hover {
     text-decoration: underline;
     text-decoration-color: #5292e5;
 }
+
 .o-list-2 {
     background-color: transparent;
     color: #433f3f;
 }
+
 .o-list-2 a:hover {
     text-decoration: underline;
     text-decoration-color: #5292e5;
 }
+
 .o-list-h {
     color: #5292e5;
 }
+
 .news-ticker div {
     white-space: nowrap;
     font-size: xx-large;
     text-transform: uppercase;
     animation: scrollnews 20s linear infinite;
-    font-family: 'hando',sans-serif;
+    font-family: 'hando', sans-serif;
 }
 
 
@@ -226,7 +255,7 @@ body {
     padding-left: 3rem;
 }
 
-.news-ticker:hover div{
+.news-ticker:hover div {
     animation-play-state: paused;
 }
 
@@ -247,41 +276,58 @@ body {
 .background-text {
     position: absolute;
     display: none;
-    font-family: 'Altero','Portico-outline',Georgia;
+    font-family: 'Altero', 'Portico-outline', Georgia;
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
 #cce-icon {
-    content: ""; /*placeholder*/
+    content: "";
+    /*placeholder*/
     font-size: 20rem;
 }
+
 #ps-icon {
-    content: ""; /*placeholder*/
+    content: "";
+    /*placeholder*/
 }
+
 #dr-icon {
-    content: ""; /*placeholder*/
+    content: "";
+    /*placeholder*/
 }
+
 #pp-icon {
-    content: ""; /*placeholder*/
+    content: "";
+    /*placeholder*/
 }
+
 #xd-icon {
-    content: ""; /*placeholder*/
+    content: "";
+    /*placeholder*/
 }
+
 #ai-icon {
-    content: ""; /*placeholder*/
+    content: "";
+    /*placeholder*/
 }
+
 #ae-icon {
-    content: ""; /*placeholder*/
+    content: "";
+    /*placeholder*/
 }
+
 #ar-icon {
-    content: ""; /*placeholder*/
+    content: "";
+    /*placeholder*/
 }
-@media (min-width: 0){
+
+@media (min-width: 0) {
     .o-card-change {
         font-size: 3rem;
     }
 }
+
 @media (min-width: 768px) {
     .o-card-change {
         font-size: 2rem;
@@ -295,67 +341,108 @@ body {
 }
 
 /* */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
     position: relative;
     opacity: 1;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  
-  }
-  .bgimg-1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("https://helpx.adobe.com/content/dam/help/en/creative-cloud/how-to/adobe-stock-sell-photos-videos-vector-online_1408x792.jpg");
+
+}
+
+.bgimg-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://helpx.adobe.com/content/dam/help/en/creative-cloud/how-to/adobe-stock-sell-photos-videos-vector-online_1408x792.jpg");
     /*min-height: 50rem;*/
-  }
-  
-  .bgimg-2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://adobe.arizona.edu/sites/default/files/styles/uaqs_full_width_xs/public/AdobeCreativeCloud_MediaRow.jpg?itok=B8q1rkUb&timestamp=1602789662");
+}
+
+.bgimg-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://adobe.arizona.edu/sites/default/files/styles/uaqs_full_width_xs/public/AdobeCreativeCloud_MediaRow.jpg?itok=B8q1rkUb&timestamp=1602789662");
     /*min-height: 50rem;*/
-  }
-  
-  .bgimg-3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://helpx.adobe.com/content/dam/help/en/photoshop/how-to/blur-background-for-focal-point/jcr%3acontent/main-pars/image_1240569604/selective-focus-blur_1408x792.jpg");
+}
+
+.bgimg-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://helpx.adobe.com/content/dam/help/en/photoshop/how-to/blur-background-for-focal-point/jcr%3acontent/main-pars/image_1240569604/selective-focus-blur_1408x792.jpg");
     /*min-height: 50rem;*/
-  }
+}
 
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-      background-attachment: scroll;
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
     }
 }
+
 /*Plan-price page */
 
-.o-table td{
+.o-table td {
     color: #f7f3f0;
     text-align: justify;
 }
-.o-table thead th{
+
+.o-table thead th {
     color: blueviolet;
     border-bottom: 1.8px solid;
     font-size: large;
-    border-color: rgba(248, 244, 227,.75);
+    border-color: rgba(248, 244, 227, .75);
     pointer-events: none;
     padding-bottom: 1rem;
 }
+
 .o-table tbody {
-    font-family: 'hando',sans-serif;
+    font-family: 'hando', sans-serif;
 }
-.o-table th{
+
+.o-table th {
     color: #f14a4a;
 }
-.o-table th{
+
+.o-table th {
     color: #f14a4a;
 }
+
 .o-table tr:hover {
-    background-color: rgba(69, 68, 68,.5);
+    background-color: rgba(69, 68, 68, .5);
 }
-.o-table tr:hover th{
+
+.o-table tr:hover th {
     color: #f7f3f0;
 }
+
 .sm-icon {
     content: "";
 }
+
 .buy-btn {
     content: "";
+}
+
+/* MODAL */
+.ab-modal-wrapper {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    width: 100vw;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    color: black;
+    display: flex;
+}
+
+.ab-modal-container {
+    height: 60%;
+    width: 50%;
+    min-width: 400px;
+    background-color: whitesmoke;
+    margin: auto;
+    overflow: auto;
+}
+
+.hide {
+    display: none;
 }
