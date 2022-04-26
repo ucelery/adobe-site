@@ -490,9 +490,11 @@ footer svg:hover path{
 .va-icon {
     position: absolute;
     bottom: 20px;
+    left: 20%;
+    right: 20%;
 }
 .va-icon svg{
-    width: 75%;
+    width: 100%;
     min-width: 50%;
     height: auto;
     cursor:wait;
