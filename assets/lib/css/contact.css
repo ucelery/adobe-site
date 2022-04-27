@@ -500,6 +500,12 @@ body {
 .payment a:hover {
     text-decoration: underline;
 }
+.mix {
+    background: -webkit-linear-gradient(323deg,#eee, #f14a4a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /* MODAL */
 .ab-modal-wrapper {
     position: fixed;
@@ -511,6 +517,9 @@ body {
     left: 0;
     color: #312F2F;
     display: flex;
+}
+.o-header-o {
+    font-family: 'Portico-outline';
 }
 
 .ab-modal-container {
@@ -532,6 +541,13 @@ body {
 
 .pp-modal-cont {
     display: none;
+}
+.pp-modal-cont .pp-active {
+    content: "";
+}
+
+.pp-active {
+    display: block;
 }
 
 ul {
