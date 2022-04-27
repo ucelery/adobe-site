@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+body {
+    overflow: hidden;
+}
+
 html * {
     scrollbar-color: #4E4E4E #202225;
     scrollbar-width: thin;
@@ -370,11 +374,17 @@ a {
     height: 100%;
 }
 
+/* FOOTER */
 footer a:hover {
     color: red;
+    transition: all .3s ease-out;
 }
 
-/* FOOTER */
+footer svg:hover path {
+    fill: red;
+    transition: all .3s ease-out;
+}
+
 .footer {
     width: 100%;
     position: relative;
@@ -424,6 +434,7 @@ footer a:hover {
 }
 
 .sitemap {
+    padding-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -440,11 +451,16 @@ footer a:hover {
     .dropright a {
         padding: 0 .3rem;
     }
+
+    .dropright:target {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .dropright {
     display: none;
-    padding: 1px;
+    padding: 0 1px;
 }
 
 .dropright a {
@@ -452,7 +468,7 @@ footer a:hover {
 }
 
 .dropright:target {
-    display: block;
+    display: flex;
 }
 
 .exit:target .dropright {
@@ -460,6 +476,7 @@ footer a:hover {
 }
 
 #hoversvg:hover {
+    transition: all .3s ease-out;
     fill: red;
 }
 
@@ -571,4 +588,42 @@ footer a:hover {
 .card-gallery .card-gallery-container {
     width: auto;
     margin: 0px auto;
+}
+
+.va-icon {
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+    right: 20%;
+}
+
+.va-icon svg {
+    width: 100%;
+    min-width: 50%;
+    height: auto;
+    cursor: wait;
+}
+
+.home-btn {
+    position: absolute;
+    top: 3.2%;
+    left: 45%;
+    right: 45%;
+}
+
+.home-btn svg {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.home-btn svg:hover path {
+    transition: all .3s ease-out;
+    fill: red;
+    /* HEYY PSST, if u think we could copy the rainbow-text and use it for this SVG, it will be da bomba, but not linear-gradient, radial ofc */
+}
+
+.menu-btn svg:hover path {
+    stroke: red;
+    transition: all .3s ease-out;
 }
