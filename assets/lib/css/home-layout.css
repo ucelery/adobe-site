@@ -601,7 +601,6 @@ footer svg:hover path {
     width: 100%;
     min-width: 50%;
     height: auto;
-    cursor: wait;
 }
 
 .home-btn {
@@ -628,7 +627,7 @@ footer svg:hover path {
     transition: all .3s ease-out;
 }
 
-.light_box{
+.light_box {
     display: none;
     position: fixed;
     z-index: 1500;
@@ -639,7 +638,11 @@ footer svg:hover path {
     padding: 1em;
     background: rgba(0, 0, 0, 0.8);
 }
-.light_box:target {display: block;}
+
+.light_box:target {
+    display: block;
+}
+
 .light_box img {
     display: block;
     width: 100%;
@@ -648,4 +651,97 @@ footer svg:hover path {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-  }
+}
+
+/* LIGHTBOX ICON */
+.hp-lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.hp-lightbox {
+    display: none;
+}
+
+.hp-lightbox:target {
+    display: block;
+}
+
+.hp-lightbox .lb-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.lb-item-holder {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: 658px;
+}
+
+.lb-container .lb-devcon {
+    padding: 0px 50px;
+}
+
+.lb-item-holder>* {
+    width: 33%;
+    margin: 0px 10px;
+}
+
+.lb-item-holder>* img {
+    width: 100%;
+}
+
+.devpfp {
+    margin: 0px 25px;
+    position: relative;
+}
+
+.devpfp .dp-name span {
+    transform: translateX(5px)
+}
+
+.devpfp .dp-name {
+    width: 100%;
+    height: 100%;
+    font-family: 'chronicnormal';
+    letter-spacing: .3rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+
+    opacity: 0;
+    transition: .4s;
+}
+
+.devpfp .dp-name:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 700px) {
+    .devpfp {
+        margin: 0px 0px;
+    }
+
+    .lb-container .lb-devcon {
+        padding: 0px 5%;
+    }
+}
