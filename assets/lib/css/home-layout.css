@@ -329,9 +329,9 @@ a {
     height: 400px;
     width: 150%;
     margin-left: -25%;
-    background: linear-gradient(45deg, red, orange, rgb(255, 208, 0), yellow, rgb(0, 255, 0), rgb(85, 231, 85), rgb(17, 247, 255), rgb(77, 77, 248), rgb(138, 29, 216), rgb(77, 77, 248), rgb(17, 247, 255), rgb(85, 231, 85), rgb(0, 255, 0), yellow, rgb(255, 208, 0), orange, red);
+    /* background: linear-gradient(45deg, red, orange, rgb(255, 208, 0), yellow, rgb(0, 255, 0), rgb(85, 231, 85), rgb(17, 247, 255), rgb(77, 77, 248), rgb(138, 29, 216), rgb(77, 77, 248), rgb(17, 247, 255), rgb(85, 231, 85), rgb(0, 255, 0), yellow, rgb(255, 208, 0), orange, red);
     background-size: 1800% 1800%;
-    animation: bg-animation 20s infinite;
+    animation: bg-animation 20s infinite; */
     transform: rotate(-5deg);
     position: relative;
     display: flex;
@@ -345,7 +345,9 @@ a {
     width: 100%;
     text-align: center;
     letter-spacing: -8px;
-    color: rgba(255, 255, 255, 0.5)
+    white-space: nowrap;
+    justify-content: center;
+    opacity: .8;
 }
 
 .partners .partner-container {
@@ -367,11 +369,50 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    animation: float 6s ease-in-out infinite;
 }
 
 .partners img {
     object-fit: contain;
     height: 100%;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-30px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.item.--p-delay-1 {
+    animation-delay: 1s
+}
+
+.item.--p-delay-2 {
+    animation-delay: 2s
+}
+
+.item.--p-delay-3 {
+    animation-delay: 3s
+}
+
+.item.--p-delay-4 {
+    animation-delay: 4s
+}
+
+.item.--p-delay-5 {
+    animation-delay: 5s
+}
+
+.item.--p-delay-6 {
+    animation-delay: 6s
 }
 
 /* FOOTER */
