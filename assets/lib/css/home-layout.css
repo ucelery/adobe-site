@@ -670,10 +670,13 @@ footer svg:hover path {
 .hp-lightbox {
     display: none;
     cursor: default;
+
 }
 
 .hp-lightbox:target {
     display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .hp-lightbox .lb-container {
