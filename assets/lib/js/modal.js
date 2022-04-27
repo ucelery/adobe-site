@@ -9,9 +9,12 @@ window.onclick = function (event) {
 
 const openModal = (id) => {
     modal.classList.remove('hide');
+    const items = document.querySelectorAll('.pp-modal-cont');
+    items.forEach(itm=>itm.classList.remove('pp-active'))
     const content = document.getElementById(id);
-    const clone = content.cloneNode(true);
-    clone.removeChild(clone.firstElementChild); // content.removeChild(content.firstElementChild)
-    clone.style.display = "block";
-    modalContent[0].appendChild(clone);
+    content.classList.add('pp-active')
+    //const clone = content.cloneNode(true);
+    //clone.removeChild(clone.firstElementChild); // content.removeChild(content.firstElementChild)
+    //clone.style.display = "block";
+    //modalContent[0].appendChild(clone);
 }
