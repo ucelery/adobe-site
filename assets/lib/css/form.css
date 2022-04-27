@@ -1,0 +1,273 @@
+/* BANNER */
+.banner {
+    margin-bottom: 50px;
+}
+
+.banner .back-btn {
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    padding-left: 5%;
+}
+
+.back-btn .btn-text {
+    font-size: 1.5rem;
+    font-family: 'hando';
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.img-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img-container {
+    height: 10vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container .filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+/* FORM */
+.form-container {
+    padding-left:  20%;
+    padding-right: 20%;
+    padding-top: 5%;
+}
+
+@media only screen and (max-width: 740px) {
+    .form-container {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
+    }
+}
+
+h2 {
+    font-family: 'Altero';
+    font-size: 1.4rem;
+}
+
+form legend {
+    font-family: 'hando';
+    font-size: 2rem;
+    margin-bottom: 2.5%;
+}
+
+.form-header {
+    font-family: 'Altero';
+    font-size: 1.4rem;
+    margin-top: 40px;
+}
+
+.form-sub-header {
+    font-family: 'Altero';
+    font-size: 1rem;
+}
+
+.form-row {
+    display: flex;
+    /* align-items: flex-start; */
+}
+
+.form-row>div {
+    margin: 10px 10px;
+    width: 100%;
+}
+
+.input-group {
+    overflow: hidden;
+}
+
+.input-group select {
+    width: 100%;
+}
+
+.input-group textarea,
+.input-group input,
+.input-group .rs-select2,
+.radio-btn-label {
+    font-family: 'Rockwell';
+}
+
+.input-group.form-btn {
+    border: none;
+}
+
+.input-group textarea {
+    min-width: 100%;
+    min-height: 100px;
+    border: none;
+    resize: none;
+}
+
+.input-group .select2-dropdown {
+    color: white;
+    background-color: #1c1b22;
+}
+
+.input-group .select2-container--open .select2-dropdown--below {
+    border-color: transparent;
+}
+
+.input-group.custom-drop-down {
+    overflow: unset;
+}
+
+.cus-label {
+    font-family: 'hando';
+    font-size: 1rem;
+}
+
+/* NUMBER INPUT */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.radio-buttons {
+    margin-top: 5px;
+    display: flex;
+}
+
+.radio-btn {
+    width: 100%;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+.form-container fieldset:nth-of-type(n + 2) {
+    margin-top: 50px;
+}
+
+.custom-upload {
+    justify-content: center;
+    font-family: 'Monospace';
+    font-size: 1rem;
+    display: block;
+    margin: 20px 0;
+}
+.custom-upload span{
+    padding: 2.8px;
+    cursor: pointer;
+    --angle: 0deg;
+    border: 2.5px solid white;
+    border-image: linear-gradient(var(--angle), rgb(0, 6, 128), rgb(255, 0, 60)) 1;
+    animation: 12s rotate linear infinite;
+    opacity: .5;
+    transition: .15s;
+}
+
+.custom-upload span:hover {
+    opacity: 1;
+    font-weight: bolder;
+}
+
+.custom-button {
+    margin: 0; /*tbc...*/
+}
+
+#Signature:valid {display: flex;overflow: hidden;}
+#Signature:invalid {display: none;}
+#Cover:valid  {display: flex;overflow: hidden;}
+#Cover:invalid {display: none;}
+#CV:valid {display: flex;}
+#CV:invalid {display: none;overflow: hidden;}
+ 
+@keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+}
+  
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+  
+  
+input[type="file"]::-webkit-file-upload-button {
+    display: none;
+}
+
+.disclaimer {
+    padding: 20px;
+    font-family: 'Rockwell';
+    font-size: 1rem;
+}
+
+.disclaimer p {
+    text-align: justify;
+}
+
+#submit,
+#reset {
+    height: 100%;
+    cursor: pointer;
+    font-size: 24px;
+    transition: .2s;
+    width: auto;
+    padding: 0 20px;
+}
+
+#submit {
+    float: right;
+}
+
+#submit:hover,
+#reset:hover {
+    opacity: .4;
+    color: red;
+}
+
+@media only screen and (max-width: 400px) {
+    .empty {
+        display: none;
+    }
+    #reset,
+    #submit {
+        float: none;
+    }
+    .input-group.form-btn {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .form-row {
+        display: inline-block;
+        width: 100%;
+    }
+    .form-row>div {
+        margin: 10px 0px;
+    }
+    .custom-upload span:hover {
+        opacity: 1;
+        font-weight: normal;
+    }
+    .disclaimer {
+        padding: 20px;
+        font-family: 'Rockwell';
+        font-size: .8rem;
+    }
+}

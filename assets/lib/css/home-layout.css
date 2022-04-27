@@ -1,0 +1,629 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    scrollbar-color: #4E4E4E #202225;
+    scrollbar-width: thin;
+    background-color: #07060A;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+body {
+    overflow: hidden;
+}
+
+html * {
+    scrollbar-color: #4E4E4E #202225;
+    scrollbar-width: thin;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #4E4E4E;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #202225;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #99a3ac;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+/* HEADER */
+.home-wrapper .header {
+    position: absolute;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 0px 5vw;
+    width: 100%;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    font-family: 'CodeNext_ExtraBold';
+    font-size: 2rem;
+    color: red;
+}
+
+.company .company-text {
+    margin-left: 25px;
+}
+
+/* SLIDE MENU */
+.slide-menu {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    width: 400px;
+    transition: 0.35s;
+    z-index: 999;
+}
+
+.buttons .sl-dropdown>div {
+    margin-left: 30px;
+}
+
+.slide-menu .buttons .sl-dropdown>div a {
+    font-size: 2rem;
+}
+
+.sl-dropdown {
+    max-height: 0px;
+    transition: .4s;
+    overflow: hidden;
+
+}
+
+#dropdown:hover .sl-dropdown {
+    max-height: 100%;
+}
+
+@media only screen and (max-width: 720px) {
+    .slide-menu {
+        width: 100%;
+        right: -100%;
+    }
+
+    .slide-menu .menu-btn {
+        position: fixed !important;
+        left: auto;
+        right: 50px;
+    }
+}
+
+.slide-menu .buttons {
+    margin-left: 100px;
+    margin-top: 120px;
+}
+
+.slide-menu .buttons .btn a {
+    font-family: 'Rockwell';
+    color: black;
+    font-size: 2.5rem;
+}
+
+.shown-menu {
+    background-color: #fbfbfd;
+    right: 0;
+}
+
+.shown-menu .menu-btn path {
+    stroke: black;
+}
+
+.menu-btn {
+    position: absolute;
+    left: 20px;
+    top: 35px;
+    height: auto;
+    cursor: pointer;
+}
+
+.btn {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    display: block;
+    text-align: left;
+}
+
+.rainbow-text:hover {
+    background-size: 500%;
+    background-image: linear-gradient(45deg, red, orange, rgb(255, 208, 0), yellow, rgb(0, 255, 0), rgb(85, 231, 85), rgb(17, 247, 255), rgb(77, 77, 248), rgb(138, 29, 216), rgb(77, 77, 248), rgb(17, 247, 255), rgb(85, 231, 85), rgb(0, 255, 0), yellow, rgb(255, 208, 0), orange, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: bg-animation 10s infinite alternate;
+}
+
+.rainbow-text-fix {
+    background-size: 500%;
+    background-image: linear-gradient(45deg, red, orange, rgb(255, 208, 0), yellow, rgb(0, 255, 0), rgb(85, 231, 85), rgb(17, 247, 255), rgb(77, 77, 248), rgb(138, 29, 216), rgb(77, 77, 248), rgb(17, 247, 255), rgb(85, 231, 85), rgb(0, 255, 0), yellow, rgb(255, 208, 0), orange, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: bg-animation 10s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+.logo img {
+    width: 50px;
+}
+
+/* VIDEO BANNER */
+.video-banner {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.vid-filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.video-foreground video {
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.video-banner .gradient {
+    background-image: url(../../images/filters/gradient.png);
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.down-arrow-icon {
+    position: absolute;
+    bottom: 25px;
+    right: 50%;
+    translate: 24px 0px;
+}
+
+/* STATEMENT SECTION */
+.statement-section {
+    position: absolute;
+    top: 40vh;
+    left: 7%;
+}
+
+.statement-section .statement-header {
+    font-family: 'CodeNext_ExtraBold';
+    font-size: 3rem;
+}
+
+.statement-section .details {
+    font-family: 'Rockwell';
+    font-size: 1.2rem;
+    width: 70%;
+}
+
+/* SHOWCASES */
+.showcase .title {
+    font-family: 'CodeNext_ExtraBold';
+    font-size: 3rem;
+    height: 100%;
+}
+
+.showcase-container {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding-bottom: 20px;
+}
+
+.showcase .card:first-child {
+    margin-left: 0;
+}
+
+.showcase .card:last-child {
+    margin-right: 0;
+}
+
+.showcase .card {
+    width: 20vw;
+    min-width: 210px;
+    height: 90%;
+    min-height: 290px;
+    display: inline-block;
+    background-color: rgb(138, 29, 216);
+    margin: 5px 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .showcase .title {
+        display: none;
+    }
+
+    .showcase {
+        padding: 0 5%;
+    }
+
+    .card-gallery {
+        padding: 0px 0px;
+    }
+}
+
+/*  EVENTS */
+.events {
+    position: relative;
+    height: 800px;
+    margin-top: 300px;
+    width: 100%;
+    user-select: none;
+}
+
+.events .background {
+    position: absolute;
+    width: 100%;
+    min-width: 1400px;
+}
+
+.events-container {
+    position: absolute;
+    width: 100vw;
+    height: 380px;
+    margin-top: 240px;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.events .card.size20 {
+    width: 400px;
+    min-width: 450px;
+}
+
+.events .card {
+    height: 350px;
+    width: 33%;
+    background-color: rgb(138, 29, 216);
+    margin: 0px 50px;
+    display: inline-block;
+}
+
+/* PARTNERS */
+.partners {
+    padding: 100px 0px;
+    margin-top: 200px;
+    height: 400px;
+    width: 150%;
+    margin-left: -25%;
+    background: linear-gradient(45deg, red, orange, rgb(255, 208, 0), yellow, rgb(0, 255, 0), rgb(85, 231, 85), rgb(17, 247, 255), rgb(77, 77, 248), rgb(138, 29, 216), rgb(77, 77, 248), rgb(17, 247, 255), rgb(85, 231, 85), rgb(0, 255, 0), yellow, rgb(255, 208, 0), orange, red);
+    background-size: 1800% 1800%;
+    animation: bg-animation 20s infinite;
+    transform: rotate(-5deg);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.partners .partner-header {
+    font-family: 'Altero';
+    font-size: 7rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    letter-spacing: -8px;
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.partners .partner-container {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}
+
+.track {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+}
+
+.track .item {
+    margin: 15px 15px;
+    width: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.partners img {
+    object-fit: contain;
+    height: 100%;
+}
+
+/* FOOTER */
+footer a:hover {
+    color: red;
+    transition: all .3s ease-out;
+}
+
+footer svg:hover path {
+    fill: red;
+    transition: all .3s ease-out;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    margin-top: 200px;
+    padding-top: 100px;
+    padding-bottom: .5rem;
+}
+
+.footer .terms-container {
+    display: flex;
+    text-align: center;
+    font-family: 'Altero';
+    margin: 10px 0px;
+    justify-content: center;
+}
+
+.terms-container .terms a {
+    padding: 0px 10px;
+}
+
+.terms-container .terms span:last-child {
+    padding: 0px 10px;
+}
+
+/* .footer .social-container {
+    position: absolute;
+    bottom: 50px;
+    width: 300px;
+} */
+
+.social-container .message {
+    text-align: center;
+    font-family: 'Altero';
+    margin: 10px 0px;
+}
+
+.footer .socials {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .soc-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.sitemap {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    font-family: 'hando', sans-serif;
+}
+
+@media (max-width:992px) {
+    .sitemap {
+        flex-direction: column;
+    }
+
+    .dropright a {
+        padding: 0 .3rem;
+    }
+
+    .dropright:target {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.dropright {
+    display: none;
+    padding: 0 1px;
+}
+
+.dropright a {
+    padding: 0 5px;
+}
+
+.dropright:target {
+    display: flex;
+}
+
+.exit:target .dropright {
+    display: none;
+}
+
+#hoversvg:hover {
+    transition: all .3s ease-out;
+    fill: red;
+}
+
+/* CARD */
+/* APPS */
+.products-section .showcase {
+    margin-top: 150px;
+}
+
+.products-section .showcase-container {
+    display: inline-block;
+}
+
+.products-section .showcase-container .card {
+    white-space: normal;
+}
+
+#popular-section {
+    margin-top: 250px;
+    padding-top: 100px;
+}
+
+.products-section>* {
+    margin: 150px 0px;
+}
+
+.misc-section {
+    margin-bottom: 100px;
+}
+
+.card-gallery {
+    display: flex;
+    height: 30vw;
+    max-height: 310px;
+    padding: 0px 50px;
+    user-select: none;
+    min-height: 430px;
+}
+
+.card-gallery .title {
+    width: 105px;
+}
+
+.card-gallery .card-gallery-container {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.card-gallery .card-gallery-container .card {
+    height: 90%;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    margin: 0px 10px;
+    position: relative;
+    background-color: rgba(20, 19, 22, 255);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.card-gallery .card .card-banner {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-gallery .card .card-banner img {
+    height: auto;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.card-gallery .card:hover .card-banner img {
+    transform: scale(1.5);
+}
+
+.card-gallery .card .card-header {
+    width: 100%;
+    font-family: 'hando';
+    margin: 10px 0px;
+    font-size: 2em;
+}
+
+.card-gallery .card .card-desc {
+    width: 100%;
+    font-family: 'Rockwell';
+}
+
+.card-gallery .card .app-link {
+    position: absolute;
+    bottom: 10px;
+    font-family: 'Rockwell';
+}
+
+.card-gallery .card .app-link:hover a {
+    color: rgb(149, 117, 255);
+}
+
+/* EVENTS */
+.events-container .card-gallery {
+    width: 100vw;
+    display: flex;
+    padding: 0;
+}
+
+.card-gallery .card-gallery-container {
+    width: auto;
+    margin: 0px auto;
+}
+
+.va-icon {
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+    right: 20%;
+}
+
+.va-icon svg {
+    width: 100%;
+    min-width: 50%;
+    height: auto;
+    cursor: wait;
+}
+
+.home-btn {
+    position: absolute;
+    top: 3.2%;
+    left: 45%;
+    right: 45%;
+}
+
+.home-btn svg {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.home-btn svg:hover path {
+    transition: all .3s ease-out;
+    fill: red;
+    /* HEYY PSST, if u think we could copy the rainbow-text and use it for this SVG, it will be da bomba, but not linear-gradient, radial ofc */
+}
+
+.menu-btn svg:hover path {
+    stroke: red;
+    transition: all .3s ease-out;
+}

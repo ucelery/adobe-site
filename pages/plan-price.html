@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=.card, initial-scale=1.0">
+    <title>Plans & Pricing</title>
+    <!-- IMAGE ICON -->
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/adobe-2752254-2285071.png"
+        type="image/icon type">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+    <!-- STYLES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/lib/css/home-layout.css">
+    <link rel="stylesheet" href="../assets/lib/css/contact.css">
+    <link rel="stylesheet" href="../assets/lib/css/fonts.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+    <script src="../assets/lib/js/slideMenu.js" defer></script>
+
+</head>
+
+<body>
+    <!-- MODAL -->
+    <div class="ab-modal-wrapper hide" id="modal">
+        <div class="ab-modal-container">
+        </div>
+    </div>
+
+    <nav>
+        <div class="slide-menu" id="slide-menu">
+            <span class="menu-btn">
+                <svg width="37" height="30" viewBox="0 0 37 30" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.4541 26.4062H33.4541M3.4541 14.9776H33.4541M3.4541 3.54907H33.4541" stroke="white"
+                        stroke-width="5.625" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </span>
+            <!-- CONTENTS -->
+            <div class="buttons" id="button-container">
+                <span class="home-btn">
+                    <a href="../index.html" title="Home">
+                        <svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M49 14.1221L86.9167 44.4554L86.9167 86.9167H59.8333V65.25L38.1667 65.25V86.9167H11.0833L11.0833 47.0608C11.083 46.2485 11.2654 45.4465 11.617 44.7142C11.9687 43.9819 12.4805 43.3381 13.1146 42.8304L49 14.1221ZM49 0.25L6.34917 34.375C4.44724 35.8964 2.91164 37.8259 1.85592 40.0208C0.800195 42.2157 0.251363 44.6198 0.250003 47.0554L0.250003 86.9167C0.250003 89.7898 1.39137 92.5453 3.42301 94.577C5.45466 96.6086 8.21016 97.75 11.0833 97.75L86.9167 97.75C89.7898 97.75 92.5453 96.6086 94.577 94.577C96.6086 92.5453 97.75 89.7898 97.75 86.9167L97.75 44.4554C97.7498 42.8317 97.3846 41.2288 96.6814 39.7652C95.9782 38.3016 94.955 37.0148 93.6875 36L49 0.25Z" fill="black"/>
+                    </svg>
+                    </a>
+                </span>
+                <div class="btn">
+                    <a id="about-btn" class="rainbow-text" href="about-adobe.html">about us</a>
+                </div>
+                <div class="btn" id="dropdown">
+                    <a id="products-btn" class="rainbow-text" href="product-home.html">products</a>
+                    <div class="sl-dropdown">
+                        <div class="btn">
+                            <a id="products-btn" class="rainbow-text" href="apps/photoshop.html">photoshop</a>
+                        </div>
+                        <div class="btn">
+                            <a id="products-btn" class="rainbow-text" href="apps/animate.html">animate</a>
+                        </div>
+                        <div class="btn">
+                            <a id="products-btn" class="rainbow-text" href="apps/lightroom.html">lightroom</a>
+                        </div>
+                        <div class="btn">
+                            <a id="products-btn" class="rainbow-text" href="apps/aftereffects.html">after effects</a>
+                        </div>
+                        <div class="btn">
+                            <a id="products-btn" class="rainbow-text" href="apps/premiere.html">premiere pro</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <a id="plan-btn" class="rainbow-text" href="#">plans & pricing</a>
+                </div>
+                <div class="btn">
+                    <a id="contact-btn" class="rainbow-text" href="contact.html">contact us</a>
+                    <!--removed events -> contact us-->
+                </div>
+                <span class="va-icon">
+                    <div>
+                        <svg id="devcon" width="1297" height="380" viewBox="0 0 1297 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M602.12 108L592.671 104.725L592.663 104.749L592.654 104.774L602.12 108ZM583.92 161.4L574.443 164.594L583.867 192.551L593.385 164.626L583.92 161.4ZM565.92 108L575.396 104.806L575.382 104.765L575.368 104.725L565.92 108ZM555.52 78L564.968 74.7246L562.637 68H555.52V78ZM516.32 78V68H506.32V78H516.32ZM516.32 82.2H506.32V84.0491L506.981 85.776L516.32 82.2ZM568.32 218L558.981 221.576L561.441 228H568.32V218ZM599.32 218V228H606.208L608.663 221.564L599.32 218ZM651.12 82.2L660.463 85.764L661.12 84.0425V82.2H651.12ZM651.12 78H661.12V68H651.12V78ZM612.52 78V68H605.402L603.071 74.7246L612.52 78ZM592.654 104.774L574.454 158.174L593.385 164.626L611.585 111.226L592.654 104.774ZM593.396 158.206L575.396 104.806L556.443 111.194L574.443 164.594L593.396 158.206ZM575.368 104.725L564.968 74.7246L546.071 81.2754L556.471 111.275L575.368 104.725ZM555.52 68H516.32V88H555.52V68ZM506.32 78V82.2H526.32V78H506.32ZM506.981 85.776L558.981 221.576L577.658 214.424L525.658 78.624L506.981 85.776ZM568.32 228H599.32V208H568.32V228ZM608.663 221.564L660.463 85.764L641.776 78.636L589.976 214.436L608.663 221.564ZM661.12 82.2V78H641.12V82.2H661.12ZM651.12 68H612.52V88H651.12V68ZM603.071 74.7246L592.671 104.725L611.568 111.275L621.968 81.2754L603.071 74.7246Z" fill="black"/>
+                            <path d="M684.443 190.861L693.891 194.137L693.9 194.112L693.908 194.087L684.443 190.861ZM702.643 137.461L712.119 134.267L702.695 106.31L693.178 134.235L702.643 137.461ZM720.643 190.861L711.167 194.056L711.181 194.096L711.195 194.137L720.643 190.861ZM731.043 220.861L721.595 224.137L723.926 230.861L731.043 230.861L731.043 220.861ZM770.243 220.861L770.243 230.861L780.243 230.861L780.243 220.861L770.243 220.861ZM770.243 216.661L780.243 216.661L780.243 214.812L779.582 213.085L770.243 216.661ZM718.243 80.8613L727.582 77.2854L725.122 70.8613L718.243 70.8613L718.243 80.8613ZM687.243 80.8613L687.243 70.8613L680.355 70.8613L677.9 77.2974L687.243 80.8613ZM635.443 216.661L626.1 213.097L625.443 214.819L625.443 216.661L635.443 216.661ZM635.443 220.861L625.443 220.861L625.443 230.861L635.443 230.861L635.443 220.861ZM674.043 220.861L674.043 230.861L681.16 230.861L683.491 224.137L674.043 220.861ZM693.908 194.087L712.108 140.687L693.178 134.235L674.978 187.635L693.908 194.087ZM693.167 140.656L711.167 194.056L730.119 187.667L712.119 134.267L693.167 140.656ZM711.195 194.137L721.595 224.137L740.491 217.586L730.091 187.586L711.195 194.137ZM731.043 230.861L770.243 230.861L770.243 210.861L731.043 210.861L731.043 230.861ZM780.243 220.861L780.243 216.661L760.243 216.661L760.243 220.861L780.243 220.861ZM779.582 213.085L727.582 77.2854L708.904 84.4373L760.904 220.237L779.582 213.085ZM718.243 70.8613L687.243 70.8613L687.243 90.8613L718.243 90.8613L718.243 70.8613ZM677.9 77.2974L626.1 213.097L644.786 220.225L696.586 84.4253L677.9 77.2974ZM625.443 216.661L625.443 220.861L645.443 220.861L645.443 216.661L625.443 216.661ZM635.443 230.861L674.043 230.861L674.043 210.861L635.443 210.861L635.443 230.861ZM683.491 224.137L693.891 194.137L674.995 187.586L664.595 217.586L683.491 224.137Z" fill="black"/>
+                            <path d="M451.72 274.403V319.203H473.224C485.64 319.203 495.752 309.091 495.752 296.611C495.752 284.195 485.64 274.403 473.224 274.403H451.72ZM456.648 279.331H473.224C476.04 279.331 478.664 280.035 481.032 281.187L463.368 303.523L456.648 298.275V279.331ZM467.144 306.467L485 283.875C488.584 287.139 490.824 291.427 490.824 296.611C490.824 305.123 484.744 312.291 476.744 313.891L467.144 306.467ZM456.648 314.275V304.355L469.384 314.275H456.648ZM556.64 319.203V314.275H524.96V304.611H553.632V299.683H546.4L530.272 279.331H555.616V274.403H520.032V319.203H556.64ZM524.96 279.331L541.088 299.683H524.96V279.331ZM595.754 292.835C589.61 289.827 588.586 287.715 588.65 284.387C588.778 280.611 591.786 278.243 596.266 278.307C599.466 278.435 601.834 279.587 603.498 281.763L604.266 282.723L608.17 279.779L607.402 278.819C604.778 275.363 601.066 273.571 596.394 273.443C589.162 273.187 583.978 277.667 583.786 284.259C583.658 290.147 586.282 293.603 593.578 297.187L597.098 298.979L598.122 299.555L589.034 313.059C587.754 312.227 586.666 311.139 585.77 309.667L585.13 308.643L580.97 311.267L581.674 312.291C584.874 317.411 589.546 319.907 595.754 320.163C603.882 320.355 609.706 315.619 609.962 308.451C610.154 300.963 604.97 297.379 599.274 294.627L595.754 292.835ZM601.77 301.731C604.202 303.587 605.162 305.571 605.034 308.323C604.906 312.611 601.13 315.427 595.882 315.235C594.666 315.235 593.578 315.043 592.49 314.787L601.77 301.731ZM663.21 319.203V314.275H660.33L651.178 302.563V279.331H663.21V274.403H634.282V279.331H646.25V314.275H634.282V319.203H663.21ZM651.178 314.275V308.899L655.402 314.275H651.178ZM728.172 319.139V298.083H709.868V302.947H714.924V314.851C713.58 315.107 712.3 315.299 710.892 315.299C705.964 315.299 701.356 313.379 697.836 309.859C690.668 302.691 690.668 290.979 697.836 283.747C701.356 280.227 705.964 278.307 710.892 278.307C715.884 278.307 720.492 280.227 724.012 283.747L724.844 284.579L728.3 281.123L727.468 280.291C723.052 275.875 717.164 273.443 710.892 273.443C704.684 273.443 698.796 275.875 694.38 280.291C685.228 289.379 685.228 304.227 694.38 313.315C698.796 317.731 704.684 320.163 710.892 320.163C715.372 320.163 719.596 318.947 723.244 316.643V319.139H728.172ZM723.244 302.947V310.499C722.22 311.523 721.004 312.291 719.788 312.995V302.947H723.244ZM787.539 274.403V312.675L784.211 308.259V292.579H779.283V301.795L758.099 274.403H752.595V319.203H757.523V282.211L760.851 286.563V319.203H765.779V292.963L786.003 319.203H792.467V274.403H787.539ZM831.566 292.835C825.422 289.827 824.398 287.715 824.462 284.387C824.59 280.611 827.598 278.243 832.078 278.307C835.278 278.435 837.646 279.587 839.31 281.763L840.078 282.723L843.982 279.779L843.214 278.819C840.59 275.363 836.878 273.571 832.206 273.443C824.974 273.187 819.79 277.667 819.598 284.259C819.47 290.147 822.094 293.603 829.39 297.187L832.91 298.979L833.934 299.555L824.846 313.059C823.566 312.227 822.478 311.139 821.582 309.667L820.942 308.643L816.782 311.267L817.486 312.291C820.686 317.411 825.358 319.907 831.566 320.163C839.694 320.355 845.518 315.619 845.774 308.451C845.966 300.963 840.782 297.379 835.086 294.627L831.566 292.835ZM837.582 301.731C840.014 303.587 840.974 305.571 840.846 308.323C840.718 312.611 836.942 315.427 831.694 315.235C830.478 315.235 829.39 315.043 828.302 314.787L837.582 301.731Z" fill="#060404"/>
+                            <path d="M67.5065 266.72L47.9865 304.928L45.5545 300.128L62.6425 266.72H57.1385L42.8025 294.752L28.4665 266.72H22.9625L45.8745 311.52H50.0985L73.0105 266.72H67.5065ZM112.077 268.704L108.365 265.76L105.549 269.344C101.965 267.04 97.7415 265.76 93.1975 265.76C80.3335 265.76 69.8375 276.256 69.8375 289.12C69.8375 295.712 72.5895 301.664 77.0055 305.952L74.2535 309.536L78.0295 312.48L80.7815 308.896C84.3655 311.136 88.6535 312.48 93.1975 312.48C106.061 312.48 116.493 301.984 116.493 289.12C116.493 282.464 113.741 276.512 109.325 272.288L112.077 268.704ZM80.0775 302.048C76.7495 298.72 74.7015 294.176 74.7015 289.12C74.7015 278.944 83.0215 270.624 93.1975 270.624C96.5895 270.624 99.7895 271.584 102.541 273.184L80.0775 302.048ZM106.317 276.128C109.581 279.456 111.629 284.064 111.629 289.12C111.629 299.296 103.373 307.552 93.1975 307.552C89.7415 307.552 86.5415 306.592 83.7895 304.992L106.317 276.128ZM170.993 266.72H166.065V304.992L162.737 301.984V285.088H157.873V297.44L124.465 266.72H119.025V311.52H123.889V272.736L127.281 275.872H127.217V311.52H132.081V280.288L165.937 311.52H170.993V266.72Z" fill="black"/>
+                            <path d="M1118.1 311.519L1122.32 304.287H1126.48L1122.32 311.519H1127.44L1131.67 304.287H1153.55L1157.71 311.519H1162.96L1139.99 266.719H1135.76L1112.91 311.519H1118.1ZM1137.94 273.055L1151.38 299.039H1147.28L1135.76 277.151L1137.94 273.055ZM1124.37 299.039L1133.71 282.399L1142.03 299.039H1124.37ZM1190.87 266.719H1147.6V271.583H1166.8V311.519H1171.67V292.895L1190.87 271.583V266.719ZM1185.3 271.583L1171.67 286.559V271.583H1185.3ZM1229.28 268.703L1225.57 265.759L1222.75 269.343C1219.17 267.039 1214.94 265.759 1210.4 265.759C1197.54 265.759 1187.04 276.255 1187.04 289.119C1187.04 295.711 1189.79 301.663 1194.21 305.951L1191.46 309.535L1195.23 312.479L1197.98 308.895C1201.57 311.135 1205.86 312.479 1210.4 312.479C1223.26 312.479 1233.7 301.983 1233.7 289.119C1233.7 282.463 1230.94 276.511 1226.53 272.287L1229.28 268.703ZM1197.28 302.047C1193.95 298.719 1191.9 294.175 1191.9 289.119C1191.9 278.943 1200.22 270.623 1210.4 270.623C1213.79 270.623 1216.99 271.583 1219.74 273.183L1197.28 302.047ZM1223.52 276.127C1226.78 279.455 1228.83 284.063 1228.83 289.119C1228.83 299.295 1220.58 307.551 1210.4 307.551C1206.94 307.551 1203.74 306.591 1200.99 304.991L1223.52 276.127ZM1288.2 266.719H1283.27V304.991L1279.94 301.983V285.087H1275.08V297.439L1241.67 266.719H1236.23V311.519H1241.09V272.735L1244.48 275.871H1244.42V311.519H1249.28V280.287L1283.14 311.519H1288.2V266.719Z" fill="black"/>
+                        </svg>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <section class="p-5 text-center">
+        <div class="container">
+            <h2>Plans & <span style="color: #f14a4a">Pricing</span> for <span class="rainbow-text-fix">Creative Cloud
+                    apps</span> and more.</h2>
+            <a href="https://www.adobe.com/products/pricing-info/cc-pricing-info.html" class="">Learn more about
+                Creative Cloud</a>
+        </div>
+    </section>
+    <section class="bgimg-1">
+        <div class="container p-5">
+            <h4>Pricing Table</h4>
+            <div class="table-responsive">
+                <table class="table table-borderless table-sm o-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Annual <sup class="o-tiny">/mo</sup></th>
+                            <th scope="col">Annual <sup class="o-tiny">/yr</sup></th>
+                            <th scope="col">Monthly Plan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Creative Cloud All Apps</th>
+                            <td>₱2,642.00<sup class="o-tiny">/mo</sup></td>
+                            <td>₱29,904.00<sup class="o-tiny">/yr</sup></td>
+                            <td>₱3,963.00<sup class="o-tiny">/mo</sup></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Photography</th>
+                            <td>₱498.00<sup class="o-tiny">/mo</sup></td>
+                            <td>₱5,976.00<sup class="o-tiny">/yr</sup></td>
+                            <td>Not Applicable</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Acrobat Pro</th>
+                            <td>₱747.00<sup class="o-tiny">/mo</sup></td>
+                            <td>₱8,964.00<sup class="o-tiny">/yr</sup></td>
+                            <td>₱1,246.00<sup class="o-tiny">/mo</sup></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Photoshop</th>
+                            <td>₱1,046.00<sup class="o-tiny">/mo</sup></td>
+                            <td>₱11,964.00<sup class="o-tiny">/yr</sup></td>
+                            <td>₱1,570.00<sup class="o-tiny">/mo</sup></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Premiere Pro</th>
+                            <td>₱1,046.00<sup class="o-tiny">/mo</sup></td>
+                            <td>₱11,964.00<sup class="o-tiny">/yr</sup></td>
+                            <td>₱1,570.00<sup class="o-tiny">/mo</sup></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Illustrator</th>
+                            <td>₱1,046.00<sup class="o-tiny">/mo</sup></td>
+                            <td>₱11,964.00<sup class="o-tiny">/yr</sup></td>
+                            <td>₱1,570.00<sup class="o-tiny">/mo</sup></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">After Effects</th>
+                            <td>₱1,046.00<sup class="o-tiny">/mo</sup></td>
+                            <td>₱11,964.00<sup class="o-tiny">/yr</sup></td>
+                            <td>₱1,570.00<sup class="o-tiny">/mo</sup></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lightroom (1TB)</th>
+                            <td>₱498.00<sup class="o-tiny">/mo</sup></td>
+                            <td>₱5,976.00<sup class="o-tiny">/yr</sup></td>
+                            <td>Not Applicable</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">InDesign</th>
+                            <td>₱1,046.00<sup class="o-tiny">/mo</sup></td>
+                            <td>₱11,964.00<sup class="o-tiny">/yr</sup></td>
+                            <td>₱1,570.00<sup class="o-tiny">/mo</sup></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Audition</th>
+                            <td>₱1,046.00<sup class="o-tiny">/mo</sup></td>
+                            <td>₱11,964.00<sup class="o-tiny">/yr</sup></td>
+                            <td>₱1,570.00<sup class="o-tiny">/mo</sup></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Animate</th>
+                            <td>₱1,046.00<sup class="o-tiny">/mo</sup></td>
+                            <td>₱11,964.00<sup class="o-tiny">/yr</sup></td>
+                            <td>₱1,570.00<sup class="o-tiny">/mo</sup></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Substance 3D Collection</th>
+                            <td>Not Applicable</td>
+                            <td>₱27,408.00<sup class="o-tiny">/yr</sup></td>
+                            <td>₱2,492.00<sup class="o-tiny">/mo</sup></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Substance 3D Texturing</th>
+                            <td>Not Applicable</td>
+                            <td>₱10,956.00<sup class="o-tiny">/yr</sup> </td>
+                            <td>₱997.00<sup class="o-tiny">/mo</sup></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Adobe XD</th>
+                            <td>Not Applicable</td>
+                            <td>₱4,980.00<sup class="o-tiny">/yr</sup></td>
+                            <td>₱498.00<sup class="o-tiny">/mo</sup></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Dreamweaver</th>
+                            <td>₱1,046.00<sup class="o-tiny">/mo</sup></td>
+                            <td>₱11,964.00<sup class="o-tiny">/yr</sup></td>
+                            <td>₱1,570.00<sup class="o-tiny">/mo</sup></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">InCopy</th>
+                            <td>₱249.00<sup class="o-tiny">/mo</sup></td>
+                            <td>₱2,988.00<sup class="o-tiny">/yr</sup></td>
+                            <td>₱373.00<sup class="o-tiny">/mo</sup></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Adobe Stock</th>
+                            <td>₱1,495.00<sup class="o-tiny">/mo</sup></td>
+                            <td>₱17,940.00<sup class="o-tiny">/yr</sup></td>
+                            <td>₱2,492.00<sup class="o-tiny">/mo</sup></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </section>
+    <section>
+        <div class="container">
+            <h1>Individual</h1>
+            <!-- card template-->
+            <div class="card">
+                <div class="card-header">
+                    <img src="" class="sm-icon">
+                    Creative Cloud Full Package
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">₱2642.00/mo</h5>
+                    <p class="card-text"><i>Annual subscription, cancel within 14 days for a full refund.</i></p>
+                    <p class="card-text">Get 20+ Creative Cloud apps including Photoshop, Illustrator, Adobe Express,
+                        Premiere Pro and Acrobat Pro.</p>
+                    <!-- Button trigger modal -->
+                    <button onclick="openModal('full-package')">
+                        Learn More
+                    </button>
+                    <a href="" class="buy-btn">Buy now</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div>
+            <h4>Individual</h4>
+            <!--use lightbox for displaying info herein-->
+            <!--Is it odd na hindi ako nag lagay ng purchase button inside the lightbox, only on the outside?-->
+            <div class="pp-modal-cont" id="full-package">
+                <div>Creative Cloud Full Package |
+                    <!--on hover show price-->₱2642.00/mo | <a href="">Click for more info</a> |
+                    <form>
+                        <button>Buy Now</button>
+                    </form>
+                </div>
+                <span title="info">
+                    Get 20+ Creative Cloud apps for photography, design, video, web, UX, and social media.
+                    Includes
+                    <ul>
+                        <li>Acrobat Pro</li>
+                        <li>Acrobat Reader</li>
+                        <li>Adobe Scan</li>
+                        <li>Aero</li>
+                        <li>After Effects</li>
+                        <li>Animate</li>
+                        <li>Audition</li>
+                        <li>Bridge</li>
+                        <li>Capture</li>
+                        <li>Character Animator</li>
+                        <li>Creative Cloud Express</li>
+                        <li>Dimension</li>
+                        <li>Dreamweaver</li>
+                        <li>Fill & Sign</li>
+                        <li>Fresco</li>
+                        <li>Illustrator</li>
+                        <li>InCopy</li>
+                        <li>InDesign</li>
+                        <li>Lightroom</li>
+                        <li>Lightroom Classic</li>
+                        <li>Media Encoder</li>
+                        <li>Photoshop</li>
+                        <li>Photoshop Camera</li>
+                        <li>Photoshop Express</li>
+                        <li>Premiere Pro</li>
+                        <li>Premiere Rush</li>
+                        <li>XD</li>
+                    </ul>
+                    100 GB of cloud storage, Adobe Portfolio, Adobe Fonts and access to the latest features and updates
+                    as
+                    soon as they're released
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>PAYMENT</caption>
+                        <label>Annual plan, paid monthly — ₱2,642.00/mo Annual subscription, cancel within 14 days for a
+                            <a href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱29,904.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Monthly plan — ₱3,963.00/mo Annual subscription, cancel within 14 days for a <a
+                                href="">full
+                                refund</a>.</label>
+                        <input type="radio">
+
+                        <input type="checkbox">
+                        <!-- i ignore the switcheroo in when choosing a different radio button option-->
+                        <label>Add Adobe Stock. Get one month free - Up to 10 images. Cancel risk-free in the first
+                            month or
+                            suscribe for ₱1,495.00/mo <i>Annual Subscription, cancel within 14 days for a<a href="">full
+                                    refund</a></i> after your trial ends.</label>
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+            </div>
+
+            <div class="pp-modal-cont" id="photography-package">
+                <div>Photography Package |
+                    <!--on hover show price-->₱498.00/mo | <a href="">Click for more info</a> | <form> <button>Buy
+                            Now</button> </form>
+                </div>
+                <span title="info">
+                    Easily edit, organize, store, and share your photos from anywhere — and transform them into anything
+                    you
+                    can imagine.
+                    Includes
+                    <ul>
+                        <li>Lightroom: Photo editing and organization on desktop and mobile</li>
+                        <li> Photoshop: Image editing and compositing on desktop and iPad</li>
+                        <li> Lightroom Classic: Desktop-focused photo editing</li>
+                    </ul>
+                    20 GB or 1 TB of cloud storage, Adobe Portfolio, Adobe Fonts and access to the latest features and
+                    updates as soon as they’re released
+                    <img src="" alt="random_image">
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>STORAGE</caption>
+                        <input type="radio">
+                        <label>20GB</label>
+                        <input type="radio">
+                        <label>1TB</label>
+
+                        <caption>PAYMENT</caption>
+                        <label>Annual plan, paid monthly — ₱498.00/mo Annual subscription, cancel within 14 days for a
+                            <a href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱5,976.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+
+                        <input type="checkbox">
+                        <label>Add Adobe Stock. Get one month free - Up to 10 images. Cancel risk-free in the first
+                            month or
+                            suscribe for ₱1,495.00/mo <i>Annual Subscription, cancel within 14 days for a<a href="">full
+                                    refund</a></i> after your trial ends.</label>
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+            </div>
+
+            <div class="pp-modal-cont" id="photoshop">
+                <div>Photoshop |
+                    <!--on hover show price-->₱1046.00/mo | <a href="">Click for more info</a> | <form> <button>Buy
+                            Now</button> </form>
+                </div>
+                <span title="info">
+                    The world’s best imaging and graphic design software is at the core of just about every creative
+                    project, from photo editing and compositing to digital painting, animation, and graphic design.
+                    Includes
+                    Photoshop on desktop and iPad, 100GB of cloud storage, Adobe Fresco, Adobe Portfolio, Adobe Fonts,
+                    access to the latest features and updates as soon as they’re released, plus Creative Cloud Express
+                    with
+                    Premiere Rush and Photoshop Express
+                    <img src="" alt="random_image">
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>PAYMENT</caption>
+                        <label>Annual plan, paid monthly — ₱1,046.00/mo Annual subscription, cancel within 14 days for a
+                            <a href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱11,964.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Monthly plan — ₱1,570.00/mo Annual subscription, cancel within 14 days for a <a
+                                href="">full
+                                refund</a>.</label>
+                        <input type="radio">
+
+                        <input type="checkbox">
+                        <label>Add Adobe Stock. Get one month free - Up to 10 images. Cancel risk-free in the first
+                            month or
+                            suscribe for ₱1495.00/mo <i>Annual Subscription, cancel within 14 days for a<a href="">full
+                                    refund</a></i> after your trial ends.</label>
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+            </div>
+
+            <div class="pp-modal-cont" id="premiere">
+                <div>Premiere Pro |
+                    <!--on hover show price-->₱1046.00/mo | <a href="">Click for more info</a> | <form> <button>Buy
+                            Now</button> </form>
+                </div>
+                <span title="info">
+                    Get the leading video editing software for film, TV, and the web. Creative tools, integration with
+                    other
+                    Adobe apps and services, and the power of Adobe Sensei help you craft footage into polished films
+                    and
+                    videos in one seamless workflow.
+                    Includes
+                    100 GB of cloud storage, Adobe Portfolio, Adobe Fonts, access to the latest features and updates as
+                    soon
+                    as they’re released, plus Creative Cloud Express with Premiere Rush and Photoshop Express
+                    <img src="" alt="random_image">
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>PAYMENT</caption>
+                        <label>Annual plan, paid monthly — ₱1,046.00/mo Annual subscription, cancel within 14 days for a
+                            <a href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱11,964.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Monthly plan — ₱1,570.00/mo Annual subscription, cancel within 14 days for a <a
+                                href="">full
+                                refund</a>.</label>
+                        <input type="radio">
+
+                        <input type="checkbox">
+                        <label>Add Adobe Stock. Get one month free - Up to 10 images. Cancel risk-free in the first
+                            month or
+                            suscribe for ₱1495.00/mo <i>Annual Subscription, cancel within 14 days for a<a href="">full
+                                    refund</a></i> after your trial ends.</label>
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+            </div>
+
+            <div class="pp-modal-cont" id="illustrator">
+                <div>Illustrator |
+                    <!--on hover show price-->₱1046.00/mo | <a href="">Click for more info</a> | <form> <button>Buy
+                            Now</button> </form>
+                </div>
+                <span title="info">
+                    The industry-standard vector graphics app lets you create logos, icons, drawings, typography, and
+                    illustrations for print, web, video, and mobile.
+                    Includes
+                    Illustrator on desktop and iPad, 100 GB of cloud storage, Adobe Portfolio, Adobe Fonts, access to
+                    the
+                    latest features and updates as soon as they’re released, plus Creative Cloud Express with Premiere
+                    Rush
+                    and Photoshop Express
+                    <img src="" alt="random_image">
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>PAYMENT</caption>
+                        <label>Annual plan, paid monthly — ₱1,046.00/mo Annual subscription, cancel within 14 days for a
+                            <a href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱11,964.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Monthly plan — ₱1,570.00/mo Annual subscription, cancel within 14 days for a <a
+                                href="">full
+                                refund</a>.</label>
+                        <input type="radio">
+
+                        <input type="checkbox">
+                        <label>Add Adobe Stock. Get one month free - Up to 10 images. Cancel risk-free in the first
+                            month or
+                            suscribe for ₱1495.00/mo <i>Annual Subscription, cancel within 14 days for a<a href="">full
+                                    refund</a></i> after your trial ends.</label>
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+            </div>
+
+            <div class="pp-modal-cont" id="after-effects">
+                <div>After Effects |
+                    <!--on hover show price-->₱1046.00/mo | <a href="">Click for more info</a> | <form> <button>Buy
+                            Now</button> </form>
+                </div>
+                <span title="info">
+                    Create cinematic movie titles, intros, and transitions. Start a fire or make it rain. Animate a logo
+                    or
+                    character. With the industry-standard animation and creative compositing app, you can take any idea
+                    and
+                    make it move.
+                    Includes
+                    100GB of cloud storage, Adobe Portfolio, Adobe Fonts, access to the latest features and updates as
+                    soon
+                    as they’re released, plus Creative Cloud Express with Premiere Rush and Photoshop Express
+                    <img src="" alt="random_image">
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>PAYMENT</caption>
+                        <label>Annual plan, paid monthly — ₱1,046.00/mo Annual subscription, cancel within 14 days for a
+                            <a href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱11,964.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Monthly plan — ₱1,570.00/mo Annual subscription, cancel within 14 days for a <a
+                                href="">full
+                                refund</a>.</label>
+                        <input type="radio">
+
+                        <input type="checkbox">
+                        <label>Add Adobe Stock. Get one month free - Up to 10 images. Cancel risk-free in the first
+                            month or
+                            suscribe for ₱1495.00/mo <i>Annual Subscription, cancel within 14 days for a<a href="">full
+                                    refund</a></i> after your trial ends.</label>
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+            </div>
+
+            <div class="pp-modal-cont" id="dreamweaver">
+                <div>Dreamweaver |
+                    <!--on hover show price-->₱1046.00/mo | <a href="">Click for more info</a> | <form> <button>Buy
+                            Now</button> </form>
+                </div>
+                Discover faster, easier ways to design, code, and publish websites and web applications that look
+                amazing on
+                any size screen.
+                Includes
+                100GB of cloud storage, Adobe Portfolio, Adobe Fonts, access to the latest features and updates as soon
+                as
+                they’re released, plus Creative Cloud Express with Premiere Rush and Photoshop Express
+                <img src="" alt="random_image">
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>PAYMENT</caption>
+                        <label>Annual plan, paid monthly — ₱1,046.00/mo Annual subscription, cancel within 14 days for a
+                            <a href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱11,964.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Monthly plan — ₱1,570.00/mo Annual subscription, cancel within 14 days for a <a
+                                href="">full
+                                refund</a>.</label>
+                        <input type="radio">
+
+                        <input type="checkbox">
+                        <label>Add Adobe Stock. Get one month free - Up to 10 images. Cancel risk-free in the first
+                            month or
+                            suscribe for ₱1495.00/mo <i>Annual Subscription, cancel within 14 days for a<a href="">full
+                                    refund</a></i> after your trial ends.</label>
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+            </div>
+
+            <div class="pp-modal-cont" id="adobe-xd">
+
+                <div>Adobe XD |
+                    <!--on hover show price-->₱498.00/mo | <a href="">Click for more info</a> | <form> <button>Buy
+                            Now</button> </form>
+                </div>
+                <span title="info">
+                    Made for designers like you, by designers like us. Adobe XD is the fastest way to design, prototype,
+                    and
+                    share any user experience — from websites and mobile apps to voice interactions and so much more.
+                    Includes
+                    <ul>
+                        <li>Unlimited shared prototypes and design specs</li>
+                        <li>100GB of cloud storage, Adobe Portfolio, and Adobe Fonts</li>
+                    </ul>
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>PAYMENT</caption>
+                        <label>Annual plan, paid monthly — ₱498.00/mo Annual subscription, cancel within 14 days for a
+                            <a href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱5,976.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+
+                        <input type="checkbox">
+                        <label>Add Adobe Stock. Get one month free - Up to 10 images. Cancel risk-free in the first
+                            month or
+                            suscribe for ₱1495.00/mo <i>Annual Subscription, cancel within 14 days for a<a href="">full
+                                    refund</a></i> after your trial ends.</label>
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+            </div>
+
+            <div class="pp-modal-cont" id="adobe-stock">
+                <div>Adobe Stock |
+                    <!--on hover show price-->₱1495.00/mo | <a href="">Click for more info</a> | <form> <button>Buy
+                            Now</button> </form>
+                </div>
+                <span title="info">
+                    Search Adobe Stock for millions of royalty-free stock images, photos, graphics, vectors, video
+                    footage,
+                    illustrations, templates and 3D assets to help enhance your next creative project. New content is
+                    added
+                    daily.
+                    Includes
+                    <ul>
+                        <li>10 standard assets per month, with the first 30 days free</li>
+                        <li>Cancel risk-free within the first 30 days</li>
+                    </ul>
+                    <img src="" alt="random_image">
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>PAYMENT</caption>
+                        <label>Annual plan, paid monthly — ₱1,495.00/mo Annual subscription, cancel within 14 days for a
+                            <a href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱17,940.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Monthly plan — ₱2,492.00/mo Annual subscription, cancel within 14 days for a <a
+                                href="">full
+                                refund</a>.</label>
+                        <input type="radio">
+
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+            </div>
+
+            <div class="pp-modal-cont" id="acrobat-pro">
+                <div>Acrobat Pro |
+                    <!--on hover show price-->₱747.00/mo | <a href="">Click for more info</a> | <form> <button>Buy
+                            Now</button> </form>
+                </div>
+                <span title="info">
+                    Connect to your documents, teams, and favorite PDF tools anywhere you are with the world’s most
+                    complete
+                    PDF solution.
+                    Includes
+                    <ul>
+                        <li>Desktop, web, and mobile access</li>
+                        <li>100GB of cloud storage, Adobe Portfolio, and Adobe Fonts</li>
+                    </ul>
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>PAYMENT</caption>
+                        <label>Annual plan, paid monthly — ₱747.00/mo Annual subscription, cancel within 14 days for a
+                            <a href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱8,964.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Monthly plan — ₱1,246.00/mo Annual subscription, cancel within 14 days for a <a
+                                href="">full
+                                refund</a>.</label>
+                        <input type="radio">
+
+                        <input type="checkbox">
+                        <label>Add Adobe Stock. Get one month free - Up to 10 images. Cancel risk-free in the first
+                            month or
+                            suscribe for ₱1495.00/mo <i>Annual Subscription, cancel within 14 days for a<a href="">full
+                                    refund</a></i> after your trial ends.</label>
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+            </div>
+
+            <div class="pp-modal-cont" id="indesign">
+
+                <div>InDesign |
+                    <!--on hover show price-->₱1046.00/mo | <a href="">Click for more info</a> | <form> <button>Buy
+                            Now</button> </form>
+                </div>
+                <span title="info">
+                    The industry-leading page design and layout app lets you create, preflight, and publish beautiful
+                    documents for print and digital media. Get everything you need to make posters, books, digital
+                    magazines, eBooks, interactive PDFs, and more.
+                    Includes
+                    100 GB of cloud storage, Adobe Portfolio, Adobe Fonts, access to the latest features and updates as
+                    soon
+                    as they’re released, plus Creative Cloud Express with Premiere Rush and Photoshop Express
+                    <img src="" alt="random_image">
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>PAYMENT</caption>
+                        <label>Annual plan, paid monthly — ₱1,046.00/mo Annual subscription, cancel within 14 days for a
+                            <a href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱11,964.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Monthly plan — ₱1,570.00/mo Annual subscription, cancel within 14 days for a <a
+                                href="">full
+                                refund</a>.</label>
+                        <input type="radio">
+
+                        <input type="checkbox">
+                        <label>Add Adobe Stock. Get one month free - Up to 10 images. Cancel risk-free in the first
+                            month or
+                            suscribe for ₱1495.00/mo <i>Annual Subscription, cancel within 14 days for a<a href="">full
+                                    refund</a></i> after your trial ends.</label>
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+            </div>
+
+            <div class="pp-modal-cont" id="audition">
+                <div>Audition |
+                    <!--on hover show price-->₱1046.00/mo | <a href="">Click for more info</a> | <form> <button>Buy
+                            Now</button> </form>
+                </div>
+                <span title="info">
+                    Create, mix, and design sound effects with the industry’s best digital audio editing software.
+                    Includes
+                    100 GB of cloud storage, Adobe Portfolio, Adobe Fonts, access to the latest features and updates as
+                    soon
+                    as they’re released, plus Creative Cloud Express with Premiere Rush and Photoshop Express
+                    <img src="" alt="random_image">
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>PAYMENT</caption>
+                        <label>Annual plan, paid monthly — ₱1,046.00/mo Annual subscription, cancel within 14 days for a
+                            <a href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱11,964.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Monthly plan — ₱1,570.00/mo Annual subscription, cancel within 14 days for a <a
+                                href="">full
+                                refund</a>.</label>
+                        <input type="radio">
+
+                        <input type="checkbox">
+                        <label>Add Adobe Stock. Get one month free - Up to 10 images. Cancel risk-free in the first
+                            month or
+                            suscribe for ₱1495.00/mo <i>Annual Subscription, cancel within 14 days for a<a href="">full
+                                    refund</a></i> after your trial ends.</label>
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+            </div>
+
+            <div class="pp-modal-cont" id="animate">
+                <div>Animate |
+                    <!--on hover show price-->₱1046.00/mo | <a href="">Click for more info</a> | <form> <button>Buy
+                            Now</button> </form>
+                </div>
+                <span title="info">
+                    Design interactive vector and bitmap animations for games, apps, and the web. Bring cartoons and
+                    banner
+                    ads to life. And add action to tutorials and infographics. With Animate, you can quickly publish
+                    content
+                    to reach viewers on desktop, mobile, and TV.
+                    Includes
+                    100 GB of cloud storage, Adobe Portfolio, Adobe Fonts, access to the latest features and updates as
+                    soon
+                    as they’re released, plus Creative Cloud Express with Premiere Rush and Photoshop Express
+                    <img src="" alt="random_image">
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>PAYMENT</caption>
+                        <label>Annual plan, paid monthly — ₱1,046.00/mo Annual subscription, cancel within 14 days for a
+                            <a href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱11,964.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Monthly plan — ₱1,570.00/mo Annual subscription, cancel within 14 days for a <a
+                                href="">full
+                                refund</a>.</label>
+                        <input type="radio">
+
+                        <input type="checkbox">
+                        <label>Add Adobe Stock. Get one month free - Up to 10 images. Cancel risk-free in the first
+                            month or
+                            suscribe for ₱1495.00/mo <i>Annual Subscription, cancel within 14 days for a<a href="">full
+                                    refund</a></i> after your trial ends.</label>
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+            </div>
+
+            <div class="pp-modal-cont" id="sub-3d-texturing">
+                <div>Substance 3D Texturing |
+                    <!--on hover show price-->₱997.00/mo | <a href="">Click for more info</a> | <form> <button>Buy
+                            Now</button> </form>
+                </div>
+                <span title="info">
+                    Get our Substance 3D Painter, Designer and Sampler apps and up to 30 downloads of 3D materials per
+                    month.
+                    Includes
+                    <ul>
+                        <li>Adobe Substance 3D Painter: Texture 3D models in real time</li>
+                        <li>Adobe Substance 3D Designer: Design parametric 3D assets</li>
+                        <li>Adobe Substance 3D Sampler: Create 3D materials and lights</li>
+                    </ul>
+                    30 downloads of 3D materials per month and 100 GB of cloud storage
+                    <img src="" alt="random_image">
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>PAYMENT</caption>
+                        <label>Monthly plan — ₱997.00/mo Annual subscription, cancel within 14 days for a <a
+                                href="">full
+                                refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱10,956.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+            </div>
+
+            <div class="pp-modal-cont" id="sub-3d-col">
+                <div>Substance 3D Collection |
+                    <!--on hover show price-->₱2492.00/mo | <a href="">Click for more info</a> | <form> <button>Buy
+                            Now</button> </form>
+                </div>
+                <span title="info">
+                    The collection of Substance 3D Painter, Designer, Stager and Sampler apps and up to 50 asset
+                    downloads
+                    per month covers your 3D needs, from asset creation to scene design and rendering.
+                    Includes
+                    <ul>
+                        <li>Adobe Substance 3D Stager: Compose and render 3D scenes</li>
+                        <li>Adobe Substance 3D Painter: Texture 3D models in real time</li>
+                        <li>Adobe Substance 3D Sampler: Create 3D materials and lights</li>
+                        <li>Adobe Substance 3D Designer: Design parametric 3D assets</li>
+                    </ul>
+                    50 3D assets a month and 100 GB of cloud storage
+                    <img src="" alt="random_image">
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>PAYMENT</caption>
+                        <label>Monthly plan — ₱2,492.00/mo Annual subscription, cancel within 14 days for a <a
+                                href="">full
+                                refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱27,408.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+            </div>
+
+            <div class="pp-modal-cont" id="lightroom">
+                <div>Lightroom |
+                    <!--on hover show price-->₱498.00/mo | <a href="">Click for more info</a> | <form> <button>Buy
+                            Now</button> </form>
+                </div>
+                <span title="info">
+                    The cloud-based service for people who love photography, Lightroom gives you everything you need to
+                    edit, organize, store, and share your photos across desktop, mobile, and web.
+                    Includes
+                    1 TB of cloud storage, Adobe Portfolio, Adobe Fonts and access to the latest features and updates as
+                    soon as they’re released
+                    <img src="" alt="random_image">
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>PAYMENT</caption>
+                        <label>Annual plan, paid monthly — ₱498.00/mo Annual subscription, cancel within 14 days for a
+                            <a href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱5,976.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+
+                        <input type="checkbox">
+                        <label>Add Adobe Stock. Get one month free - Up to 10 images. Cancel risk-free in the first
+                            month or
+                            suscribe for ₱1495.00/mo <i>Annual Subscription, cancel within 14 days for a<a href="">full
+                                    refund</a></i> after your trial ends.</label>
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+            </div>
+
+            <div class="pp-modal-cont" id="incopy">
+                <div>InCopy |
+                    <!--on hover show price-->₱249.00/mo | <a href="">Click for more info</a> | <form> <button>Buy
+                            Now</button> </form>
+                </div>
+                <span title="info">
+                    With InCopy, writers and editors can style text, track changes, and make simple layout modifications
+                    while designers simultaneously work on the same document in InDesign — all without overwriting each
+                    other’s contributions.
+                    Includes
+                    <ul>
+                        <li>Access to the latest features and updates as soon as they’re released</li>
+                        <li>100 GB of cloud storage, Adobe Portfolio and Adobe Fonts</li>
+                    </ul>
+                    <img src="" alt="random_image">
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>PAYMENT</caption>
+                        <label>Annual plan, paid monthly — ₱249.00/mo Annual subscription, cancel within 14 days for a
+                            <a href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱2,988.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Monthly plan — ₱373.00/mo Annual subscription, cancel within 14 days for a <a
+                                href="">full
+                                refund</a>.</label>
+                        <input type="radio">
+
+                        <input type="checkbox">
+                        <label>Add Adobe Stock. Get one month free - Up to 10 images. Cancel risk-free in the first
+                            month or
+                            suscribe for ₱1495.00/mo <i>Annual Subscription, cancel within 14 days for a<a href="">full
+                                    refund</a></i> after your trial ends.</label>
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h4>Business</h4>
+            <div>
+                <h5><a href="">Creative Cloud for Teams</a></h5>
+                <span>
+                    Your choice of one creative app like Photoshop, Illustrator, Premiere Pro, and Acrobat or the entire
+                    collection of 20+ apps, plus exclusive features for your business or your department.
+                    Plans starting at ₱1898.00/mo
+                    <img alt="lock" src="">Secure Transaction.
+                    <form>
+                        <button>Select your plans</button>
+                    </form>
+                    <div>
+                        <h5>Business Features in Creative Cloud for teams.</h5>
+                        <hr />
+                        <table>
+                            <tr>
+                                <td>Centralized administration tools <span>Deploy apps and manage products and users
+                                        from a handy web-based Admin Console.</span></td>
+                                <td>Technical support<span>Get advanced 24x7 tech support and two 1:1 Expert Sessions
+                                        per user per year, to keep your creative team moving forward.</span></td>
+                                <td>Creative Cloud Libraries<span>Your team can share creative assets across apps and
+                                        devices — and stay in sync.</span></td>
+                            </tr>
+                            <tr>
+                                <td>Unlimited job posts on Adobe Talent<span>Your posts will reach the millions of
+                                        creatives on Behance.</span></td>
+                                <td>Integration with popular apps<span>Works with Slack, Microsoft Teams, and other
+                                        productivity apps your team uses every day.</span></td>
+                                <td>Storage<span>Get 1TB of cloud storage per user.*</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </span>
+            </div>
+            <h4>Student & Teachers</h4>
+            <div>
+                <h6>Students & Teachers save over 60%</h6>
+                <div>Creative Cloud Full Package |
+                    <!--on hover show price-->₱997.00/mo <s>₱2642.00/mo</s> | <a href="">Click for more info</a>
+                </div>
+                <span title="info">
+                    All Apps. Get 20+ Creative Cloud apps. Pay ₱997.00/mo* (incl. GST) the first year and ₱1,495.00/mo*
+                    (incl. GST) after that.
+                    Includes
+                    <ul>
+                        <li>Acrobat Pro</li>
+                        <li>Acrobat Reader</li>
+                        <li>Adobe Scan</li>
+                        <li>Aero</li>
+                        <li>After Effects</li>
+                        <li>Animate</li>
+                        <li>Audition</li>
+                        <li>Bridge</li>
+                        <li>Capture</li>
+                        <li>Character Animator</li>
+                        <li>Creative Cloud Express</li>
+                        <li>Dimension</li>
+                        <li>Dreamweaver</li>
+                        <li>Fill & Sign</li>
+                        <li>Fresco</li>
+                        <li>Illustrator</li>
+                        <li>InCopy</li>
+                        <li>InDesign</li>
+                        <li>Lightroom</li>
+                        <li>Lightroom Classic</li>
+                        <li>Media Encoder</li>
+                        <li>Photoshop</li>
+                        <li>Photoshop Camera</li>
+                        <li>Photoshop Express</li>
+                        <li>Premiere Pro</li>
+                        <li>Premiere Rush</li>
+                        <li>XD</li>
+                    </ul>
+                </span>
+                <span title="payment">
+                    <form>
+                        <caption>PAYMENT</caption>
+                        <label>Annual plan, paid monthly — ₱997.00/mo Annual subscription, cancel within 14 days for a
+                            <a href="">full refund</a>.</label>
+                        <input type="radio">
+                        <label>Annual plan, prepaid — ₱11,964.00/yr. Annual subscription, cancel within 14 days for a <a
+                                href="">full refund</a>.</label>
+                        <input type="radio">
+
+                        <input type="checkbox">
+                        <!-- i ignore the switcheroo in when choosing a different radio button option-->
+                        <label>Add Adobe Stock. Get one month free - Up to 10 images. Cancel risk-free in the first
+                            month or suscribe for ₱1,495.00/mo <i>Annual Subscription, cancel within 14 days for a<a
+                                    href="">full refund</a></i> after your trial ends.</label>
+                        <img alt="lock" src="">Secure Transaction.
+                    </form>
+                </span>
+                <p>Creative Cloud for student includes:</p>
+                <ul>
+                    <li>The world's best creative tools — Photoshop, Illustrator and more</li>
+                    <li>Your own portfolio website to showcase your work and get hired</li>
+                    <li>Apps to create and share photos, videos and graphics anywhere</li>
+                </ul>
+                <a href="https://www.adobe.com/sea/creativecloud/buy/students.html">Learn more</a> | <a
+                    href="https://www.adobe.com/ph/creativecloud/plans.html#student-teacher-eligibility">Check
+                    eligibility</a>
+            </div>
+
+            <h4>Schools & Universities</h4>
+            <div>
+                <h5>Creative Cloud for Education</h5>
+                <p>Creative Cloud for education is an affordable licensing option for small workgroups, departments,
+                    classrooms, labs or even entire institutions. Get the latest Creative Cloud apps including
+                    Photoshop, Illustrator and Acrobat - and manage licence deployments and updates from one central
+                    console. Adobe Substance 3D apps may be included with your education plans. <a href="">See what’s
+                        included.</a></p>
+                <div>
+                    <h4>Per Named-user License</h4>
+                    <span>For small workgroups and departments</span>
+                    <hr />
+                    <span>
+                        Creative Cloud All Apps
+                        ₱1,945.00/mo per user
+                    </span>
+                    <span>
+                        Single App
+                        ₱837.00/mo per user
+                    </span>
+                    <ul>
+                        <li>Get the latest desktop apps, including Photoshop, Illustrator and Acrobat</li>
+                        <li>Manage licence deployment and updates from one central console</li>
+                        <li>100 GB of cloud storage, per licence, for easy file sharing</li>
+                        <li>Advanced 24/7 tech support, plus 1:1 access to product experts</li>
+                        <li>Requires <a href="">institutional affiliation</a></li>
+                    </ul>
+                    <form>
+                        <button>Select your plans</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer" style="margin-top: 100px;">
+            <div class="social-container">
+                <div class="message">
+                    FOLLOW OUR SOCIALS!
+                </div>
+                <div class="socials">
+                    <a target="_blank" href="https://www.youtube.com/user/AdobeSystems" class="soc-icon youtube">
+                        <svg width="60" height="42" viewBox="0 0 60 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M58.7501 7.26745C58.4103 6.05552 57.7486 4.95831 56.8351 4.09245C55.8958 3.19996 54.7446 2.56154 53.4901 2.23745C48.7951 0.999946 29.9851 0.999946 29.9851 0.999946C22.1434 0.910728 14.3037 1.30313 6.51008 2.17495C5.25555 2.52298 4.10649 3.17566 3.16508 4.07495C2.24008 4.96495 1.57008 6.06245 1.22008 7.26495C0.379311 11.7943 -0.0291918 16.3933 7.81143e-05 20.9999C-0.0299219 25.6024 0.377578 30.1999 1.22008 34.7349C1.56258 35.9324 2.23008 37.0249 3.15758 37.9074C4.08508 38.7899 5.24008 39.4274 6.51008 39.7649C11.2676 40.9999 29.9851 40.9999 29.9851 40.9999C37.8367 41.0893 45.6865 40.6969 53.4901 39.8249C54.7446 39.5009 55.8958 38.8624 56.8351 37.9699C57.7482 37.1043 58.4092 36.0069 58.7476 34.7949C59.6103 30.2673 60.0298 25.6664 60.0001 21.0574C60.065 16.429 59.646 11.8064 58.7501 7.26495V7.26745ZM24.0051 29.5599V12.4424L39.6551 21.0024L24.0051 29.5599Z"
+                                fill="#F8F8F8" />
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/Adobe" class="soc-icon twitter">
+                        <svg width="50" height="40" viewBox="0 0 60 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.8475 49.2499C41.49 49.2499 53.8762 30.4887 53.8762 14.2474C53.8762 13.7224 53.8763 13.1899 53.8538 12.6649C56.2652 10.9192 58.3465 8.75798 60 6.28241C57.7474 7.2756 55.3604 7.93019 52.9163 8.22491C55.4908 6.68606 57.419 4.2648 58.3425 1.41116C55.9237 2.84413 53.2763 3.85006 50.5162 4.38491C48.6607 2.40875 46.2053 1.09961 43.5303 0.660254C40.8554 0.220903 38.1102 0.675869 35.72 1.95468C33.3298 3.23349 31.428 5.26477 30.3092 7.73389C29.1903 10.203 28.9169 12.9722 29.5312 15.6124C24.6365 15.367 19.8481 14.0954 15.4764 11.8802C11.1048 9.66498 7.24757 6.55558 4.155 2.75366C2.58503 5.46523 2.1059 8.67267 2.81492 11.7247C3.52394 14.7767 5.36796 17.4444 7.9725 19.1862C6.02077 19.1199 4.11195 18.5958 2.4 17.6562V17.8249C2.40337 20.6655 3.3874 23.4177 5.18578 25.6165C6.98415 27.8153 9.48655 29.3257 12.27 29.8924C11.2135 30.1835 10.1221 30.3286 9.02625 30.3237C8.25369 30.326 7.48268 30.2544 6.72375 30.1099C7.51045 32.5551 9.04227 34.693 11.1047 36.2242C13.1671 37.7554 15.6568 38.6031 18.225 38.6487C13.8621 42.0754 8.47275 43.9339 2.925 43.9249C1.94745 43.929 0.970587 43.8727 0 43.7562C5.63068 47.3459 12.1699 49.252 18.8475 49.2499V49.2499Z"
+                                fill="#F8F8F8" />
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/Adobe/" class="soc-icon facebook">
+                        <svg width="45" height="45" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 30.1675C0 45.0825 10.8325 57.485 25 60V38.3325H17.5V30H25V23.3325C25 15.8325 29.8325 11.6675 36.6675 11.6675C38.8325 11.6675 41.1675 12 43.3325 12.3325V20H39.5C35.8325 20 35 21.8325 35 24.1675V30H43L41.6675 38.3325H35V60C49.1675 57.485 60 45.085 60 30.1675C60 13.575 46.5 0 30 0C13.5 0 0 13.575 0 30.1675Z"
+                                fill="#F8F8F8" />
+                        </svg>
+                    </a>
+                    <a target="_blank" class="soc-icon linkedin" href="http://www.linkedin.com/company/adobe">
+                        <svg width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M18.5725 17.4225H27.8575V22.0475C29.195 19.3875 32.625 16.9975 37.7775 16.9975C47.655 16.9975 50 22.2925 50 32.0075V50H40V34.22C40 28.6875 38.6625 25.5675 35.2575 25.5675C30.535 25.5675 28.5725 28.93 28.5725 34.2175V50H18.5725V17.4225V17.4225ZM1.425 49.575H11.425V16.9975H1.425V49.575V49.575ZM12.8575 6.375C12.8579 7.21319 12.6916 8.04309 12.3685 8.81647C12.0453 9.58985 11.5716 10.2913 10.975 10.88C9.766 12.0816 8.12953 12.7541 6.425 12.75C4.72347 12.7489 3.09078 12.078 1.88 10.8825C1.28553 10.2918 0.813465 9.58956 0.490859 8.81608C0.168254 8.0426 0.00144783 7.21306 0 6.375C0 4.6825 0.675 3.0625 1.8825 1.8675C3.09221 0.670396 4.7256 -0.000748027 6.4275 6.25661e-07C8.1325 6.25661e-07 9.7675 0.672501 10.975 1.8675C12.18 3.0625 12.8575 4.6825 12.8575 6.375Z"
+                                fill="#F8F8F8" />
+                        </svg>
+                    </a>
+                    <a target="_blank" class="soc-icon instagram" href="https://www.instagram.com/adobe/">
+                        <svg width="50" height="50" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M44.9615 0.0656738H15.0386C6.79456 0.0656738 0.0874023 6.75027 0.0874023 14.9666V45.0332C0.0874023 53.2489 6.79456 59.9342 15.0386 59.9342H44.9615C53.2055 59.9342 59.9125 53.2488 59.9125 45.0332V14.9665C59.9125 6.75027 53.2055 0.0657338 44.9615 0.0657338V0.0656738ZM54.3752 45.033C54.3752 50.2059 50.1524 54.4151 44.9616 54.4151H15.0386C9.84778 54.4151 5.62492 50.2059 5.62492 45.033V25.6142H17.4537C16.5901 27.4407 16.1044 29.4784 16.1044 31.6272C16.1044 39.4322 22.4752 45.7811 30.3062 45.7811C38.1369 45.7811 44.5079 39.4322 44.5079 31.6272C44.5079 29.4784 44.0222 27.4407 43.1585 25.6142H54.3752V45.033H54.3752ZM24.4107 31.6274C24.4107 28.388 27.0553 25.752 30.3062 25.752C33.5573 25.752 36.2017 28.388 36.2017 31.6274C36.2017 34.8674 33.5573 37.5029 30.3062 37.5029C27.0554 37.5029 24.4107 34.8674 24.4107 31.6274V31.6274ZM54.3752 20.0954H38.5248C36.2027 18.4473 33.3675 17.4737 30.3062 17.4737C27.2449 17.4737 24.4094 18.4473 22.0878 20.0954H5.62492V14.9666C5.62492 9.79317 9.84778 5.58453 15.0386 5.58453H44.9616C50.1524 5.58453 54.3752 9.79317 54.3752 14.9666V20.0954H54.3753H54.3752ZM48.3749 8.93163H43.2419C42.3279 8.93163 41.5806 9.67671 41.5806 10.5873V15.7032C41.5806 16.6137 42.3279 17.3589 43.2419 17.3589H48.3749C49.2887 17.3589 50.0361 16.6137 50.0361 15.7032V10.5873C50.0361 9.67671 49.2888 8.93163 48.3749 8.93163Z"
+                                fill="#F8F8F8" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="terms-container">
+                <div class="terms">
+                    <a href="https://www.adobe.com/privacy.html">
+                        PRIVACY
+                    </a>
+                    <span>|</span>
+                    <a href="https://www.adobe.com/legal/terms.html">
+                        TERMS OF USE
+                    </a>
+                    <span>|</span>
+                    <span>
+                        ©2022
+                    </span>
+                </div>
+            </div>
+            <div>
+                <hr />
+            </div>
+            <div class="sitemap">
+                <a href="../index.html">Home</a>
+                <a href="about-adobe.html">About us</a>
+                <div>
+                    <a href="#drop-right">Products</a>
+                </div>
+                <div class="dropright" id="drop-right">
+                    <a href="product-home.html">Main</a> 
+                    <a href="apps/photoshop.html">Photoshop</a> 
+                    <a href="apps/animate.html">Animate</a> 
+                    <a href="apps/lightroom.html">Lightroom</a> 
+                    <a href="apps/aftereffects.html">After Effects</a> 
+                    <a href="apps/premiere.html">Premiere Pro</a>
+                    <a href="#exit"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1216 1312"><g transform="rotate(180 608 656)"><path id="hoversvg" fill="#f8f8f8" d="M1202 1066q0 40-28 68l-136 136q-28 28-68 28t-68-28L608 976l-294 294q-28 28-68 28t-68-28L42 1134q-28-28-28-68t28-68l294-294L42 410q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294l294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68L880 704l294 294q28 28 28 68z"/></g></svg></a>
+                </div>
+                <a href="#">Plans & Pricing</a>
+                <a href="contact.html">Contact us</a>
+                <a href="form.html">Form</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="../assets/lib/js/modal.js"></script>
+</body>
+
+</html>

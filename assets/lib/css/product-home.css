@@ -1,0 +1,366 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* BANNER */
+.video-banner {
+    overflow: visible;
+}
+
+.video-foreground video {
+    overflow: hidden;
+}
+
+.image-map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 30%;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    object-fit: contain;
+}
+
+.image-map-section {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+}
+
+.statement-section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 8%;
+    left: 0;
+    width: 100%;
+}
+
+.statement-section .statement-header {
+    line-height: 40px;
+    font-size: 3em;
+}
+
+.statement-section .statement-subheader {
+    font-family: "Altero";
+    font-size: 1.8em;
+}
+
+.statement-section .details {
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width:700px) {
+    .image-map {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0% 5%;
+    }
+
+    .statement-section {
+        font-size: 0.8em
+    }
+
+    .statement-section .details {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .image-map-section {
+        top: 40%;
+    }
+}
+
+/* FEATURES SECTION */
+.features {
+    margin-top: 150px;
+}
+
+section.features {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.features .feature {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.features .big-desc {
+    width: 80%;
+    text-align: center;
+}
+
+section.features .feature h1 {
+    font-family: 'CodeNext_ExtraBold';
+}
+
+section.features .feature p {
+    font-family: 'Rockwell';
+}
+
+section.features .feature>* {
+    width: 50%;
+    margin: 10px 25px;
+}
+
+section.features .feature .feature-video img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 700px) {
+    section.features .feature {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    section.features .feature.reverse {
+        flex-direction: column-reverse;
+    }
+
+    section.features .feature>* {
+        width: 100%;
+    }
+}
+
+/* MORE APPS */
+.more-apps {
+    margin: 100px 0px;
+}
+
+.more-apps h1 {
+    font-family: 'Altero';
+    white-space: nowrap;
+    font-size: 2.5em;
+    margin: 0;
+    margin-left: -350px;
+    line-height: 35px;
+}
+
+.more-apps .subheader {
+    font-size: 1.8em;
+    font-family: 'CodeNext_ExtraBold';
+    display: flex;
+    justify-content: center;
+    margin: 80px 0px;
+}
+
+.more-apps .card-container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 10%;
+}
+
+.more-apps .card-container .card {
+    margin: 0px 15px;
+    width: 30%;
+}
+
+.more-apps .card .image img {
+    width: 100%;
+    height: auto;
+}
+
+.more-apps .card dt {
+    font-family: 'hando';
+    font-size: 1.5em;
+}
+
+.more-apps .card dd {
+    font-family: 'Rockwell';
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 700px) {
+    .more-apps .card-container {
+        flex-direction: column;
+    }
+
+    .more-apps .card-container .card {
+        width: 100%;
+        margin: 50px 0px;
+    }
+}
+
+
+
+/* APPS */
+.products-section .showcase {
+    margin-top: 150px;
+}
+
+.products-section .showcase-container {
+    display: inline-block;
+}
+
+.products-section .showcase-container .card {
+    white-space: normal;
+}
+
+#popular-section {
+    margin-top: 250px;
+    padding-top: 100px;
+}
+
+.products-section>* {
+    margin: 150px 0px;
+}
+
+.misc-section {
+    margin-bottom: 100px;
+}
+
+.card-gallery {
+    display: flex;
+    height: 30vw;
+    max-height: 310px;
+    padding: 0px 50px;
+    user-select: none;
+    min-height: 430px;
+}
+
+.card-gallery .title {
+    width: 105px;
+}
+
+.card-gallery .card-gallery-container {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.card-gallery .card-gallery-container .card {
+    height: 90%;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    margin: 0px 10px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.card-gallery .card .card-banner {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-gallery .card .card-banner img {
+    height: auto;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.card-gallery .card:hover .card-banner img {
+    transform: scale(1.5);
+}
+
+.card-gallery .card .card-header {
+    width: 100%;
+    font-family: 'hando';
+    margin: 10px 0px;
+    font-size: 2em;
+}
+
+.card-gallery .card .card-desc {
+    width: 100%;
+    font-family: 'Rockwell';
+}
+
+.card-gallery .card .app-link {
+    position: absolute;
+    bottom: 10px;
+    font-family: 'Rockwell';
+}
+
+.card-gallery .card .app-link:hover a {
+    color: rgb(149, 117, 255);
+}
+
+/* PLANS AND PRICING */
+.d-line {
+    width: 50px;
+    height: 5px;
+    display: inline-block;
+    background-color: rgb(149, 117, 255);
+    transform: translateY(-9px);
+    margin: 0px 10px;
+}
+
+.plans-and-pricing {
+    padding: 0px 5%;
+}
+
+.plans-and-pricing a {
+    font-size: 2em;
+    font-family: 'Altero';
+    color: rgba(149, 117, 255, 1);
+    transition: .4s;
+}
+
+.plans-and-pricing a:hover {
+    opacity: .4;
+}
+
+.discover.more-apps {
+    margin-top: 200px;
+}
+
+.discover.more-apps .subheader {
+    font-family: 'Altero';
+    letter-spacing: 10px;
+    margin: 10px 0px;
+}
+
+.discover.more-apps .card-container .card {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+dt {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+@media (min-width:0px) {
+    * {
+        text-align: center;
+    }
+    #o-subheader {
+        text-align: start;
+        padding: .5rem;
+    }
+}
+
+@media (min-width:700px) {
+    * {
+        text-align: unset;
+    }
+    #o-subheader {
+        padding: 0;
+    }
+}

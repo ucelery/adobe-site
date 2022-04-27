@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'CodeNext_ExtraBold';
+    src: url('../../fonts/CodeNext/codenext-extrabold-webfont.woff2') format('woff2'),
+        url('../../fonts/CodeNext/codenext-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rockwell";
+    src: url("../../fonts/Rockwell/rockwell.eot");
+    src: url("../../fonts/Rockwell/rockwell.eot?#iefix") format("embedded-opentype"),
+        url("../../fonts/Rockwell/rockwell.woff2") format("woff2"),
+        url("../../fonts/Rockwell/rockwell.woff") format("woff"),
+        url("../../fonts/Rockwell/rockwell.ttf") format("truetype"),
+        url("../../fonts/Rockwell/rockwell.svg#Rockwell") format("svg");
+}
+
+@font-face {
+    font-family: 'Altero';
+    src: url('../../fonts/Altero/altero-regular-webfont.woff2') format('woff2'),
+        url('../../fonts/Altero/altero-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'peppermint';
+    src: url('../../fonts/Peppermint/peppermint-webfont.woff2') format('woff2'),
+        url('../../fonts/Peppermint/peppermint-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hando';
+    src: url('../../fonts/Hando/handotrial-black-webfont.woff2') format('woff2'),
+        url('../../fonts/Hando/handotrial-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Portico';
+    src: url('../../fonts/portico/Portico\ Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Portico-light';
+    src: url('../../fonts/portico/Portico\ Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Portico-layer';
+    src: url('../../fonts/portico/Portico\ Layer.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Portico-diagonal';
+    src: url('../../fonts/portico/Portico\ Diagonal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Portico-indiagonal';
+    src: url('../../fonts/portico/Portico\ Indiagonal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Portico-outline';
+    src: url('../../fonts/portico/Portico\ Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
