@@ -235,15 +235,6 @@ a {
 }
 
 /* SHOWCASES */
-.showcase {
-    display: flex;
-    height: 30vw;
-    padding: 0px 50px;
-    margin-top: 350px;
-    user-select: none;
-    min-height: 310px;
-}
-
 .showcase .title {
     font-family: 'CodeNext_ExtraBold';
     font-size: 3rem;
@@ -280,6 +271,14 @@ a {
     .showcase .title {
         display: none;
     }
+
+    .showcase {
+        padding: 0 5%;
+    }
+
+    .card-gallery {
+        padding: 0px 0px;
+    }
 }
 
 /*  EVENTS */
@@ -301,21 +300,9 @@ a {
     position: absolute;
     width: 100vw;
     height: 380px;
-
-    margin: 0px 20px;
     margin-top: 240px;
     padding-bottom: 30px;
-
-    white-space: nowrap;
-    overflow: auto;
-}
-
-.events .card {
-    height: 350px;
-    width: 270px;
-    background-color: rgb(138, 29, 216);
-    margin: 0px 50px;
-    display: inline-block;
+    display: flex;
 }
 
 .events .card.size20 {
@@ -324,13 +311,11 @@ a {
 }
 
 .events .card {
-    width: 15vw;
-    min-width: 210px;
-    height: 90%;
-    min-height: 290px;
-    display: inline-block;
+    height: 350px;
+    width: 33%;
     background-color: rgb(138, 29, 216);
-    margin: 5px 20px;
+    margin: 0px 50px;
+    display: inline-block;
 }
 
 /* PARTNERS */
@@ -385,7 +370,7 @@ a {
     height: 100%;
 }
 
-footer a:hover{
+footer a:hover {
     color: red;
 }
 
@@ -444,13 +429,14 @@ footer a:hover{
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
-    font-family: 'hando',sans-serif;
+    font-family: 'hando', sans-serif;
 }
 
 @media (max-width:992px) {
     .sitemap {
         flex-direction: column;
     }
+
     .dropright a {
         padding: 0 .3rem;
     }
@@ -460,7 +446,8 @@ footer a:hover{
     display: none;
     padding: 1px;
 }
-.dropright a{
+
+.dropright a {
     padding: 0 5px;
 }
 
@@ -468,10 +455,120 @@ footer a:hover{
     display: block;
 }
 
-.exit:target .dropright{
+.exit:target .dropright {
     display: none;
 }
 
 #hoversvg:hover {
     fill: red;
+}
+
+/* CARD */
+/* APPS */
+.products-section .showcase {
+    margin-top: 150px;
+}
+
+.products-section .showcase-container {
+    display: inline-block;
+}
+
+.products-section .showcase-container .card {
+    white-space: normal;
+}
+
+#popular-section {
+    margin-top: 250px;
+    padding-top: 100px;
+}
+
+.products-section>* {
+    margin: 150px 0px;
+}
+
+.misc-section {
+    margin-bottom: 100px;
+}
+
+.card-gallery {
+    display: flex;
+    height: 30vw;
+    max-height: 310px;
+    padding: 0px 50px;
+    user-select: none;
+    min-height: 430px;
+}
+
+.card-gallery .title {
+    width: 105px;
+}
+
+.card-gallery .card-gallery-container {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.card-gallery .card-gallery-container .card {
+    height: 90%;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    margin: 0px 10px;
+    position: relative;
+    background-color: rgba(20, 19, 22, 255);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.card-gallery .card .card-banner {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-gallery .card .card-banner img {
+    height: auto;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.card-gallery .card:hover .card-banner img {
+    transform: scale(1.5);
+}
+
+.card-gallery .card .card-header {
+    width: 100%;
+    font-family: 'hando';
+    margin: 10px 0px;
+    font-size: 2em;
+}
+
+.card-gallery .card .card-desc {
+    width: 100%;
+    font-family: 'Rockwell';
+}
+
+.card-gallery .card .app-link {
+    position: absolute;
+    bottom: 10px;
+    font-family: 'Rockwell';
+}
+
+.card-gallery .card .app-link:hover a {
+    color: rgb(149, 117, 255);
+}
+
+/* EVENTS */
+.events-container .card-gallery {
+    width: 100vw;
+    display: flex;
+    padding: 0;
+}
+
+.card-gallery .card-gallery-container {
+    width: auto;
+    margin: 0px auto;
 }
