@@ -329,9 +329,9 @@ a {
     height: 400px;
     width: 150%;
     margin-left: -25%;
-    background: linear-gradient(45deg, red, orange, rgb(255, 208, 0), yellow, rgb(0, 255, 0), rgb(85, 231, 85), rgb(17, 247, 255), rgb(77, 77, 248), rgb(138, 29, 216), rgb(77, 77, 248), rgb(17, 247, 255), rgb(85, 231, 85), rgb(0, 255, 0), yellow, rgb(255, 208, 0), orange, red);
+    /* background: linear-gradient(45deg, red, orange, rgb(255, 208, 0), yellow, rgb(0, 255, 0), rgb(85, 231, 85), rgb(17, 247, 255), rgb(77, 77, 248), rgb(138, 29, 216), rgb(77, 77, 248), rgb(17, 247, 255), rgb(85, 231, 85), rgb(0, 255, 0), yellow, rgb(255, 208, 0), orange, red);
     background-size: 1800% 1800%;
-    animation: bg-animation 20s infinite;
+    animation: bg-animation 20s infinite; */
     transform: rotate(-5deg);
     position: relative;
     display: flex;
@@ -345,7 +345,9 @@ a {
     width: 100%;
     text-align: center;
     letter-spacing: -8px;
-    color: rgba(255, 255, 255, 0.5)
+    white-space: nowrap;
+    justify-content: center;
+    opacity: .8;
 }
 
 .partners .partner-container {
@@ -367,11 +369,50 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    animation: float 6s ease-in-out infinite;
 }
 
 .partners img {
     object-fit: contain;
     height: 100%;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-30px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.item.--p-delay-1 {
+    animation-delay: 1s
+}
+
+.item.--p-delay-2 {
+    animation-delay: 2s
+}
+
+.item.--p-delay-3 {
+    animation-delay: 3s
+}
+
+.item.--p-delay-4 {
+    animation-delay: 4s
+}
+
+.item.--p-delay-5 {
+    animation-delay: 5s
+}
+
+.item.--p-delay-6 {
+    animation-delay: 6s
 }
 
 /* FOOTER */
@@ -601,7 +642,6 @@ footer svg:hover path {
     width: 100%;
     min-width: 50%;
     height: auto;
-    cursor: wait;
 }
 
 .home-btn {
@@ -628,7 +668,7 @@ footer svg:hover path {
     transition: all .3s ease-out;
 }
 
-.light_box{
+.light_box {
     display: none;
     position: fixed;
     z-index: 1500;
@@ -639,7 +679,11 @@ footer svg:hover path {
     padding: 1em;
     background: rgba(0, 0, 0, 0.8);
 }
-.light_box:target {display: block;}
+
+.light_box:target {
+    display: block;
+}
+
 .light_box img {
     display: block;
     width: 100%;
@@ -648,4 +692,108 @@ footer svg:hover path {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-  }
+}
+
+/* LIGHTBOX ICON */
+.hp-lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.hp-lightbox {
+    display: none;
+    cursor: default;
+
+}
+
+.hp-lightbox:target {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.hp-lightbox .lb-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.lb-item-holder {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: 658px;
+}
+
+.lb-container .lb-devcon {
+    padding: 0px 50px;
+}
+
+.lb-item-holder>* {
+    width: 33%;
+    margin: 0px 10px;
+}
+
+.lb-item-holder>* img {
+    width: 100%;
+    height: 100%;
+}
+
+.devpfp {
+    margin: 0px 25px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.devpfp .dp-name span {
+    transform: translateX(5px)
+}
+
+.devpfp .dp-name {
+    width: 100%;
+    height: 99%;
+    font-family: 'chronicnormal';
+    letter-spacing: .3rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    opacity: 0;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.devpfp .dp-name:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 700px) {
+    .devpfp {
+        margin: 0px 0px;
+    }
+
+    .lb-container .lb-devcon {
+        padding: 0px 5%;
+    }
+
+    .devpfp .dp-name {
+        font-size: 3vw;
+        letter-spacing: .2rem;
+    }
+}
