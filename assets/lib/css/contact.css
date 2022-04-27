@@ -417,20 +417,89 @@ body {
 }
 
 .sm-icon {
-    content: "";
+    width: 25px;
+    height: 25px;
 }
 
 .buy-btn {
-    content: "";
+    color: #312f2f;
+    background-color: #F02D3A;
+    float: right;
+    padding: .3em .85em;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: .95em;
 }
-
+.buy-btn:hover {
+    color: #f8f9fa;
+}
+.learn-btn {
+    background-color: transparent;
+    padding: .3em 0;
+    border: none;
+    float: left;
+    color: #5292e5;
+    font-size: .95em;
+}
+.learn-btn:hover {
+    text-decoration: underline;
+}
+.o-radio {
+    margin-right: .5rem;
+}
+.h-fixed {
+    height: 350px;
+}
+.p-fix {
+    font-size: .8em;
+}
+.o-foot {
+    background-color: transparent;
+    border-top: 0;
+}
+.head-fix {
+    display: flex;
+    align-content: center;
+    padding: 1em;
+    font-weight: bold;
+    background-color: #312f2f;
+    color: #f8f9fa;
+}
+.head-fix img{
+    margin-right: .5em;
+}
 .o-block {
     display: flex;
     padding: .2rem;
     align-items: center;
     justify-content: start;
+    font-size: .8em;
 }
 
+.o-block img{
+    width: auto;
+    height: auto;
+}
+
+.payment {
+    font-size: .8em;
+}
+.payment label {
+    display: block;
+    padding: .5rem;
+}
+.payment span {
+    font-size: 1rem;
+}
+.payment p {
+    font-size: 1rem;
+}
+.payment a {
+    color: #5292e5;
+}
+.payment a:hover {
+    text-decoration: underline;
+}
 /* MODAL */
 .ab-modal-wrapper {
     position: fixed;
@@ -440,7 +509,7 @@ body {
     z-index: 99;
     top: 0;
     left: 0;
-    color: black;
+    color: #312F2F;
     display: flex;
 }
 
@@ -454,6 +523,7 @@ body {
     border-radius: 5px;
     overflow-y: auto;
     overflow-x: hidden;
+    color: #312F2F;
 }
 
 .hide {
@@ -469,10 +539,14 @@ ul {
 }
 
 ul li:before {
-    content: "•";
-    font-size: 10pt;
+    content: "✵";
+    font-size: 13pt;
 }
 
 .nostyle li:before {
     content: "";
+}
+
+.o-color-d {
+    color: #312F2F;
 }
