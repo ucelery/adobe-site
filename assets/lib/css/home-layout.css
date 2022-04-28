@@ -723,11 +723,23 @@ footer svg:hover path {
 .light_box img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 10% 25%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.product-home-layout .pop-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .light_box img {
+        padding: 0% 5%;
+    }   
 }
 
 /* LIGHTBOX ICON */
