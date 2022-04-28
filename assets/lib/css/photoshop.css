@@ -87,12 +87,13 @@ a {
 
 @media only screen and (max-width: 740px) {
     .banner .first-half {
-        font-size: 5rem;
-        line-height: 4rem;
+        font-size: 14vw;
+        line-height: 11vw;
     }
 
     .app-text-name {
-        font-size: 3.8rem;
+        font-size: 10vw;
+        line-height: 5vw;
     }
 }
 
