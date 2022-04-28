@@ -475,13 +475,17 @@ footer svg:hover path {
 }
 
 .sitemap {
-    padding-top: 10px;
+    padding: 35px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
-    font-family: 'hando', sans-serif;
+    font-family: 'Altero', sans-serif;
+}
+
+.footer .hr-divider hr{
+    margin: 0;
 }
 
 @media (max-width:992px) {
@@ -636,6 +640,19 @@ footer svg:hover path {
     .showcase .alt-title {
         display: block;
     }
+
+    .socials a svg {
+        width: 30px;
+    }
+
+    .terms-container .terms {
+        font-size: .8rem;
+    }
+
+    .terms-container .terms a {
+        padding: 0px 1%;
+    }
+
 }
 
 /* EVENTS */
