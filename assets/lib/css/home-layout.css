@@ -416,13 +416,21 @@ a {
 }
 
 /* FOOTER */
+footer a {
+    transition: all .3s ease-out;
+}
+
+footer svg {
+    transition: all .3s ease-out;
+}
+
 footer a:hover {
-    color: red;
+    color: #9575d0;
     transition: all .3s ease-out;
 }
 
 footer svg:hover path {
-    fill: red;
+    fill: #9575d0;
     transition: all .3s ease-out;
 }
 
@@ -440,6 +448,10 @@ footer svg:hover path {
     font-family: 'Altero';
     margin: 10px 0px;
     justify-content: center;
+}
+
+.footer .terms {
+    width: 100%;
 }
 
 .terms-container .terms a {
