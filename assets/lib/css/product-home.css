@@ -188,6 +188,15 @@ section.features .feature .feature-video img {
     font-size: 1em;
 }
 
+.products-section .alt-title {
+    font-size: 2rem;
+    font-family: 'CodeNext_ExtraBold';
+    margin-top: 100px;
+    margin-left: 30px;
+    display: none;
+    text-align: left;
+}
+
 @media only screen and (max-width: 700px) {
     .more-apps .card-container {
         flex-direction: column;
@@ -196,6 +205,18 @@ section.features .feature .feature-video img {
     .more-apps .card-container .card {
         width: 100%;
         margin: 50px 0px;
+    }
+
+    .products-section .card-gallery .title {
+        display:none;
+    }    
+
+    .products-section .alt-title {
+        display: block;
+    }
+
+    .products-section .card-gallery {
+        padding: 0px 5%;
     }
 }
 

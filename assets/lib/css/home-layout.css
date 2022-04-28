@@ -280,7 +280,7 @@ a {
         padding: 0 5%;
     }
 
-    .card-gallery {
+    .showcase .card-gallery {
         padding: 0px 0px;
     }
 }
@@ -559,6 +559,7 @@ footer svg:hover path {
 
 .card-gallery .title {
     width: 105px;
+    padding-bottom: 70px;
 }
 
 .card-gallery .card-gallery-container {
@@ -617,6 +618,24 @@ footer svg:hover path {
 
 .card-gallery .card .app-link:hover a {
     color: rgb(149, 117, 255);
+}
+
+.showcase .alt-title {
+    font-size: 2rem;
+    font-family: 'CodeNext_ExtraBold';
+    margin-top: 100px;
+    margin-left: 25px;
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-gallery .title {
+        display:none;
+    }    
+
+    .showcase .alt-title {
+        display: block;
+    }
 }
 
 /* EVENTS */
@@ -736,6 +755,7 @@ footer svg:hover path {
 
 .lb-container .lb-devcon {
     padding: 0px 50px;
+    color: whitesmoke;
 }
 
 .lb-item-holder>* {
@@ -777,6 +797,8 @@ footer svg:hover path {
     opacity: 0;
     transition: .4s;
     border-radius: 50%;
+
+    color: whitesmoke;
 }
 
 .devpfp .dp-name:hover {
